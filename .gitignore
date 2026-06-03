@@ -30,6 +30,7 @@ submission/
 Submit-*/
 *.docx
 *.pdf
+!figures/*.pdf
 cover_letter*
 CoverLetter*
 reviews/

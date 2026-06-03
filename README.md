@@ -30,6 +30,12 @@ Current summary:
 - Material and FDR-significant decreases: 3 cities.
 - Cohort mean Delta P_liq: +0.00042.
 - Beijing is sign-positive but sub-material: Delta P_liq = +0.00025.
+- Extended parameter grid: `data_derived/sensitivity_grid_v2.csv`.
+- Six-hotspot sensitivity envelope: `data_derived/hotspot_sensitivity_envelope_v2.csv`.
+- Validation evidence matrix: `data_derived/validation_evidence_matrix_v2.csv`.
+- Policy-priority screening table: `data_derived/policy_priority_table_v2.csv`.
+
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and groundwater-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline material hotspots do not reverse sign.
 
 ## Boundary of use
 

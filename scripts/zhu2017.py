@@ -1,7 +1,8 @@
 """Zhu et al. (2017) global geospatial liquefaction model — verified implementation.
 
 Source: Zhu, Baise & Thompson (2017), "An Updated Geospatial Liquefaction Model for
-Global Application", Earthquake Spectra 33(4):1365-1385. Coefficients cross-checked
+Global Application", Bulletin of the Seismological Society of America 107(3):1365-1385.
+Coefficients cross-checked
 against GEM OpenQuake secondary-perils implementation.
 
 Model 2 (general / non-coastal) — the model we use because WATER TABLE DEPTH (wtd) is

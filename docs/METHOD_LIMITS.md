@@ -7,6 +7,7 @@ This package supports a directional screening analysis.
 - Observed groundwater change creates regional, bidirectional shifts in modelled liquefaction probability.
 - The global mean response across the screened city cohort is near zero.
 - Six cities are both material under the chosen threshold and FDR-significant in the recent-window analysis.
+- The six baseline material hotspots keep their direction across the reported sensitivity grid.
 - Recharge-side increases and depletion-side decreases should be interpreted as a water-security versus seismic-safety trade-off.
 
 ## Unsupported claims
@@ -15,6 +16,7 @@ This package supports a directional screening analysis.
 - Liquefaction hazard is increasing everywhere.
 - GRACE/GRACE-FO resolves city- or neighbourhood-scale shallow groundwater.
 - The reported city values are precise engineering predictions or factor-of-safety estimates.
+- The screening tiers in `policy_priority_table_v2.csv` are regulatory thresholds.
 - Groundwater depletion is a seismic-safety benefit.
 
 ## Scale statement

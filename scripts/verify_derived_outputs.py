@@ -16,6 +16,9 @@ def main() -> None:
     summary = json.loads((DER / "core_summary_v2.json").read_text(encoding="utf-8"))
     cities = pd.read_csv(DER / "city_results_v2.csv")
     hotspots = pd.read_csv(DER / "hotspot_table.csv")
+    grid = pd.read_csv(DER / "sensitivity_grid_v2.csv")
+    envelope = pd.read_csv(DER / "hotspot_sensitivity_envelope_v2.csv")
+    policy = pd.read_csv(DER / "policy_priority_table_v2.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -23,6 +26,11 @@ def main() -> None:
     assert len(material[material["dP"] > 0]) == summary["n_material_inc"] == 3
     assert len(material[material["dP"] < 0]) == summary["n_material_dec"] == 3
     assert len(hotspots) == 6
+    assert len(grid) == 150
+    assert int(grid["hotspot_sign_reversals"].sum()) == 0
+    assert len(envelope) == 6
+    assert bool(envelope["sign_consistent_across_grid"].all())
+    assert len(policy) == 444
 
     beijing = cities[cities["name"] == "Beijing"].iloc[0]
     assert beijing["dP"] > 0
@@ -33,6 +41,7 @@ def main() -> None:
     print(f"FDR-significant: {int(cities['fdr_sig'].sum())}")
     print(f"Material increases/decreases: {summary['n_material_inc']}/{summary['n_material_dec']}")
     print(f"Beijing dP: {beijing['dP']:+.6f}; TWS trend: {beijing['tws_cm_yr']:+.2f} cm yr-1")
+    print(f"Sensitivity combinations: {len(grid)}; hotspot sign reversals: {int(grid['hotspot_sign_reversals'].sum())}")
 
 
 if __name__ == "__main__":

@@ -25,6 +25,7 @@ python scripts\\assemble_inputs.py
 python scripts\\grace_trend.py
 python scripts\\groundwater_isolation.py
 python scripts\\analyze_v2.py
+python scripts\\sensitivity_policy_analysis.py
 python scripts\\make_figures.py
 python scripts\\make_fig3_regional.py
 python scripts\\make_fig4_timeseries.py
@@ -46,6 +47,8 @@ Expected summary:
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
+- Sensitivity grid rows: 150.
+- Six baseline material hotspots: zero sign reversals across the sensitivity grid.
 
 `scripts\\analyze_v2.py` reconstructs the final city table and hotspot table, but it expects the Natural Earth lake boundary data under `data_raw/` so that the inland-water-body exclusion can be recomputed.
 
@@ -57,6 +60,9 @@ Generated figures are stored under `figures/`:
 - `Fig2_global_signresolved.png`
 - `Fig3_regional.png`
 - `Fig4_timeseries.png`
+- `Fig5_policy_robustness.png`
+- `Fig5_policy_robustness.svg`
+- `Fig5_policy_robustness.pdf`
 
 ## Guardrails
 

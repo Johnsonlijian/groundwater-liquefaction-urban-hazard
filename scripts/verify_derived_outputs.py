@@ -22,6 +22,14 @@ def main() -> None:
     effects = pd.read_csv(DER / "sensitivity_parameter_effects_v2.csv")
     policy = pd.read_csv(DER / "policy_priority_table_v2.csv")
     exposure = pd.read_csv(DER / "policy_exposure_summary_v2.csv")
+    r20 = json.loads((DER / "r20_spatial_trigger_summary.json").read_text(encoding="utf-8"))
+    spatial = pd.read_csv(DER / "city_results_spatial_r20.csv")
+    metro = pd.read_csv(DER / "metro_deduplication_r20.csv")
+    blocks = pd.read_csv(DER / "spatial_block_fdr_r20.csv")
+    coastal = pd.read_csv(DER / "coastal_robustness_r20.csv")
+    signs = pd.read_csv(DER / "hotspot_driver_sign_robustness_r20.csv")
+    trigger = pd.read_csv(DER / "water_table_trigger_r20.csv")
+    external = pd.read_csv(DER / "external_product_status_r20.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -39,6 +47,23 @@ def main() -> None:
     assert effects.iloc[0]["parameter"] == "Specific yield"
     assert len(policy) == 444
     assert not exposure.empty
+    assert r20["n_cities"] == len(spatial) == 444
+    assert r20["city_bh_fdr_sig"] == int(cities["fdr_sig"].sum()) == 330
+    assert r20["city_by_fdr_sig"] == 261
+    assert r20["n_material_point_hotspots"] == 6
+    assert r20["n_material_metro_clusters_50km"] == 5
+    assert r20["n_material_300km_blocks"] == 2
+    assert r20["n_positive_material_hotspots_coastal_lt50km"] == 3
+    assert r20["n_material_hotspots_available_sign_robust"] == 5
+    assert r20["n_material_hotspots_available_sign_probable"] == 1
+    assert 14.0 < r20["median_trigger_rise_m"] < 15.0
+    assert 16.5 < r20["beijing_trigger_rise_m"] < 17.5
+    assert len(metro[metro["n_material_point_hotspots"] > 0]) == 5
+    assert len(blocks[blocks["n_material_hotspots"] > 0]) >= 8
+    assert len(coastal) == 6
+    assert len(signs) == 6
+    assert len(trigger) == 444
+    assert set(external["status_in_this_project"]) >= {"ingested and used", "not yet ingested"}
 
     for stem in [
         "Fig1_mechanism",
@@ -46,6 +71,7 @@ def main() -> None:
         "Fig3_regional",
         "Fig4_timeseries",
         "Fig5_policy_robustness",
+        "Fig6_trigger_spatial_robustness",
     ]:
         for ext in ["png", "svg", "pdf"]:
             assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
@@ -56,12 +82,15 @@ def main() -> None:
 
     print("Derived-output verification passed.")
     print(f"Cities: {len(cities)}")
-    print(f"FDR-significant: {int(cities['fdr_sig'].sum())}")
+    print(f"FDR-significant BH/BY: {int(cities['fdr_sig'].sum())}/{r20['city_by_fdr_sig']}")
     print(f"Material increases/decreases: {summary['n_material_inc']}/{summary['n_material_dec']}")
     print(f"Beijing dP: {beijing['dP']:+.6f}; TWS trend: {beijing['tws_cm_yr']:+.2f} cm yr-1")
     print(f"Sensitivity combinations: {len(grid)}; hotspot sign reversals: {int(grid['hotspot_sign_reversals'].sum())}")
     print(f"Hotspot city-grid rows: {len(city_grid)}")
     print(f"Largest hotspot-magnitude sensitivity factor: {effects.iloc[0]['parameter']}")
+    print(f"R20 metro/300km hotspot groups: {r20['n_material_metro_clusters_50km']}/{r20['n_material_300km_blocks']}")
+    print(f"Median/Beijing +0.01 trigger: {r20['median_trigger_rise_m']:.2f}/{r20['beijing_trigger_rise_m']:.2f} m")
+    print(f"External products pending: {', '.join(r20['external_products_pending'])}")
 
 
 if __name__ == "__main__":

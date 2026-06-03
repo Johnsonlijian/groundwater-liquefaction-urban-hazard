@@ -1,0 +1,5 @@
+product_or_dataset,status_in_this_project,official_source,local_action
+CSR GRACE/GRACE-FO RL06.3 mascon,ingested and used,https://www2.csr.utexas.edu/grace/RL06_mascons.html,current primary regional storage driver
+JPL GRACE/GRACE-FO Mascon RL06.3Mv04 CRI-filtered,not yet ingested,https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4,required before claiming independent mascon-product sign robustness for coastal hotspots
+NASA GSFC GRACE/GRACE-FO RL06v2.0 mascon,not yet ingested,https://earth.gsfc.nasa.gov/geo/data/grace-mascons,required before claiming three-product sign agreement
+GHSL Urban Centre Database R2024A,not yet ingested,https://human-settlement.emergency.copernicus.eu/ghs_ucdb_2024.php,required for polygon-based urban-centre replacement of GeoNames points

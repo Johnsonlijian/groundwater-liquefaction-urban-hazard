@@ -1,0 +1,7 @@
+name,country,direction,distance_to_coast_km,coastal_lt25km,coastal_lt50km,coastal_lt100km,csr_recent_tws_cm_yr,n_inland_controls_100_300km,median_inland_control_tws_cm_yr,inland_control_sign_agreement,coastal_robustness_status
+Yokohama,JP,material increase,1.8340361042652882,True,True,True,1.5877,0,,False,coastal-sensitive; multi-product CRI/GSFC check required
+Bhayandar,IN,material increase,2.301836643909409,True,True,True,1.4173,6,2.5294,True,coastal-sensitive; multi-product CRI/GSFC check required; inland controls share sign
+Mumbai,IN,material increase,4.7052142468930125,True,True,True,1.4173,6,2.5294,True,coastal-sensitive; multi-product CRI/GSFC check required; inland controls share sign
+Delhi,IN,material decrease,830.6819162416839,False,False,False,-2.3689,7,-4.5934,True,not coastal by 100 km screen; inland controls share sign
+Lahore,PK,material decrease,1012.2014915492502,False,False,False,-4.3053,9,-3.8148,True,not coastal by 100 km screen; inland controls share sign
+Ludhiana,IN,material decrease,1003.3049650644491,False,False,False,-7.7419,13,-2.3689,True,not coastal by 100 km screen; inland controls share sign

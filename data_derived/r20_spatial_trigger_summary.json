@@ -1,0 +1,21 @@
+{
+  "n_cities": 444,
+  "n_material_point_hotspots": 6,
+  "n_material_metro_clusters_50km": 5,
+  "n_material_300km_blocks": 2,
+  "n_positive_material_hotspots": 3,
+  "n_positive_material_hotspots_coastal_lt50km": 3,
+  "city_bh_fdr_sig": 330,
+  "city_by_fdr_sig": 261,
+  "n_300km_blocks": 81,
+  "n_300km_blocks_fdr_sig": 69,
+  "n_material_hotspots_available_sign_robust": 5,
+  "n_material_hotspots_available_sign_probable": 1,
+  "median_trigger_rise_m": 14.540010690184376,
+  "beijing_trigger_rise_m": 17.07089194012865,
+  "external_products_pending": [
+    "GHSL Urban Centre Database",
+    "JPL CRI-filtered mascon",
+    "NASA GSFC mascon"
+  ]
+}

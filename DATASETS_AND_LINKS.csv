@@ -7,3 +7,7 @@ Fan et al. global water-table depth,baseline water-table depth,https://www.scien
 CSR GRACE/GRACE-FO RL06.3 mascons,total-water-storage trend,https://www2.csr.utexas.edu/grace/RL06_mascons.html,10.1002/2016JB013007,Download from CSR; raw mascons not redistributed
 NOAA CPC soil moisture,soil-moisture sensitivity,https://psl.noaa.gov/data/gridded/data.cpcsoil.html,10.1029/2003JD004345,Download from NOAA; used only as sensitivity
 Natural Earth lakes,large-water-body exclusion,https://www.naturalearthdata.com/,NA,Download from Natural Earth
+Natural Earth 10m coastline,coastal sensitivity diagnostic,https://www.naturalearthdata.com/,NA,Download from Natural Earth; used for R20 coastline-distance flags
+JPL GRACE/GRACE-FO Mascon RL06.3Mv04 CRI-filtered,pending independent mascon follow-up,https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4,NA,Not ingested in current package; required before claiming independent coastal-filtered mascon agreement
+NASA GSFC GRACE/GRACE-FO RL06v2.0 mascon,pending independent mascon follow-up,https://earth.gsfc.nasa.gov/geo/data/grace-mascons,NA,Not ingested in current package; required before claiming three-product mascon agreement
+GHSL Urban Centre Database R2024A,pending urban-polygon exposure replacement,https://human-settlement.emergency.copernicus.eu/ghs_ucdb_2024.php,NA,Not ingested in current package; required before replacing GeoNames points with official urban-centre polygons

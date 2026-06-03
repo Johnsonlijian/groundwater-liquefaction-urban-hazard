@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="831.114pt" height="379.167562pt" viewBox="0 0 831.114 379.167562" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-03T19:19:09.830199</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 379.167562 
+L 831.114 379.167562 
+L 831.114 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 43.476955 321.871875 
+L 228.8925 321.871875 
+L 228.8925 121.503 
+L 43.476955 121.503 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #e9dcc3; stroke: #222222; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 43.476955 321.871875 
+L 228.8925 321.871875 
+L 228.8925 261.761212 
+L 43.476955 261.761212 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #c8b89d; stroke: #6f6f6f; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 43.476955 321.871875 
+L 228.8925 321.871875 
+L 228.8925 158.714362 
+L 43.476955 158.714362 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #9ec9e8; opacity: 0.45"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 136.184727 201.080566 
+Q 136.184727 180.896887 136.184727 163.172882 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #c0392b; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 132.984727 169.572882 
+L 136.184727 163.172882 
+L 139.384727 169.572882 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #c0392b; stroke: #c0392b; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 329.661818 148.692494 
+Q 329.661818 153.419404 329.661818 157.251887 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 331.061818 154.451887 
+L 329.661818 157.251887 
+L 328.261818 154.451887 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 329.661818 174.454207 
+Q 329.661818 179.181117 329.661818 183.013599 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 331.061818 180.213599 
+L 329.661818 183.013599 
+L 328.261818 180.213599 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 329.661818 200.215919 
+Q 329.661818 204.942829 329.661818 208.775312 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 331.061818 205.975312 
+L 329.661818 208.775312 
+L 328.261818 205.975312 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 329.661818 225.977632 
+Q 329.661818 230.704542 329.661818 234.537024 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 331.061818 231.737024 
+L 329.661818 234.537024 
+L 328.261818 231.737024 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 249.046364 287.522925 
+L 394.154182 287.522925 
+Q 402.215727 287.522925 402.215727 281.7981 
+L 402.215727 251.742769 
+Q 402.215727 246.017944 394.154182 246.017944 
+L 249.046364 246.017944 
+Q 240.984818 246.017944 240.984818 251.742769 
+L 240.984818 281.7981 
+Q 240.984818 287.522925 249.046364 287.522925 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #c0392b; opacity: 0.12; stroke: #c0392b; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 240.984818 344.771175 
+L 398.184955 344.771175 
+Q 406.2465 344.771175 406.2465 339.04635 
+L 406.2465 301.834988 
+Q 406.2465 296.110163 398.184955 296.110163 
+L 240.984818 296.110163 
+Q 232.923273 296.110163 232.923273 301.834988 
+L 232.923273 339.04635 
+Q 232.923273 344.771175 240.984818 344.771175 
+z
+" clip-path="url(#pf6130b69ad)" style="fill: #f7f7f7; stroke: #c0392b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 43.476955 203.081756 
+L 228.8925 203.081756 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #5c8fd6; stroke-width: 1.3"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 43.476955 158.714362 
+L 228.8925 158.714362 
+" clip-path="url(#pf6130b69ad)" style="fill: none; stroke: #c0392b; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-style: italic; font-size: 8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #c0392b" x="15.261545" y="90.016462" transform="rotate(-0 15.261545 90.016462)">North China Plain / Beijing</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #2b6fc1" transform="translate(236.954045 201.189459)">baseline</text>
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #2b6fc1" transform="translate(236.954045 208.593272)">water table</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="257.107909" y="144.260569" transform="rotate(-0 257.107909 144.260569)">water table rises</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="257.107909" y="170.022281" transform="rotate(-0 257.107909 170.022281)">pore pressure u increases</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="257.107909" y="195.783994" transform="rotate(-0 257.107909 195.783994)">effective stress decreases</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="257.107909" y="221.640769" transform="rotate(-0 257.107909 221.640769)">liquefaction resistance decreases</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="257.107909" y="247.307419" transform="rotate(-0 257.107909 247.307419)">modelled P_liq increases</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="321.600273" y="269.011328" transform="rotate(-0 321.600273 269.011328)">P_liq increases</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #555555" x="319.584886" y="316.719533" transform="rotate(-0 319.584886 316.719533)">Water-agency trigger</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #c0392b" x="319.584886" y="329.88663" transform="rotate(-0 319.584886 329.88663)">Liquefaction monitoring</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="7.2" y="58.25475" transform="rotate(-0 7.2 58.25475)">Recharge or aquifer recovery</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_12">
+    <path d="M 457.113682 321.871875 
+L 642.529227 321.871875 
+L 642.529227 121.503 
+L 457.113682 121.503 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #e9dcc3; stroke: #222222; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 457.113682 321.871875 
+L 642.529227 321.871875 
+L 642.529227 261.761212 
+L 457.113682 261.761212 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #c8b89d; stroke: #6f6f6f; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 457.113682 321.871875 
+L 642.529227 321.871875 
+L 642.529227 247.44915 
+L 457.113682 247.44915 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #9ec9e8; opacity: 0.45"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 549.821455 205.082947 
+Q 549.821455 225.266626 549.821455 242.99063 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #2c6fbb; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 553.021455 236.59063 
+L 549.821455 242.99063 
+L 546.621455 236.59063 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #2c6fbb; stroke: #2c6fbb; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 743.298545 148.692494 
+Q 743.298545 153.419404 743.298545 157.251887 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 744.698545 154.451887 
+L 743.298545 157.251887 
+L 741.898545 154.451887 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 743.298545 174.454207 
+Q 743.298545 179.181117 743.298545 183.013599 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 744.698545 180.213599 
+L 743.298545 183.013599 
+L 741.898545 180.213599 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 743.298545 200.215919 
+Q 743.298545 204.942829 743.298545 208.775312 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 744.698545 205.975312 
+L 743.298545 208.775312 
+L 741.898545 205.975312 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 743.298545 225.977632 
+Q 743.298545 230.704542 743.298545 234.537024 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 744.698545 231.737024 
+L 743.298545 234.537024 
+L 741.898545 231.737024 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #777777; stroke: #777777; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 662.683091 287.522925 
+L 807.790909 287.522925 
+Q 815.852455 287.522925 815.852455 281.7981 
+L 815.852455 251.742769 
+Q 815.852455 246.017944 807.790909 246.017944 
+L 662.683091 246.017944 
+Q 654.621545 246.017944 654.621545 251.742769 
+L 654.621545 281.7981 
+Q 654.621545 287.522925 662.683091 287.522925 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #2c6fbb; opacity: 0.12; stroke: #2c6fbb; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 654.621545 344.771175 
+L 811.821682 344.771175 
+Q 819.883227 344.771175 819.883227 339.04635 
+L 819.883227 301.834988 
+Q 819.883227 296.110163 811.821682 296.110163 
+L 654.621545 296.110163 
+Q 646.56 296.110163 646.56 301.834988 
+L 646.56 339.04635 
+Q 646.56 344.771175 654.621545 344.771175 
+z
+" clip-path="url(#p8ac9ebde8f)" style="fill: #f7f7f7; stroke: #2c6fbb; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 457.113682 203.081756 
+L 642.529227 203.081756 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke-dasharray: 4.81,2.08; stroke-dashoffset: 0; stroke: #5c8fd6; stroke-width: 1.3"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 457.113682 247.44915 
+L 642.529227 247.44915 
+" clip-path="url(#p8ac9ebde8f)" style="fill: none; stroke: #2c6fbb; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-style: italic; font-size: 8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2c6fbb" x="428.898273" y="90.016462" transform="rotate(-0 428.898273 90.016462)">Punjab / Delhi-Lahore-Ludhiana</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #2b6fc1" transform="translate(650.590773 201.189459)">baseline</text>
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #2b6fc1" transform="translate(650.590773 208.593272)">water table</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="670.744636" y="144.260569" transform="rotate(-0 670.744636 144.260569)">water table deepens</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="670.744636" y="170.022281" transform="rotate(-0 670.744636 170.022281)">pore pressure u decreases</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="670.744636" y="195.783994" transform="rotate(-0 670.744636 195.783994)">effective stress increases</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="670.744636" y="221.545706" transform="rotate(-0 670.744636 221.545706)">modelled P_liq decreases</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #222222" x="670.744636" y="247.307419" transform="rotate(-0 670.744636 247.307419)">subsidence and scarcity remain</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2c6fbb" x="735.237" y="269.011328" transform="rotate(-0 735.237 269.011328)">P_liq decreases, but subsidence risk rises</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #555555" x="733.221614" y="316.719533" transform="rotate(-0 733.221614 316.719533)">Water-agency trigger</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #2c6fbb" x="733.221614" y="329.88663" transform="rotate(-0 733.221614 329.88663)">Subsidence + water-security audit</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="420.836727" y="58.25475" transform="rotate(-0 420.836727 58.25475)">Depletion or over-abstraction</text>
+   </g>
+  </g>
+  <g id="text_23">
+   <text style="font-weight: 700; font-size: 11.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle" x="423.36" y="15.571641" transform="rotate(-0 423.36 15.571641)">Groundwater management changes the water-table term in liquefaction screening</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #555555" x="423.36" y="370.368" transform="rotate(-0 423.36 370.368)">The mechanism changes liquefaction susceptibility if shaking occurs; it does not imply that groundwater causes earthquakes.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf6130b69ad">
+   <rect x="7.2" y="64.25475" width="403.077273" height="286.24125"/>
+  </clipPath>
+  <clipPath id="p8ac9ebde8f">
+   <rect x="420.836727" y="64.25475" width="403.077273" height="286.24125"/>
+  </clipPath>
+ </defs>
+</svg>

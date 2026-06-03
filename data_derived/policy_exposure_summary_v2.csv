@@ -1,0 +1,10 @@
+screening_tier,direction,n_cities,population_million,population_weighted_abs_dP
+A material hotspot,material decrease,3,25.657569,0.3328090069941474
+A material hotspot,material increase,3,17.278705000000002,0.19660484200672992
+B targeted regional monitoring,sub-material decrease,6,7.774616,0.05581230063903229
+B targeted regional monitoring,sub-material increase,17,51.970663,0.4066698315417538
+C detectable but sub-material,near zero,15,26.232143,0.0
+C detectable but sub-material,sub-material decrease,105,202.15007500000002,0.12929748793372356
+C detectable but sub-material,sub-material increase,181,418.41283799999997,0.36203780305188527
+D routine periodic update,sub-material decrease,40,85.229506,0.057265898325766076
+D routine periodic update,sub-material increase,74,159.466672,0.11612067205717853

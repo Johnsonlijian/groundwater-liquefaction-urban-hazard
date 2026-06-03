@@ -18,7 +18,10 @@ def main() -> None:
     hotspots = pd.read_csv(DER / "hotspot_table.csv")
     grid = pd.read_csv(DER / "sensitivity_grid_v2.csv")
     envelope = pd.read_csv(DER / "hotspot_sensitivity_envelope_v2.csv")
+    city_grid = pd.read_csv(DER / "hotspot_sensitivity_city_grid_v2.csv")
+    effects = pd.read_csv(DER / "sensitivity_parameter_effects_v2.csv")
     policy = pd.read_csv(DER / "policy_priority_table_v2.csv")
+    exposure = pd.read_csv(DER / "policy_exposure_summary_v2.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -30,7 +33,22 @@ def main() -> None:
     assert int(grid["hotspot_sign_reversals"].sum()) == 0
     assert len(envelope) == 6
     assert bool(envelope["sign_consistent_across_grid"].all())
+    assert len(city_grid) == 900
+    assert not bool(city_grid["sign_reversed_from_baseline"].any())
+    assert len(effects) == 3
+    assert effects.iloc[0]["parameter"] == "Specific yield"
     assert len(policy) == 444
+    assert not exposure.empty
+
+    for stem in [
+        "Fig1_mechanism",
+        "Fig2_global_signresolved",
+        "Fig3_regional",
+        "Fig4_timeseries",
+        "Fig5_policy_robustness",
+    ]:
+        for ext in ["png", "svg", "pdf"]:
+            assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
 
     beijing = cities[cities["name"] == "Beijing"].iloc[0]
     assert beijing["dP"] > 0
@@ -42,6 +60,8 @@ def main() -> None:
     print(f"Material increases/decreases: {summary['n_material_inc']}/{summary['n_material_dec']}")
     print(f"Beijing dP: {beijing['dP']:+.6f}; TWS trend: {beijing['tws_cm_yr']:+.2f} cm yr-1")
     print(f"Sensitivity combinations: {len(grid)}; hotspot sign reversals: {int(grid['hotspot_sign_reversals'].sum())}")
+    print(f"Hotspot city-grid rows: {len(city_grid)}")
+    print(f"Largest hotspot-magnitude sensitivity factor: {effects.iloc[0]['parameter']}")
 
 
 if __name__ == "__main__":

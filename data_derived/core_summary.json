@@ -1,0 +1,37 @@
+{
+  "n_cities": 447,
+  "dP_liq_mean": -0.0007649242224317228,
+  "dP_liq_median": -2.3945749399393354e-12,
+  "n_material_increase": 2,
+  "n_material_decrease": 12,
+  "pop_material_increase": 4776391,
+  "pop_material_decrease": 40096793,
+  "net_pop_x_dP": -1397098.7997250487,
+  "mean_LSE_change_pct": 0.011798758813338205,
+  "Sy_sensitivity": {
+    "Sy_0.05": {
+      "n_material_increase": 15,
+      "mean_dP": -0.0013691152979201746
+    },
+    "Sy_0.1": {
+      "n_material_increase": 2,
+      "mean_dP": -0.0007649242224317228
+    },
+    "Sy_0.15": {
+      "n_material_increase": 0,
+      "mean_dP": -0.0005357531116746541
+    },
+    "Sy_0.25": {
+      "n_material_increase": 0,
+      "mean_dP": -0.00033231274865840895
+    }
+  },
+  "null_test": {
+    "obs_mean_abs_dP": 0.0019377881413247544,
+    "null_mean_abs_dP_mean": 0.002811872013363269,
+    "null_mean_abs_dP_p95": 0.0033823011579021886,
+    "p_value_geographic_null": 1.0,
+    "obs_n_material_increase": 2,
+    "null_n_material_increase_mean": 2.339
+  }
+}

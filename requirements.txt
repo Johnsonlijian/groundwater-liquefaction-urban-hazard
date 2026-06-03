@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+geopandas
+xarray
+netCDF4
+matplotlib
+pyproj
+Pillow

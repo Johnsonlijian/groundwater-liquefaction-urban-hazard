@@ -1,0 +1,63 @@
+# Reproducible runbook
+
+This runbook documents the local command sequence used for the derived outputs in this repository.
+
+## Environment
+
+Python 3.11 was used locally. Install dependencies:
+
+```powershell
+python -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
+pip install -r requirements.txt
+```
+
+## Raw data boundary
+
+Raw third-party data are not included. Download them from the sources in `DATASETS_AND_LINKS.csv` and place them under `data_raw/` with the paths expected by the scripts.
+
+## Full reconstruction sequence
+
+```powershell
+python scripts\\build_cohort.py
+python scripts\\attach_gem_hazard.py
+python scripts\\assemble_inputs.py
+python scripts\\grace_trend.py
+python scripts\\groundwater_isolation.py
+python scripts\\analyze_v2.py
+python scripts\\make_figures.py
+python scripts\\make_fig3_regional.py
+python scripts\\make_fig4_timeseries.py
+```
+
+## Minimum verification from included derived data
+
+The headline numbers can be rechecked without raw downloads:
+
+```powershell
+python scripts\\verify_derived_outputs.py
+```
+
+Expected summary:
+
+- Clean seismic cohort: 444 cities.
+- CI excludes zero: 319.
+- FDR-significant cities: 330.
+- Material + FDR-significant increases: 3.
+- Material + FDR-significant decreases: 3.
+- Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
+
+`scripts\\analyze_v2.py` reconstructs the final city table and hotspot table, but it expects the Natural Earth lake boundary data under `data_raw/` so that the inland-water-body exclusion can be recomputed.
+
+## Figure outputs
+
+Generated figures are stored under `figures/`:
+
+- `Fig1_mechanism.png`
+- `Fig2_global_signresolved.png`
+- `Fig3_regional.png`
+- `Fig4_timeseries.png`
+
+## Guardrails
+
+Do not reinterpret the outputs as precise city-scale engineering predictions. GRACE/GRACE-FO provides a regional groundwater-storage driver, while cities are exposure units. The analysis does not claim a diffuse global increase and does not claim that groundwater causes earthquakes.

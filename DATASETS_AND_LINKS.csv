@@ -1,0 +1,9 @@
+dataset,role,source_or_landing_page,identifier_or_doi,redistribution_note
+GeoNames populated places,city cohort,https://www.geonames.org/,NA,Source data not redistributed; derived city cohort included
+GEM Global Seismic Hazard Map v2023.1,seismic hazard,https://hazard.openquake.org/gem/,10.5281/zenodo.8409647,Download from official Zenodo/GEM source
+USGS/topographic-slope Vs30,site-condition proxy,https://pubs.usgs.gov/of/2007/1357/,10.1785/0120060267,Download from USGS/source provider
+WorldClim 2,precipitation climatology,https://www.worldclim.org/data/worldclim21.html,10.1002/joc.5086,Download from WorldClim
+Fan et al. global water-table depth,baseline water-table depth,https://www.science.org/doi/10.1126/science.1229881,10.1126/science.1229881,Use source data under provider terms
+CSR GRACE/GRACE-FO RL06.3 mascons,total-water-storage trend,https://www2.csr.utexas.edu/grace/RL06_mascons.html,10.1002/2016JB013007,Download from CSR; raw mascons not redistributed
+NOAA CPC soil moisture,soil-moisture sensitivity,https://psl.noaa.gov/data/gridded/data.cpcsoil.html,10.1029/2003JD004345,Download from NOAA; used only as sensitivity
+Natural Earth lakes,large-water-body exclusion,https://www.naturalearthdata.com/,NA,Download from Natural Earth

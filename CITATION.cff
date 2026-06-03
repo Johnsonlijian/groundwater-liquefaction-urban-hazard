@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated paper and archived release."
+title: "Groundwater management drives opposite shifts in urban earthquake-liquefaction hazard"
+authors:
+  - family-names: Ren
+    given-names: Lijian
+    affiliation: Inner Mongolia University of Technology
+repository-code: "https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard"
+date-released: 2026-06-03
+version: "0.1.0-submission-prep"
+license: MIT
+doi: "10.5281/zenodo.TO-BE-MINTED"

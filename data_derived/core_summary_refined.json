@@ -1,0 +1,41 @@
+{
+  "n_seis": 447,
+  "n_clean": 444,
+  "n_contaminated_removed": 3,
+  "clean_full": {
+    "n": 444,
+    "mean_dP": -0.0005557316058891075,
+    "n_inc": 2,
+    "n_dec": 10,
+    "pop_inc": 4776391,
+    "pop_dec": 36320852
+  },
+  "null_full": {
+    "obs_mean_abs_dP": 0.0017329169926152755,
+    "null_mean": 0.0027513882897923113,
+    "p": 1.0
+  },
+  "clean_recent": {
+    "n": 444,
+    "mean_dP": 0.00041902342063920834,
+    "n_inc": 3,
+    "n_dec": 3,
+    "pop_inc": 17278705,
+    "pop_dec": 25657569
+  },
+  "null_recent": {
+    "obs_mean_abs_dP": 0.0012323611900312151,
+    "null_mean": 0.0018658775091808264,
+    "p": 1.0
+  },
+  "beijing": {
+    "recent_trend": 0.5703,
+    "dP_recent": 0.00025056855581759817,
+    "P0_recent": 0.013375198859327296,
+    "matches_wang2025": true
+  },
+  "reversal_increase_cluster": {
+    "n": 0,
+    "pop": 0
+  }
+}

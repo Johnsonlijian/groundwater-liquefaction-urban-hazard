@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+*.env
+.env*
+
+# Raw or restricted data are not redistributed
+data_raw/
+cache/
+downloads/
+*.zip
+*.tif
+*.tiff
+*.nc
+*.nc4
+*.hdf
+*.h5
+
+# Manuscripts and submission materials are intentionally excluded
+manuscript/
+submission/
+Submit-*/
+*.docx
+*.pdf
+cover_letter*
+CoverLetter*
+reviews/
+rounds/
+logs/
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

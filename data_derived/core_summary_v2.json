@@ -1,0 +1,20 @@
+{
+  "n": 444,
+  "n_ci_excl0": 319,
+  "n_fdr_sig": 330,
+  "n_material_inc": 3,
+  "n_material_dec": 3,
+  "pop_inc": 17278705,
+  "pop_dec": 25657569,
+  "mean_dP": 0.00042273669982749207,
+  "gws_sensitivity_n_material_inc": 3,
+  "beijing": {
+    "dP": 0.0002529408037319717,
+    "ci": [
+      8.536362684613057e-05,
+      0.00044659761045724483
+    ],
+    "tws": 0.5703,
+    "fdr_sig": true
+  }
+}

@@ -59,8 +59,13 @@ Current summary:
 - Product-consensus hotspot classification: `data_derived/product_consensus_hotspots_r23.csv`.
 - Product-consensus summary: `data_derived/product_consensus_summary_r23.json`.
 - R21 external-data status: `data_derived/r21_external_data_status.csv`.
+- R24 JPL CRI access status: `data_derived/r24_jpl_cri_access_status.csv`.
+- R24 Yokohama municipal groundwater extraction: `data_derived/yokohama_groundwater_monthly_r24.csv`, `data_derived/yokohama_groundwater_trends_r24.csv`.
+- R24 local evidence registry: `data_derived/local_groundwater_evidence_registry_r24.csv`.
+- R24 attribution-confidence matrix: `data_derived/attribution_confidence_matrix_r24.csv`.
+- R24 local-evidence summary: `data_derived/r24_local_evidence_summary.json`.
 
-The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material hotspots are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims.
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material hotspots are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24 local evidence upgrades Yokohama to local sign-supported (20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; median +0.0418 m yr-1) and keeps Mumbai-Bhayandar candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery.
 
 ## Boundary of use
 

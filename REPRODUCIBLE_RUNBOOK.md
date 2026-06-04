@@ -29,6 +29,7 @@ python scripts\\make_nature_water_r19_figures.py
 python scripts\\r20_spatial_trigger_analysis.py
 python scripts\\r21_ghsl_gsfc_jpl_robustness.py
 python scripts\\r23_product_consensus_recalibration.py
+python scripts\\r24_jpl_cri_and_local_groundwater_evidence.py
 ```
 
 ## Minimum verification from included derived data
@@ -61,6 +62,9 @@ Expected summary:
 - Six-hotspot city-grid rows: 900.
 - Six baseline material hotspots: all retain baseline direction under the positive-scaling sensitivity grid.
 - R23 product-consensus table: GSFC is an independent sign check, not a materiality proof for every CSR-material hotspot.
+- R24 JPL CRI status: correct CRI-filtered collection verified; protected NetCDF remains Earthdata-authentication blocked unless local credentials or an authenticated file are supplied.
+- R24 Yokohama local groundwater evidence: 3,781 monthly records parsed from official municipal PDFs; 20 of 23 trend-qualified wells rise over 2015/04-2025/03; median slope about +0.0418 m yr-1.
+- R24 Mumbai-Bhayandar local evidence status: DOI-verified Mumbai station evidence is contradictory to positive-recovery attribution, so the hotspot remains candidate-only.
 - Largest hotspot-magnitude sensitivity factor in the deterministic grid: specific yield.
 - Median +0.01 water-table-rise trigger: about 14.5 m.
 - Beijing +0.01 water-table-rise trigger: about 17.1 m.
@@ -92,6 +96,9 @@ Generated figures are stored under `figures/`:
 - `Fig7_ghsl_gsfc_robustness.png`
 - `Fig7_ghsl_gsfc_robustness.svg`
 - `Fig7_ghsl_gsfc_robustness.pdf`
+- `FigS1_yokohama_local_groundwater_r24.png`
+- `FigS1_yokohama_local_groundwater_r24.svg`
+- `FigS1_yokohama_local_groundwater_r24.pdf`
 
 ## Guardrails
 

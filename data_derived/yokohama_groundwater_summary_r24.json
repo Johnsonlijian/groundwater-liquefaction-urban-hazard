@@ -1,0 +1,14 @@
+{
+  "source": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kankyohozen/kansoku/science/data/chikasuii-jiban.html",
+  "window": "2015/04-2025/03",
+  "n_monthly_records_all": 3781,
+  "n_stations_all": 33,
+  "n_stations_trend": 23,
+  "median_slope_m_per_year": 0.04177613665995126,
+  "median_slope_cm_per_year": 4.177613665995126,
+  "n_positive_slope": 20,
+  "n_negative_slope": 3,
+  "n_positive_p05": 15,
+  "n_negative_p05": 2,
+  "interpretation": "Most Yokohama municipal wells show rising TP-referenced groundwater level over the GRACE-comparable fiscal window, supporting the sign of the Yokohama positive hotspot but not its GRACE magnitude or management attribution."
+}

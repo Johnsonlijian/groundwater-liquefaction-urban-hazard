@@ -39,6 +39,12 @@ def main() -> None:
     r21_status = pd.read_csv(DER / "r21_external_data_status.csv")
     r23 = json.loads((DER / "product_consensus_summary_r23.json").read_text(encoding="utf-8"))
     product_consensus = pd.read_csv(DER / "product_consensus_hotspots_r23.csv")
+    r24 = json.loads((DER / "r24_local_evidence_summary.json").read_text(encoding="utf-8"))
+    jpl_r24 = pd.read_csv(DER / "r24_jpl_cri_access_status.csv")
+    yok_trends = pd.read_csv(DER / "yokohama_groundwater_trends_r24.csv")
+    yok_monthly = pd.read_csv(DER / "yokohama_groundwater_monthly_r24.csv")
+    local_registry = pd.read_csv(DER / "local_groundwater_evidence_registry_r24.csv")
+    attribution_r24 = pd.read_csv(DER / "attribution_confidence_matrix_r24.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -93,6 +99,18 @@ def main() -> None:
     assert r23["n_gsfc_material_hotspots"] == 1
     assert r23["n_gsfc_near_material_hotspots"] == 2
     assert r23["n_positive_gsfc_material_hotspots"] == 0
+    assert jpl_r24.iloc[0]["short_name"] == "TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4"
+    assert jpl_r24.iloc[0]["collection_id"] == "C3195527175-POCLOUD"
+    assert "auth_blocked" in str(jpl_r24.iloc[0]["status_in_this_project"])
+    assert r24["jpl_cri_status"] == "auth_blocked"
+    assert len(yok_monthly) == r24["yokohama_n_monthly_records"] == 3781
+    assert len(yok_trends) == r24["yokohama_n_trend_wells"] == 23
+    assert int((yok_trends["slope_m_per_year"] > 0).sum()) == r24["yokohama_positive_wells"] == 20
+    assert int(((yok_trends["slope_m_per_year"] > 0) & (yok_trends["p_value"] < 0.05)).sum()) == 15
+    assert 0.04 < r24["yokohama_median_slope_m_per_year"] < 0.05
+    assert "Yokohama / Tokyo Bay" in set(local_registry["region_or_cluster"])
+    assert "Mumbai-Bhayandar cluster" in set(local_registry["region_or_cluster"])
+    assert "low-contradictory" in set(attribution_r24["attribution_confidence"])
 
     for stem in [
         "Fig1_mechanism",
@@ -102,6 +120,7 @@ def main() -> None:
         "Fig5_policy_robustness",
         "Fig6_trigger_spatial_robustness",
         "Fig7_ghsl_gsfc_robustness",
+        "FigS1_yokohama_local_groundwater_r24",
     ]:
         for ext in ["png", "svg", "pdf"]:
             assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
@@ -124,6 +143,13 @@ def main() -> None:
     print(f"CSR-GSFC hotspot sign agreement: {r21['n_material_hotspots_csr_gsfc_recent_sign_match']}/6")
     print(f"R23 GSFC-material hotspots: {r23['n_gsfc_material_hotspots']}/6; positive GSFC-material: {r23['n_positive_gsfc_material_hotspots']}/3")
     print(f"JPL status: {r21['jpl_status']}")
+    print(f"R24 JPL CRI status: {r24['jpl_cri_status']}; collection: {jpl_r24.iloc[0]['collection_id']}")
+    print(
+        "R24 Yokohama local wells: "
+        f"{r24['yokohama_positive_wells']}/{r24['yokohama_n_trend_wells']} rising; "
+        f"median {r24['yokohama_median_slope_m_per_year']:+.4f} m yr-1"
+    )
+    print(f"R24 Mumbai-Bhayandar status: {r24['mumbai_bhayandar_status']}")
 
 
 if __name__ == "__main__":

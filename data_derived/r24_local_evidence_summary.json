@@ -1,0 +1,22 @@
+{
+  "jpl_cri_status": "auth_blocked",
+  "jpl_cri_collection_id": "C3195527175-POCLOUD",
+  "jpl_cri_granule": "GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI",
+  "yokohama_n_monthly_records": 3781,
+  "yokohama_n_trend_wells": 23,
+  "yokohama_positive_wells": 20,
+  "yokohama_positive_p05": 15,
+  "yokohama_median_slope_m_per_year": 0.04177613665995126,
+  "mumbai_bhayandar_status": "local evidence contradictory to positive-recovery attribution",
+  "outputs": [
+    "data_derived/r24_jpl_cri_access_status.csv",
+    "data_derived/yokohama_groundwater_source_links_r24.csv",
+    "data_derived/yokohama_groundwater_monthly_r24.csv",
+    "data_derived/yokohama_groundwater_trends_r24.csv",
+    "data_derived/local_groundwater_evidence_registry_r24.csv",
+    "data_derived/attribution_confidence_matrix_r24.csv",
+    "figures/FigS1_yokohama_local_groundwater_r24.png",
+    "figures/FigS1_yokohama_local_groundwater_r24.svg",
+    "figures/FigS1_yokohama_local_groundwater_r24.pdf"
+  ]
+}

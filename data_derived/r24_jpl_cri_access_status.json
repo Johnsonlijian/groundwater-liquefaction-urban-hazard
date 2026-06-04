@@ -1,0 +1,21 @@
+{
+  "product_or_dataset": "JPL GRACE/GRACE-FO RL06.3Mv04 CRI-filtered mascon",
+  "short_name": "TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4",
+  "collection_id": "C3195527175-POCLOUD",
+  "collection_entry_id": "TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4_RL06.3Mv04",
+  "collection_title": "JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water Height Coastal Resolution Improvement (CRI) Filtered Release 06.3 Version 04",
+  "granule_title": "GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI",
+  "granule_start": "2002-04-16T00:00:00.000Z",
+  "granule_end": "2026-03-16T23:59:59.000Z",
+  "data_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc",
+  "md5_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc.md5",
+  "md5_text": "GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc\t3f0a4cdeb6eddc5fdd621312377782af",
+  "anonymous_data_status": "http_302; location=https://urs.earthdata.nasa.gov/oauth/authorize?client_id=HrBaq4rVeFgp2aOo6PoUxA&response_type=code&redirect_uri=https://",
+  "anonymous_s3_status": "http_307; location=https://urs.earthdata.nasa.gov/oauth/authorize?client_id=HrBaq4rVeFgp2aOo6PoUxA&redirect_uri=https%3A%2F%2Farchive.podaa",
+  "credential_status": "no-local-earthdata-credential-detected",
+  "local_file": "",
+  "local_file_md5": "",
+  "status_in_this_project": "auth_blocked",
+  "note": "CMR retry failed after verified metadata fallback; protected file remains auth-blocked. Error: HTTPError('500 Server Error: Server Error for url: https://cmr.earthdata.nasa.gov/search/granules.json?collection_concept_id=C3195527175-POCLOUD&page_size=1&sort_key=-start_date')",
+  "official_source": "https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4"
+}

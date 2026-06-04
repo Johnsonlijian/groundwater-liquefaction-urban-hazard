@@ -8,3 +8,6 @@ netCDF4
 matplotlib
 pyproj
 Pillow
+requests
+beautifulsoup4
+pdfplumber

@@ -33,6 +33,7 @@ python scripts\\r24_jpl_cri_and_local_groundwater_evidence.py
 python scripts\\r25_tokyo_mumbai_evidence_deepening.py
 python scripts\\r27_zero_aware_fdr.py
 python scripts\\r28_specific_yield_sensitivity.py
+python scripts\\r29_submission_polish_tables.py
 ```
 
 ## Minimum verification from included derived data
@@ -50,23 +51,23 @@ Expected summary:
 - Original city-table FDR-significant cities under primary Benjamini-Hochberg control: 330.
 - Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261.
 - Zero-aware finite-Monte-Carlo FDR-sensitive cities: 311 under Benjamini-Hochberg and 245 under Benjamini-Yekutieli.
-- Zero-aware material hotspot count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
+- Zero-aware material screening-unit count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
-- Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.
-- Material point-city hotspots after GHSL urban-centre aggregation: 5 urban centres.
-- Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
-- Positive material hotspots within 50 km of the coastline: 3 of 3.
+- Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
+- Material point-city screening units after GHSL urban-centre aggregation: 5 urban centres.
+- Material screening-unit regions at GRACE-scale 300 km grouping: 2 regions.
+- Positive material screening units within 50 km of the coastline: 3 of 3.
 - GHSL R2024A polygon matches: 444/444 cities.
-- CSR-GSFC hotspot sign agreement: 6/6 CSR-material hotspots.
-- GSFC-material hotspots among CSR-material hotspots: 1/6.
-- Positive coastal hotspots that remain GSFC-material: 0/3.
+- CSR-GSFC screening-unit sign agreement: 6/6 CSR-material units.
+- GSFC-material units among CSR-material units: 1/6.
+- Positive coastal units that remain GSFC-material: 0/3.
 - JPL CRI-filtered mascon: protected by Earthdata authentication in this run.
 - Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
 - Sensitivity grid rows: 150.
-- Six-hotspot city-grid rows: 900.
-- Six baseline material hotspots: all retain baseline direction under the positive-scaling sensitivity grid.
-- R23 product-consensus table: GSFC is an independent sign check, not a materiality proof for every CSR-material hotspot.
+- Six screening-priority-unit city-grid rows: 900.
+- Six baseline material screening units: all retain baseline direction under the positive-scaling sensitivity grid.
+- R23 product-consensus table: GSFC is an independent sign check, not a materiality proof for every CSR-material unit.
 - R24 JPL CRI status: correct CRI-filtered collection verified; protected NetCDF remains Earthdata-authentication blocked unless local credentials or an authenticated file are supplied.
 - R24 Yokohama local groundwater evidence: 3,781 monthly records parsed from official municipal PDFs; 20 of 23 trend-qualified wells rise over 2015/04-2025/03; median slope about +0.0418 m yr-1.
 - R24 Mumbai-Bhayandar local evidence status: DOI-verified Mumbai station evidence is contradictory to positive-recovery attribution, so the hotspot remains candidate-only.
@@ -79,6 +80,7 @@ Expected summary:
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
 - Tokyo/Tianjin R28 context: material only at low S_y.
+- R29 confidence ledger rows: 6 main-text rows and 7 detailed rows including the Beijing mechanism anchor.
 - Median +0.01 water-table-rise trigger: about 14.5 m.
 - Beijing +0.01 water-table-rise trigger: about 17.1 m.
 

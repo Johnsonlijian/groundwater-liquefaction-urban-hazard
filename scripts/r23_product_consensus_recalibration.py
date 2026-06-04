@@ -65,21 +65,21 @@ def classify_row(row: pd.Series) -> tuple[str, str]:
     elif csr_material:
         grade = "CSR-material; product follow-up required"
     else:
-        grade = "not a CSR-material hotspot"
+        grade = "not a CSR-material screening unit"
 
     if direction == "increase" and coastal and not gsfc_material:
         interpretation = (
             "candidate recharge-side screening signal; CSR-material and GSFC-sign-supported, "
-            "but not GSFC-material and still requires local groundwater/JPL-CRI evidence"
+            "but not GSFC-material and still requires local groundwater and additional product evidence"
         )
     elif direction == "increase":
         interpretation = "recharge-side screening signal requiring local groundwater attribution"
     elif gsfc_material:
-        interpretation = "depletion-side product-material hotspot under CSR and GSFC"
+        interpretation = "depletion-side product-material screening unit under CSR and GSFC"
     elif near:
-        interpretation = "depletion-side CSR-material hotspot with GSFC near the material threshold"
+        interpretation = "depletion-side CSR-material screening unit with GSFC near the material threshold"
     else:
-        interpretation = "depletion-side CSR-material hotspot with GSFC sign support only"
+        interpretation = "depletion-side CSR-material screening unit with GSFC sign support only"
     return grade, interpretation
 
 
@@ -158,7 +158,7 @@ def build_summary(multi: pd.DataFrame, consensus: pd.DataFrame) -> dict[str, obj
         "all_city_csr_gsfc_theilsen_sign_agreement_fraction": float(multi["csr_gsfc_theilsen_sign_match"].mean()),
         "interpretation": (
             "GSFC is used as an independent sign check, not as proof that all CSR-material "
-            "hotspots are material under an independent product."
+            "screening units are material under an independent product."
         ),
     }
     return summary
@@ -188,11 +188,11 @@ def make_fig7(multi: pd.DataFrame, consensus: pd.DataFrame, summary: dict[str, o
     gray = "#c9c9c9"
 
     fig, axes = plt.subplots(
-        1,
         3,
-        figsize=(14.0, 4.4),
+        1,
+        figsize=(7.2, 9.6),
         dpi=240,
-        gridspec_kw={"width_ratios": [1.55, 1.35, 1.25]},
+        gridspec_kw={"height_ratios": [1.65, 1.55, 1.1]},
     )
     fig.suptitle("Product-consensus robustness: sign support is not materiality proof", fontsize=12, weight="bold")
 
@@ -215,9 +215,9 @@ def make_fig7(multi: pd.DataFrame, consensus: pd.DataFrame, summary: dict[str, o
     axes[0].axvline(MATERIAL, color="#777777", lw=0.7, ls="--")
     axes[0].axvline(-MATERIAL, color="#777777", lw=0.7, ls="--")
     axes[0].set_yticks(y, ordered["name"] + " (" + ordered["ghsl_uc_name"].fillna("unmatched") + ")", fontsize=7)
-    axes[0].set_xlabel("Cumulative Delta P_liq")
+    axes[0].set_xlabel("Cumulative Delta screening index")
     axes[0].set_title("a CSR materiality vs GSFC magnitude", loc="left", weight="bold")
-    axes[0].legend(loc="lower right", fontsize=6)
+    axes[0].legend(loc="lower right", fontsize=7)
 
     all_df = multi.dropna(subset=["dP", "gsfc_recent_dP"]).copy()
     axes[1].scatter(all_df["dP"], all_df["gsfc_recent_dP"], s=10, color=gray, alpha=0.55)
@@ -246,43 +246,42 @@ def make_fig7(multi: pd.DataFrame, consensus: pd.DataFrame, summary: dict[str, o
     }
     for _, row in consensus.iterrows():
         dx, dy, ha = offsets.get(row["name"], (0.0010, 0.0010, "left"))
-        axes[1].text(row["csr_dP"] + dx, row["gsfc_recent_dP"] + dy, row["name"], fontsize=5.8, va="center", ha=ha)
+        axes[1].text(row["csr_dP"] + dx, row["gsfc_recent_dP"] + dy, row["name"], fontsize=6.3, va="center", ha=ha)
     axes[1].set_xlim(-lim, lim)
     axes[1].set_ylim(-lim, lim)
-    axes[1].set_xlabel("CSR Delta P_liq")
-    axes[1].set_ylabel("GSFC Delta P_liq")
+    axes[1].set_xlabel("CSR Delta screening index")
+    axes[1].set_ylabel("GSFC Delta screening index")
     axes[1].set_title("b All-city product comparison", loc="left", weight="bold")
 
     axes[2].axis("off")
     lines = [
-        ("CSR-material hotspots", f"{summary['n_csr_material_hotspots']}/6"),
+        ("CSR-material units", f"{summary['n_csr_material_hotspots']}/6"),
         ("GSFC sign-supported", f"{summary['n_gsfc_sign_supported_hotspots']}/6"),
-        ("GSFC-material hotspots", f"{summary['n_gsfc_material_hotspots']}/6"),
+        ("GSFC-material units", f"{summary['n_gsfc_material_hotspots']}/6"),
         ("GSFC near-material", f"{summary['n_gsfc_near_material_hotspots']}/6"),
-        ("Positive coastal hotspots", f"{summary['n_positive_coastal_lt50km']}/3"),
+        ("Positive coastal units", f"{summary['n_positive_coastal_lt50km']}/3"),
         ("Positive GSFC-material", f"{summary['n_positive_gsfc_material_hotspots']}/3"),
         ("All-city sign agreement", f"{summary['all_city_csr_gsfc_recent_sign_agreement_fraction']:.2f}"),
-        ("JPL CRI status", "auth boundary"),
     ]
-    axes[2].text(0.02, 0.98, "c Product-consensus ledger", transform=axes[2].transAxes, fontsize=9, weight="bold", va="top")
+    axes[2].text(0.02, 0.98, "c Product-consensus ledger", transform=axes[2].transAxes, fontsize=9.5, weight="bold", va="top")
     y0 = 0.88
     for i, (label, value) in enumerate(lines):
-        axes[2].text(0.03, y0 - i * 0.105, label, transform=axes[2].transAxes, fontsize=7.5, color="#555555")
-        axes[2].text(0.97, y0 - i * 0.105, value, transform=axes[2].transAxes, fontsize=7.5, ha="right", color=ink)
+        axes[2].text(0.03, y0 - i * 0.11, label, transform=axes[2].transAxes, fontsize=8.0, color="#555555")
+        axes[2].text(0.97, y0 - i * 0.11, value, transform=axes[2].transAxes, fontsize=8.0, ha="right", color=ink)
     axes[2].text(
         0.03,
         0.05,
         "GSFC is an independent sign check here. It does not prove that every\n"
-        "CSR-material hotspot is material under an independent product.",
+        "CSR-material screening unit is material under an independent product.",
         transform=axes[2].transAxes,
-        fontsize=6.5,
+        fontsize=7.2,
         color="#666666",
     )
 
     for ax in axes[:2]:
         ax.grid(True, color="#e4e4e4", lw=0.5)
         ax.set_axisbelow(True)
-    fig.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.tight_layout(rect=(0, 0, 1, 0.96))
     for ext in ["png", "svg", "pdf"]:
         fig.savefig(FIG / f"Fig7_ghsl_gsfc_robustness.{ext}", bbox_inches="tight")
     plt.close(fig)

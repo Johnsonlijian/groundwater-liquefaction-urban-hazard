@@ -1,0 +1,8 @@
+exposure_unit,region,population_million,csr_tws_trend_cm_yr,csr_delta_p_liq,csr_delta_p_liq_90pct_low,csr_delta_p_liq_90pct_high,gsfc_recent_delta_p_liq,gsfc_material,gsfc_near_material,local_confidence,sy_material_threshold,manuscript_use
+"Yokohama, JP",Tokyo Bay/Yokohama,3.777491,1.5877,0.0131823600667306,0.0052217653273863,0.0218943302879452,0.0059249066615524,False,False,medium-high sign / low-management,0.1318685127152594,positive screen; sign-bounded
+"Bhayandar, IN",Mumbai-Bhayandar,0.809378,1.4173,0.0117697302764608,0.0038161602561318,0.0205713226468663,0.0023539292265584,False,False,low-contradictory,0.1176778486207835,candidate boundary only
+"Mumbai, IN",Mumbai-Bhayandar,12.691836,1.4173,0.0108165938122896,0.0035724974761384,0.0143549539997001,0.0021535539321929,False,False,low-contradictory,0.108111175298082,candidate boundary only
+"Delhi, IN",Delhi/Punjab,11.034555,-2.3689,-0.0113766608006131,-0.0215404015330639,-0.0021241040234326,-0.0229002608193464,True,False,medium-high,0.1141271152208327,strongest product-material depletion screen
+"Lahore, PK",Lahore/Punjab,13.004135,-4.3053,-0.0140276495434888,-0.0226527665302359,-0.0058761489671956,-0.009193039381494,False,True,medium-high,0.1426076055697791,depletion-side screen; near GSFC-material
+"Ludhiana, IN",Ludhiana/Punjab,1.618879,-7.7419,-0.0153533212038833,-0.0237705878345954,-0.0066860327121801,-0.0095560410724474,False,True,medium,0.1599491208561837,depletion-side screen; near GSFC-material
+"Beijing, CN",North China Plain / Beijing,18.960744,0.0956,0.0002529408037319,8.536362684613057e-05,0.0004465976104572,,False,False,high mechanism support,,mechanism anchor; sub-material in global screen

@@ -28,22 +28,22 @@ Current summary:
 - Original city-table FDR-significant detectable change under primary Benjamini-Hochberg control: 330 cities.
 - Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261 cities.
 - Zero-aware finite-Monte-Carlo FDR-sensitive detectable change: 311 Benjamini-Hochberg cities and 245 Benjamini-Yekutieli cities.
-- Zero-aware material hotspot count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
+- Zero-aware material screening-unit count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
 - Material and FDR-significant increases: 3 cities.
 - Material and FDR-significant decreases: 3 cities.
-- Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.
-- Material point-city hotspots after GHSL urban-centre aggregation: 5 urban centres.
-- Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
-- Positive material hotspots within 50 km of the coastline: 3 of 3.
+- Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
+- Material point-city screening units after GHSL urban-centre aggregation: 5 urban centres.
+- Material screening-unit regions at GRACE-scale 300 km grouping: 2 regions.
+- Positive material screening units within 50 km of the coastline: 3 of 3.
 - GHSL R2024A polygon matches: 444/444 cities, including 436 within-polygon matches.
-- CSR-GSFC hotspot sign agreement: 6/6 CSR-material hotspots under OLS and Theil-Sen trends.
-- Product-consensus materiality under GSFC: 1/6 CSR-material hotspots.
-- Positive coastal hotspots that remain GSFC-material: 0/3.
+- CSR-GSFC screening-unit sign agreement: 6/6 CSR-material units under OLS and Theil-Sen trends.
+- Product-consensus materiality under GSFC: 1/6 CSR-material units.
+- Positive coastal units that remain GSFC-material: 0/3.
 - Cohort mean Delta P_liq: +0.00042.
 - Beijing is sign-positive but sub-material: Delta P_liq = +0.00025.
 - Extended parameter grid: `data_derived/sensitivity_grid_v2.csv`.
-- Six-hotspot sensitivity envelope: `data_derived/hotspot_sensitivity_envelope_v2.csv`.
-- Six-hotspot city-by-parameter grid: `data_derived/hotspot_sensitivity_city_grid_v2.csv`.
+- Six screening-priority-unit sensitivity envelope: `data_derived/hotspot_sensitivity_envelope_v2.csv`.
+- Six screening-priority-unit city-by-parameter grid: `data_derived/hotspot_sensitivity_city_grid_v2.csv`.
 - Parameter-effect diagnostic: `data_derived/sensitivity_parameter_effects_v2.csv`.
 - Validation evidence matrix: `data_derived/validation_evidence_matrix_v2.csv`.
 - Policy-priority screening table: `data_derived/policy_priority_table_v2.csv`.
@@ -59,7 +59,7 @@ Current summary:
 - GHSL urban-centre matches and aggregates: `data_derived/ghsl_urban_centre_matches_r21.csv`, `data_derived/ghsl_urban_centre_aggregates_r21.csv`.
 - GSFC independent mascon trends: `data_derived/gsfc_city_trends_r21.csv`.
 - Multi-product sign robustness: `data_derived/multi_product_sign_robustness_r21.csv`.
-- Product-consensus hotspot classification: `data_derived/product_consensus_hotspots_r23.csv`.
+- Product-consensus screening-unit classification: `data_derived/product_consensus_hotspots_r23.csv`.
 - Product-consensus summary: `data_derived/product_consensus_summary_r23.json`.
 - R21 external-data status: `data_derived/r21_external_data_status.csv`.
 - R24 JPL CRI access status: `data_derived/r24_jpl_cri_access_status.csv`.
@@ -76,8 +76,10 @@ Current summary:
 - R28 specific-yield materiality thresholds: `data_derived/specific_yield_thresholds_r28.csv`.
 - R28 specific-yield scenario table: `data_derived/specific_yield_scenarios_r28.csv`.
 - R28 regional specific-yield materiality summary: `data_derived/specific_yield_region_summary_r28.csv`.
+- R29 main-text confidence ledger: `data_derived/confidence_ledger_main_r29.csv`.
+- R29 detailed evidence-confidence ledger: `data_derived/confidence_ledger_detail_r29.csv`.
 
-The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material screening units retain their baseline direction under 900 positive-scaling unit evaluations. The parameter-effect diagnostic identifies specific yield as the largest magnitude sensitivity factor in this deterministic grid. R28 adds unit-specific S_y* thresholds: the six CSR-material units retain |Delta P_liq| >= 0.01 only when S_y is at or below about 0.11-0.16; Beijing is sub-material across the tested range; Tokyo and Tianjin become material only at low S_y. GHSL urban-centre polygons and NASA GSFC mascons are ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material units are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24/R25 local evidence upgrades Tokyo Bay/Yokohama to local and official sign-supported (Yokohama: 20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; Tokyo: 4 of 4 representative confined wells rising over 2015-2024 and 79 of 91 confined observation wells rising in the 2024 official regional summary). Mumbai-Bhayandar remains candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery and CGWB official raw endpoints were not accessible in this run.
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material screening units retain their baseline direction under 900 positive-scaling unit evaluations. The parameter-effect diagnostic identifies specific yield as the largest magnitude sensitivity factor in this deterministic grid. R28 adds unit-specific S_y* thresholds: the six CSR-material units retain |Delta P_liq| >= 0.01 only when S_y is at or below about 0.11-0.16; Beijing is sub-material across the tested range; Tokyo and Tianjin become material only at low S_y. R29 repackages the evidence hierarchy as a six-row main-text confidence ledger plus a seven-row detailed ledger that adds the Beijing mechanism anchor. GHSL urban-centre polygons and NASA GSFC mascons are ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material units are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24/R25 local evidence upgrades Tokyo Bay/Yokohama to local and official sign-supported (Yokohama: 20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; Tokyo: 4 of 4 representative confined wells rising over 2015-2024 and 79 of 91 confined observation wells rising in the 2024 official regional summary). Mumbai-Bhayandar remains candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery and CGWB official raw endpoints were not accessible in this run.
 
 ## Boundary of use
 

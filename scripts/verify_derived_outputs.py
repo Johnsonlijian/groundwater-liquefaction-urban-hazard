@@ -61,6 +61,8 @@ def main() -> None:
     sy_thresh = pd.read_csv(DER / "specific_yield_thresholds_r28.csv")
     sy_scenarios = pd.read_csv(DER / "specific_yield_scenarios_r28.csv")
     sy_region = pd.read_csv(DER / "specific_yield_region_summary_r28.csv")
+    confidence_main = pd.read_csv(DER / "confidence_ledger_main_r29.csv")
+    confidence_detail = pd.read_csv(DER / "confidence_ledger_detail_r29.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -166,6 +168,22 @@ def main() -> None:
     assert pd.isna(sy_thresh.loc[sy_thresh["name"] == "Beijing", "sy_material_threshold"].iloc[0])
     assert 0.08 < float(sy_thresh.loc[sy_thresh["name"] == "Tokyo", "sy_material_threshold"].iloc[0]) < 0.09
     assert 0.07 < float(sy_thresh.loc[sy_thresh["name"] == "Tianjin", "sy_material_threshold"].iloc[0]) < 0.08
+    assert len(confidence_main) == 6
+    assert set(confidence_main["Region"]) == {
+        "North China Plain / Beijing",
+        "Tokyo Bay / Yokohama",
+        "Mumbai-Bhayandar / Mumbai",
+        "Delhi / New Delhi",
+        "Lahore",
+        "Ludhiana / Punjab",
+    }
+    assert len(confidence_detail) == 7
+    assert "Beijing, CN" in set(confidence_detail["exposure_unit"])
+    assert set(confidence_detail["local_confidence"]) >= {
+        "medium-high sign / low-management",
+        "low-contradictory",
+        "high mechanism support",
+    }
 
     for stem in [
         "Fig1_mechanism",
@@ -203,6 +221,7 @@ def main() -> None:
     print(f"GHSL matches: {r21['n_ghsl_matched_cities']}/444; material GHSL UCs: {r21['n_material_ghsl_urban_centres']}")
     print(f"CSR-GSFC hotspot sign agreement: {r21['n_material_hotspots_csr_gsfc_recent_sign_match']}/6")
     print(f"R23 GSFC-material hotspots: {r23['n_gsfc_material_hotspots']}/6; positive GSFC-material: {r23['n_positive_gsfc_material_hotspots']}/3")
+    print(f"R29 confidence ledger rows: main={len(confidence_main)}, detail={len(confidence_detail)}")
     print(f"JPL status: {r21['jpl_status']}")
     print(f"R24 JPL CRI status: {r24['jpl_cri_status']}; collection: {jpl_r24.iloc[0]['collection_id']}")
     print(

@@ -137,7 +137,7 @@ def main() -> None:
     ax.text(
         0.25,
         5.58,
-        "Regional storage driver -> water-table perturbation -> modelled probability change -> non-regulatory screening flag",
+        "Regional storage driver -> water-table perturbation -> screening-index change -> non-regulatory screening flag",
         fontsize=7.4,
         ha="left",
         va="top",
@@ -203,7 +203,7 @@ def main() -> None:
         (8.35, 4.48),
         1.52,
         0.56,
-        "Delta P_liq > 0\nscreening increase",
+        "Delta P_liq > 0\nscreening index rises",
         COLORS["red_light"],
         COLORS["red"],
         6.25,
@@ -248,13 +248,12 @@ def main() -> None:
         ("Punjab / Delhi / Lahore", "depletion + subsidence", COLORS["blue"], COLORS["blue_light"]),
         ("Tokyo Bay / Yokohama", "official rise sign", COLORS["red"], COLORS["red_light"]),
         ("Mumbai-Bhayandar", "candidate only", COLORS["gold"], COLORS["gold_light"]),
-        ("JPL CRI", "auth boundary", COLORS["gold"], COLORS["gold_light"]),
     ]
     x0 = 0.35
     for i, (region, status, ec, fc) in enumerate(ladder):
-        x = x0 + i * 1.86
-        box(ax, (x, 1.52), 1.63, 0.42, region, fc, ec, 5.95, "bold", radius=0.03)
-        box(ax, (x, 1.05), 1.63, 0.36, status, "#FFFFFF", ec, 5.25, "normal", radius=0.025)
+        x = x0 + i * 2.37
+        box(ax, (x, 1.52), 2.05, 0.42, region, fc, ec, 5.75, "bold", radius=0.03)
+        box(ax, (x, 1.05), 2.05, 0.36, status, "#FFFFFF", ec, 5.15, "normal", radius=0.025)
 
     box(
         ax,

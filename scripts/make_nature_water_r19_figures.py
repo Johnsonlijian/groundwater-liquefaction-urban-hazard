@@ -373,7 +373,7 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
     d["X"], d["Y"] = tr.transform(d["lon"].values, d["lat"].values)
     material = d["fdr_sig"] & (d["dP"].abs() >= MATERIAL)
 
-    fig, ax = plt.subplots(figsize=(11.8, 6.15))
+    fig, ax = plt.subplots(figsize=(7.4, 4.25))
     world.plot(ax=ax, color="#eef0f2", edgecolor="#cfd4d8", linewidth=0.3, zorder=1)
     sizes = 10 + 95 * np.sqrt(d["population"].values / d["population"].max())
     order = d["dP"].abs().sort_values().index
@@ -396,44 +396,47 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
     ax.scatter(mh["X"], mh["Y"], s=260, facecolors="none", edgecolors="black", linewidths=1.4, zorder=4)
     ax.scatter(mh["X"], mh["Y"], s=60, c=np.where(mh["dP"] > 0, RED, BLUE), edgecolors="black", linewidths=0.5, zorder=5)
     offsets = {
-        "Yokohama": (10, 10),
-        "Bhayandar": (-66, 8),
-        "Mumbai": (10, -12),
-        "Ludhiana": (-70, 8),
-        "Lahore": (10, 9),
-        "Delhi": (10, -14),
+        "Yokohama": (16, 12),
+        "Bhayandar": (-142, -42),
+        "Mumbai": (0, 0),
+        "Ludhiana": (-118, 72),
+        "Lahore": (92, 72),
+        "Delhi": (92, -54),
     }
     for _, r in mh.iterrows():
+        if r["name"] == "Mumbai":
+            continue
         dx, dy = offsets.get(r["name"], (8, 8))
+        label = "Mumbai-Bhayandar" if r["name"] == "Bhayandar" else r["name"]
         ax.annotate(
-            r["name"],
+            label,
             (r["X"], r["Y"]),
             xytext=(dx, dy),
             textcoords="offset points",
-            fontsize=7.2,
+            fontsize=7.4,
             arrowprops=dict(arrowstyle="-", color="#333333", lw=0.6),
             path_effects=[pe.withStroke(linewidth=2.4, foreground="white")],
             zorder=6,
         )
 
     cb = fig.colorbar(sc, ax=ax, shrink=0.62, pad=0.01, extend="both")
-    cb.set_label("Delta liquefaction probability\nfrom measured groundwater change", fontsize=8)
+    cb.set_label("Delta screening index\nfrom storage-derived change", fontsize=8.5)
     for p, lab in [(1e6, "1M"), (5e6, "5M"), (15e6, "15M")]:
         ax.scatter([], [], s=10 + 95 * np.sqrt(p / d["population"].max()), c="#9aa0a6", edgecolors="k", linewidths=0.25, label=lab)
-    ax.legend(title="City population", loc="lower left", fontsize=7, title_fontsize=7, labelspacing=1.1)
+    ax.legend(title="City population", loc="lower left", fontsize=7.2, title_fontsize=7.4, labelspacing=1.0)
     ax.set_title(
         "Global screen shows regional, bidirectional shifts rather than a diffuse worldwide increase",
-        fontsize=10.8,
+        fontsize=9.8,
         fontweight="bold",
     )
     ax.text(
         0.5,
         -0.04,
-        "Six material and FDR-significant hotspots are ringed and labelled. GRACE/GRACE-FO is a regional driver; cities are exposure units.",
+        "Six material and FDR-significant screening units are ringed and labelled. GRACE/GRACE-FO is a regional driver; cities are exposure units.",
         transform=ax.transAxes,
         ha="center",
         va="top",
-        fontsize=6.5,
+        fontsize=6.8,
         color="#555555",
     )
     ax.set_axis_off()
@@ -447,9 +450,27 @@ def fig3_regional(cohort: pd.DataFrame) -> None:
     regions = [
         ("A  North China Plain", "Recharge-sensitive screening zone", RED, (112.5, 122.5, 33.5, 41.5), ["Beijing", "Tianjin", "Tangshan", "Baoding", "Zhengzhou"]),
         ("B  Punjab / NW India-Pakistan", "Depletion-subsidence audit zone", BLUE, (72, 80.5, 26, 33.5), ["Delhi", "Lahore", "Ludhiana", "Amritsar", "Chandigarh", "Meerut"]),
-        ("C  Japan", "High-shaking recharge-side hotspot belt", RED, (133, 142.5, 33, 40.5), ["Yokohama", "Tokyo", "Nagoya", "Osaka", "Sendai"]),
+        ("C  Japan", "High-shaking recharge-side screening belt", RED, (133, 142.5, 33, 40.5), ["Yokohama", "Tokyo", "Nagoya", "Osaka", "Sendai"]),
     ]
-    fig, axes = plt.subplots(1, 3, figsize=(13.8, 5.1), constrained_layout=True)
+    label_offsets = {
+        "Beijing": (8, 8),
+        "Tianjin": (9, -9),
+        "Tangshan": (9, 6),
+        "Baoding": (-34, 6),
+        "Zhengzhou": (-16, -12),
+        "Delhi": (10, -12),
+        "Lahore": (-8, 12),
+        "Ludhiana": (9, 10),
+        "Amritsar": (10, 16),
+        "Chandigarh": (10, -10),
+        "Meerut": (10, 8),
+        "Yokohama": (11, -12),
+        "Tokyo": (11, 8),
+        "Nagoya": (9, 8),
+        "Osaka": (-16, -12),
+        "Sendai": (9, 8),
+    }
+    fig, axes = plt.subplots(3, 1, figsize=(7.2, 8.7), constrained_layout=True)
     sc = None
     for ax, (title, zone, color, (x0, x1, y0, y1), labels) in zip(axes, regions):
         world.plot(ax=ax, color="#f2efe9", edgecolor="#b9bdc2", linewidth=0.5, zorder=1)
@@ -467,20 +488,21 @@ def fig3_regional(cohort: pd.DataFrame) -> None:
             r = d[d["name"] == nm]
             if len(r):
                 r = r.iloc[0]
-                ax.annotate(nm, (r.lon, r.lat), xytext=(4, 3), textcoords="offset points", fontsize=7.0, zorder=7, path_effects=[pe.withStroke(linewidth=2.2, foreground="white")])
-        ax.text(0.02, 0.96, zone, transform=ax.transAxes, fontsize=7.5, fontweight="bold", color=color, va="top", path_effects=[pe.withStroke(linewidth=2.5, foreground="white")])
+                dx, dy = label_offsets.get(nm, (4, 3))
+                ax.annotate(nm, (r.lon, r.lat), xytext=(dx, dy), textcoords="offset points", fontsize=7.7, zorder=7, path_effects=[pe.withStroke(linewidth=2.2, foreground="white")])
+        ax.text(0.02, 0.96, zone, transform=ax.transAxes, fontsize=8.4, fontweight="bold", color=color, va="top", path_effects=[pe.withStroke(linewidth=2.5, foreground="white")])
         ax.set_xlim(x0, x1)
         ax.set_ylim(y0, y1)
         ax.set_aspect(1.0 / np.cos(np.radians((y0 + y1) / 2)))
-        ax.set_title(title, fontsize=9.6, fontweight="bold", loc="left")
+        ax.set_title(title, fontsize=9.9, fontweight="bold", loc="left")
         ax.set_xticks([])
         ax.set_yticks([])
         for spine in ax.spines.values():
             spine.set_visible(True)
             spine.set_edgecolor("#888888")
     cb = fig.colorbar(sc, ax=axes, shrink=0.55, pad=0.01, extend="both", location="right")
-    cb.set_label("Delta liquefaction probability (2015-2024)", fontsize=8)
-    fig.suptitle("Regional transferability of the groundwater-liquefaction trade-off", fontsize=10.8, fontweight="bold")
+    cb.set_label("Delta screening index (2015-2024)", fontsize=8.8)
+    fig.suptitle("Regional transferability of the groundwater-liquefaction trade-off", fontsize=11.0, fontweight="bold")
     save_figure(fig, "Fig3_regional")
 
 
@@ -574,7 +596,7 @@ def fig5_policy_robustness(cohort: pd.DataFrame, grid: pd.DataFrame, envelope: p
     ax1.set_yticks(y)
     ax1.set_yticklabels([f"{r.name}, {r.country}" for r in env.itertuples()])
     ax1.set_xlabel("Delta P_liq")
-    ax1.set_title("a  Hotspot signs stay stable", loc="left", fontweight="bold")
+    ax1.set_title("a  Screening-unit signs stay stable", loc="left", fontweight="bold")
     ax1.text(0.02, 0.96, "Line: min-max\nCircle: median\nDiamond: baseline", transform=ax1.transAxes, fontsize=7, va="top", color="#555555")
 
     heat = grid.groupby(["specific_yield", "trend_multiplier"])["n_material_any_direction"].mean().unstack()
@@ -596,7 +618,7 @@ def fig5_policy_robustness(cohort: pd.DataFrame, grid: pd.DataFrame, envelope: p
     ax2.text(
         0.04,
         0.05,
-        f"Largest hotspot-magnitude effect:\n{dominant}",
+        f"Largest screening-unit magnitude effect:\n{dominant}",
         transform=ax2.transAxes,
         fontsize=6.8,
         color="#333333",
@@ -614,7 +636,7 @@ def fig5_policy_robustness(cohort: pd.DataFrame, grid: pd.DataFrame, envelope: p
     ax3.axvline(0, color="#777777", lw=0.8)
     ax3.axhline(0.10, color="#999999", lw=0.7, ls="--")
     ax3.set_xlabel("GRACE/GRACE-FO recent TWS trend (cm yr-1)")
-    ax3.set_ylabel("Baseline modelled liquefaction probability")
+    ax3.set_ylabel("Baseline liquefaction-screening index")
     ax3.set_title("c  Non-regulatory policy triage", loc="left", fontweight="bold")
     ax3.text(0.03, 0.93, "Depletion-side:\nSubsidence +\nwater security audit", color=BLUE, transform=ax3.transAxes, fontsize=7.2, va="top")
     ax3.text(0.66, 0.93, "Recharge-side:\nLiquefaction\nmonitoring", color=RED, transform=ax3.transAxes, fontsize=7.2, va="top")

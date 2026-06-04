@@ -11,5 +11,5 @@
   "n_negative_gsfc_material_hotspots": 1,
   "all_city_csr_gsfc_recent_sign_agreement_fraction": 0.8040540540540541,
   "all_city_csr_gsfc_theilsen_sign_agreement_fraction": 0.7815315315315315,
-  "interpretation": "GSFC is used as an independent sign check, not as proof that all CSR-material hotspots are material under an independent product."
+  "interpretation": "GSFC is used as an independent sign check, not as proof that all CSR-material screening units are material under an independent product."
 }

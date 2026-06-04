@@ -1,0 +1,4 @@
+url,path,use_env_proxy,status,http_status,content_type,bytes,sha256,error
+https://www.env.go.jp/water/jiban/directory/13kantouminami.html,data_raw\local_groundwater_evidence\tokyo_metropolitan\tokyo_env_2024_page_r25.html,True,downloaded,200,text/html,62005,577e6e0c2caf80177dd72217bcdaae9fa9c95789fe4cd66197cb3db578fb13f5,
+https://www.env.go.jp/content/000386723.xlsx,data_raw\local_groundwater_evidence\tokyo_metropolitan\tokyo_env_2024_detail_r25.xlsx,True,downloaded,200,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,81359,9bad6ee1c6cb31c00da74c763b0009836cdb9fd5d1cd86dd96a008b4a6ebd46c,
+https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/000066298,data_raw\local_groundwater_evidence\tokyo_metropolitan\tokyo_2022_land_subsidence_report_r25.pdf,True,downloaded,200,application/pdf,3930137,6b7a2522b8414ee2df41f2badda9f6cf99ed1d4211f5a456adc920ad063b17c6,

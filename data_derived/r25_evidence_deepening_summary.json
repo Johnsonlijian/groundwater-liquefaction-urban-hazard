@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-06-04T05:41:55+00:00",
+  "tokyo_representative_wells": {
+    "n_wells": 4,
+    "n_positive_ols": 4,
+    "median_slope_m_per_year": 0.6077575757575758,
+    "median_change_m_2015_2024": 5.005000000000001
+  },
+  "tokyo_2024_regional_summary": {
+    "observation_wells": 91,
+    "rising_confined_wells": 79,
+    "share_rising": 0.8681318681318682
+  },
+  "tokyo_open_data_table5_2016": {
+    "n_rows": 91,
+    "n_positive_2016_minus_2015": 78
+  },
+  "tokyo_pdf_table5_2022": {
+    "n_rows_extracted": 91,
+    "n_positive_2022_minus_2021": 75
+  },
+  "mumbai_bhayandar_status": "candidate-only; DOI-verified local evidence is contradictory to positive-recovery attribution",
+  "cgwb_retry_any_success": false,
+  "jpl_cri_runner_status": "earthaccess_missing_and_no_local_file",
+  "outputs": [
+    "data_derived/tokyo_source_download_status_r25.csv",
+    "data_derived/tokyo_representative_groundwater_levels_r25.csv",
+    "data_derived/tokyo_representative_groundwater_trends_r25.csv",
+    "data_derived/tokyo_open_data_resources_r25.csv",
+    "data_derived/tokyo_open_data_table5_groundwater_2016_r25.csv",
+    "data_derived/tokyo_2022_pdf_table5_extracted_rows_r25.csv",
+    "data_derived/tokyo_bay_groundwater_evidence_summary_r25.csv",
+    "data_derived/cgwb_access_retry_status_r25.csv",
+    "data_derived/mumbai_bhayandar_evidence_boundary_r25.csv",
+    "data_derived/jpl_cri_earthdata_runner_status_r25.csv",
+    "data_derived/local_groundwater_evidence_registry_r25.csv",
+    "data_derived/attribution_confidence_matrix_r25.csv",
+    "figures/FigS2_tokyo_representative_groundwater_r25.png",
+    "figures/FigS2_tokyo_representative_groundwater_r25.svg",
+    "figures/FigS2_tokyo_representative_groundwater_r25.pdf"
+  ]
+}

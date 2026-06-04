@@ -1,0 +1,5 @@
+evidence_layer,source_url,n_units,n_positive,n_negative,median_slope_m_per_year,median_change_m,window,safe_interpretation
+official_2024_excel_representative_wells,https://www.env.go.jp/content/000386723.xlsx,4,4,0.0,0.6077575757575758,5.005000000000001,2015-2024,all four representative confined wells rise over the 10-year official series
+tokyo_open_data_table5_2016,https://catalog.data.metro.tokyo.lg.jp/dataset/t000014d1700000013,90,78,12.0,,0.19,2015-2016 annual change,official downloadable well table confirms a broad positive annual sign in the archived open-data year
+tokyo_official_pdf_table5_2022,https://www.kensetsu.metro.tokyo.lg.jp/documents/d/kensetsu/000066298,91,75,14.0,,0.3,2021-2022 annual change,"PDF-extracted official well table supports positive annual changes, but row parsing is treated as an audit summary"
+ministry_2024_regional_summary,https://www.env.go.jp/water/jiban/directory/13kantouminami.html,91,79,,,,2024 annual regional summary,regional official summary reports 79 of 91 confined observation wells rising

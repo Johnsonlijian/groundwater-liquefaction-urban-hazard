@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-06-04T05:41:52+00:00",
+  "collection_short_name": "TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4",
+  "collection_id": "C3195527175-POCLOUD",
+  "granule": "GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI",
+  "data_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-protected/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc",
+  "md5_url": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-public/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4/GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc.md5",
+  "earthaccess_installed": false,
+  "credential_files_detected": 0,
+  "credential_envs_detected": 0,
+  "local_netcdf_detected": "",
+  "run_status": "earthaccess_missing_and_no_local_file",
+  "md5_text": "GRCTellus.JPL.200204_202603.GLO.RL06.3M.MSCNv04CRI.nc\t3f0a4cdeb6eddc5fdd621312377782af",
+  "note": "Install earthaccess and provide Earthdata credentials, or place the authenticated NetCDF in data_raw/grace/jpl."
+}

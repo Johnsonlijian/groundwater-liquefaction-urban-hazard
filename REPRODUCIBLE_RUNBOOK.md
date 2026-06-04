@@ -30,6 +30,7 @@ python scripts\\r20_spatial_trigger_analysis.py
 python scripts\\r21_ghsl_gsfc_jpl_robustness.py
 python scripts\\r23_product_consensus_recalibration.py
 python scripts\\r24_jpl_cri_and_local_groundwater_evidence.py
+python scripts\\r25_tokyo_mumbai_evidence_deepening.py
 ```
 
 ## Minimum verification from included derived data
@@ -65,6 +66,11 @@ Expected summary:
 - R24 JPL CRI status: correct CRI-filtered collection verified; protected NetCDF remains Earthdata-authentication blocked unless local credentials or an authenticated file are supplied.
 - R24 Yokohama local groundwater evidence: 3,781 monthly records parsed from official municipal PDFs; 20 of 23 trend-qualified wells rise over 2015/04-2025/03; median slope about +0.0418 m yr-1.
 - R24 Mumbai-Bhayandar local evidence status: DOI-verified Mumbai station evidence is contradictory to positive-recovery attribution, so the hotspot remains candidate-only.
+- R25 Tokyo official representative groundwater evidence: 4 of 4 representative confined wells rise over 2015-2024; median OLS slope about +0.608 m yr-1.
+- R25 Tokyo 2024 regional summary: 79 of 91 confined observation wells rising.
+- R25 Tokyo Open Data / official PDF annual-table checks: 78 of 90 valid 2016 changes positive and 75 of 91 extracted 2022 changes positive.
+- R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
+- R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
 - Largest hotspot-magnitude sensitivity factor in the deterministic grid: specific yield.
 - Median +0.01 water-table-rise trigger: about 14.5 m.
 - Beijing +0.01 water-table-rise trigger: about 17.1 m.
@@ -99,6 +105,9 @@ Generated figures are stored under `figures/`:
 - `FigS1_yokohama_local_groundwater_r24.png`
 - `FigS1_yokohama_local_groundwater_r24.svg`
 - `FigS1_yokohama_local_groundwater_r24.pdf`
+- `FigS2_tokyo_representative_groundwater_r25.png`
+- `FigS2_tokyo_representative_groundwater_r25.svg`
+- `FigS2_tokyo_representative_groundwater_r25.pdf`
 
 ## Guardrails
 

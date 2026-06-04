@@ -45,6 +45,17 @@ def main() -> None:
     yok_monthly = pd.read_csv(DER / "yokohama_groundwater_monthly_r24.csv")
     local_registry = pd.read_csv(DER / "local_groundwater_evidence_registry_r24.csv")
     attribution_r24 = pd.read_csv(DER / "attribution_confidence_matrix_r24.csv")
+    r25 = json.loads((DER / "r25_evidence_deepening_summary.json").read_text(encoding="utf-8"))
+    tokyo_summary = pd.read_csv(DER / "tokyo_bay_groundwater_evidence_summary_r25.csv")
+    tokyo_trends = pd.read_csv(DER / "tokyo_representative_groundwater_trends_r25.csv")
+    tokyo_levels = pd.read_csv(DER / "tokyo_representative_groundwater_levels_r25.csv")
+    tokyo_2016 = pd.read_csv(DER / "tokyo_open_data_table5_groundwater_2016_r25.csv")
+    tokyo_2022 = pd.read_csv(DER / "tokyo_2022_pdf_table5_extracted_rows_r25.csv")
+    cgwb_r25 = pd.read_csv(DER / "cgwb_access_retry_status_r25.csv")
+    mumbai_r25 = pd.read_csv(DER / "mumbai_bhayandar_evidence_boundary_r25.csv")
+    jpl_r25 = pd.read_csv(DER / "jpl_cri_earthdata_runner_status_r25.csv")
+    local_registry_r25 = pd.read_csv(DER / "local_groundwater_evidence_registry_r25.csv")
+    attribution_r25 = pd.read_csv(DER / "attribution_confidence_matrix_r25.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -111,6 +122,23 @@ def main() -> None:
     assert "Yokohama / Tokyo Bay" in set(local_registry["region_or_cluster"])
     assert "Mumbai-Bhayandar cluster" in set(local_registry["region_or_cluster"])
     assert "low-contradictory" in set(attribution_r24["attribution_confidence"])
+    assert r25["tokyo_representative_wells"]["n_wells"] == len(tokyo_trends) == 4
+    assert r25["tokyo_representative_wells"]["n_positive_ols"] == int((tokyo_trends["ols_slope_m_per_year"] > 0).sum()) == 4
+    assert 0.60 < r25["tokyo_representative_wells"]["median_slope_m_per_year"] < 0.62
+    assert len(tokyo_levels) == 40
+    assert r25["tokyo_2024_regional_summary"]["observation_wells"] == 91
+    assert r25["tokyo_2024_regional_summary"]["rising_confined_wells"] == 79
+    assert len(tokyo_2016) == 91
+    assert int((pd.to_numeric(tokyo_2016["change_2016_minus_2015_m"], errors="coerce") > 0).sum()) == 78
+    assert len(tokyo_2022) == 91
+    assert int((tokyo_2022["change_2022_minus_2021_m"] > 0).sum()) == 75
+    assert len(tokyo_summary) == 4
+    assert not bool(cgwb_r25["status"].eq("ok").any())
+    assert {"Crossref", "AGRIS metadata page"} <= set(mumbai_r25["source"])
+    assert jpl_r25.iloc[0]["run_status"] == "earthaccess_missing_and_no_local_file"
+    assert "Tokyo Bay / Yokohama" in set(local_registry_r25["city_or_region"])
+    assert "Mumbai-Bhayandar" in set(local_registry_r25["city_or_region"])
+    assert "medium-high sign / low-management" in set(attribution_r25["attribution_confidence"])
 
     for stem in [
         "Fig1_mechanism",
@@ -121,6 +149,7 @@ def main() -> None:
         "Fig6_trigger_spatial_robustness",
         "Fig7_ghsl_gsfc_robustness",
         "FigS1_yokohama_local_groundwater_r24",
+        "FigS2_tokyo_representative_groundwater_r25",
     ]:
         for ext in ["png", "svg", "pdf"]:
             assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
@@ -150,6 +179,19 @@ def main() -> None:
         f"median {r24['yokohama_median_slope_m_per_year']:+.4f} m yr-1"
     )
     print(f"R24 Mumbai-Bhayandar status: {r24['mumbai_bhayandar_status']}")
+    print(
+        "R25 Tokyo representative wells: "
+        f"{r25['tokyo_representative_wells']['n_positive_ols']}/{r25['tokyo_representative_wells']['n_wells']} rising; "
+        f"median {r25['tokyo_representative_wells']['median_slope_m_per_year']:+.3f} m yr-1"
+    )
+    print(
+        "R25 Tokyo official summary/table checks: "
+        f"{r25['tokyo_2024_regional_summary']['rising_confined_wells']}/"
+        f"{r25['tokyo_2024_regional_summary']['observation_wells']} rising in 2024; "
+        f"{r25['tokyo_open_data_table5_2016']['n_positive_2016_minus_2015']}/90 positive in 2016; "
+        f"{r25['tokyo_pdf_table5_2022']['n_positive_2022_minus_2021']}/91 positive in 2022"
+    )
+    print(f"R25 JPL runner status: {jpl_r25.iloc[0]['run_status']}")
 
 
 if __name__ == "__main__":

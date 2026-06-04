@@ -1,0 +1,15 @@
+{
+  "n_cities": 444,
+  "n_csr_material_hotspots": 6,
+  "n_gsfc_sign_supported_hotspots": 6,
+  "n_gsfc_material_hotspots": 1,
+  "n_gsfc_near_material_hotspots": 2,
+  "n_positive_csr_material_hotspots": 3,
+  "n_positive_gsfc_material_hotspots": 0,
+  "n_positive_coastal_lt50km": 3,
+  "n_negative_csr_material_hotspots": 3,
+  "n_negative_gsfc_material_hotspots": 1,
+  "all_city_csr_gsfc_recent_sign_agreement_fraction": 0.8040540540540541,
+  "all_city_csr_gsfc_theilsen_sign_agreement_fraction": 0.7815315315315315,
+  "interpretation": "GSFC is used as an independent sign check, not as proof that all CSR-material hotspots are material under an independent product."
+}

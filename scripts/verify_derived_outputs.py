@@ -37,6 +37,8 @@ def main() -> None:
     gsfc = pd.read_csv(DER / "gsfc_city_trends_r21.csv")
     multiproduct = pd.read_csv(DER / "multi_product_sign_robustness_r21.csv")
     r21_status = pd.read_csv(DER / "r21_external_data_status.csv")
+    r23 = json.loads((DER / "product_consensus_summary_r23.json").read_text(encoding="utf-8"))
+    product_consensus = pd.read_csv(DER / "product_consensus_hotspots_r23.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -85,6 +87,12 @@ def main() -> None:
     assert len(multiproduct) == 444
     assert "auth-blocked" in str(r21["jpl_status"])
     assert set(r21_status["status_in_this_project"]) >= {"ingested and used", "auth-blocked unless local Earthdata credentials are provided"}
+    assert len(product_consensus) == 6
+    assert r23["n_csr_material_hotspots"] == 6
+    assert r23["n_gsfc_sign_supported_hotspots"] == 6
+    assert r23["n_gsfc_material_hotspots"] == 1
+    assert r23["n_gsfc_near_material_hotspots"] == 2
+    assert r23["n_positive_gsfc_material_hotspots"] == 0
 
     for stem in [
         "Fig1_mechanism",
@@ -114,6 +122,7 @@ def main() -> None:
     print(f"Median/Beijing +0.01 trigger: {r20['median_trigger_rise_m']:.2f}/{r20['beijing_trigger_rise_m']:.2f} m")
     print(f"GHSL matches: {r21['n_ghsl_matched_cities']}/444; material GHSL UCs: {r21['n_material_ghsl_urban_centres']}")
     print(f"CSR-GSFC hotspot sign agreement: {r21['n_material_hotspots_csr_gsfc_recent_sign_match']}/6")
+    print(f"R23 GSFC-material hotspots: {r23['n_gsfc_material_hotspots']}/6; positive GSFC-material: {r23['n_positive_gsfc_material_hotspots']}/3")
     print(f"JPL status: {r21['jpl_status']}")
 
 

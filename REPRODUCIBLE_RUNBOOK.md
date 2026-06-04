@@ -28,6 +28,7 @@ python scripts\\analyze_v2.py
 python scripts\\make_nature_water_r19_figures.py
 python scripts\\r20_spatial_trigger_analysis.py
 python scripts\\r21_ghsl_gsfc_jpl_robustness.py
+python scripts\\r23_product_consensus_recalibration.py
 ```
 
 ## Minimum verification from included derived data
@@ -51,12 +52,15 @@ Expected summary:
 - Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
 - Positive material hotspots within 50 km of the coastline: 3 of 3.
 - GHSL R2024A polygon matches: 444/444 cities.
-- CSR-GSFC hotspot sign agreement: 6/6 material hotspots.
+- CSR-GSFC hotspot sign agreement: 6/6 CSR-material hotspots.
+- GSFC-material hotspots among CSR-material hotspots: 1/6.
+- Positive coastal hotspots that remain GSFC-material: 0/3.
 - JPL CRI-filtered mascon: protected by Earthdata authentication in this run.
 - Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
 - Sensitivity grid rows: 150.
 - Six-hotspot city-grid rows: 900.
 - Six baseline material hotspots: all retain baseline direction under the positive-scaling sensitivity grid.
+- R23 product-consensus table: GSFC is an independent sign check, not a materiality proof for every CSR-material hotspot.
 - Largest hotspot-magnitude sensitivity factor in the deterministic grid: specific yield.
 - Median +0.01 water-table-rise trigger: about 14.5 m.
 - Beijing +0.01 water-table-rise trigger: about 17.1 m.

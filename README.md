@@ -1,8 +1,8 @@
-# Groundwater change and urban earthquake-liquefaction hazard
+# Regional storage-derived water-table change and urban earthquake-liquefaction hazard
 
 This repository is the clean reproducibility package for the paper:
 
-**Groundwater change reshapes urban earthquake-liquefaction hazard in opposite directions**
+**Regional storage-derived water-table change reshapes urban earthquake-liquefaction hazard in opposite directions**
 
 The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but bidirectional regional shifts associated with recharge and depletion.
 
@@ -34,7 +34,9 @@ Current summary:
 - Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
 - Positive material hotspots within 50 km of the coastline: 3 of 3.
 - GHSL R2024A polygon matches: 444/444 cities, including 436 within-polygon matches.
-- CSR-GSFC hotspot sign agreement: 6/6 material hotspots under OLS and Theil-Sen trends.
+- CSR-GSFC hotspot sign agreement: 6/6 CSR-material hotspots under OLS and Theil-Sen trends.
+- Product-consensus materiality under GSFC: 1/6 CSR-material hotspots.
+- Positive coastal hotspots that remain GSFC-material: 0/3.
 - Cohort mean Delta P_liq: +0.00042.
 - Beijing is sign-positive but sub-material: Delta P_liq = +0.00025.
 - Extended parameter grid: `data_derived/sensitivity_grid_v2.csv`.
@@ -54,13 +56,15 @@ Current summary:
 - GHSL urban-centre matches and aggregates: `data_derived/ghsl_urban_centre_matches_r21.csv`, `data_derived/ghsl_urban_centre_aggregates_r21.csv`.
 - GSFC independent mascon trends: `data_derived/gsfc_city_trends_r21.csv`.
 - Multi-product sign robustness: `data_derived/multi_product_sign_robustness_r21.csv`.
+- Product-consensus hotspot classification: `data_derived/product_consensus_hotspots_r23.csv`.
+- Product-consensus summary: `data_derived/product_consensus_summary_r23.json`.
 - R21 external-data status: `data_derived/r21_external_data_status.csv`.
 
-The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims.
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material hotspots are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims.
 
 ## Boundary of use
 
-GRACE/GRACE-FO constrains a regional storage driver at roughly 300 km scale. The city is the exposure unit. City values are directional screening estimates, not site-specific engineering predictions. The analysis does not claim that groundwater causes earthquakes.
+GRACE/GRACE-FO constrains a regional storage-derived water-table driver at roughly 300 km scale. The city is the exposure unit. City values are directional screening estimates, not site-specific engineering predictions. The analysis does not claim that groundwater causes earthquakes.
 
 ## Intended public remote
 

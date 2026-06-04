@@ -395,29 +395,84 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
     mh = d[material].copy()
     ax.scatter(mh["X"], mh["Y"], s=260, facecolors="none", edgecolors="black", linewidths=1.4, zorder=4)
     ax.scatter(mh["X"], mh["Y"], s=60, c=np.where(mh["dP"] > 0, RED, BLUE), edgecolors="black", linewidths=0.5, zorder=5)
-    offsets = {
-        "Yokohama": (16, 12),
-        "Bhayandar": (-142, -42),
-        "Mumbai": (0, 0),
-        "Ludhiana": (-118, 72),
-        "Lahore": (92, 72),
-        "Delhi": (92, -54),
-    }
     for _, r in mh.iterrows():
-        if r["name"] == "Mumbai":
+        if r["name"] != "Yokohama":
             continue
-        dx, dy = offsets.get(r["name"], (8, 8))
-        label = "Mumbai-Bhayandar" if r["name"] == "Bhayandar" else r["name"]
         ax.annotate(
-            label,
+            r["name"],
             (r["X"], r["Y"]),
-            xytext=(dx, dy),
+            xytext=(16, 12),
             textcoords="offset points",
             fontsize=7.4,
             arrowprops=dict(arrowstyle="-", color="#333333", lw=0.6),
             path_effects=[pe.withStroke(linewidth=2.4, foreground="white")],
             zorder=6,
         )
+
+    inset = ax.inset_axes([0.485, 0.10, 0.35, 0.40])
+    inset.set_facecolor("white")
+    inset.patch.set_alpha(0.96)
+    world.plot(ax=inset, color="#f5f6f7", edgecolor="#cfd4d8", linewidth=0.25, zorder=1)
+    x0i, y0i = tr.transform(54.0, 9.0)
+    x1i, y1i = tr.transform(90.0, 37.0)
+    inset.set_xlim(min(x0i, x1i), max(x0i, x1i))
+    inset.set_ylim(min(y0i, y1i), max(y0i, y1i))
+    south = d[(d["lon"] >= 66.0) & (d["lon"] <= 82.5) & (d["lat"] >= 16.0) & (d["lat"] <= 34.5)]
+    inset.scatter(
+        south["X"],
+        south["Y"],
+        c=south["dP"],
+        cmap="RdBu_r",
+        vmin=-0.03,
+        vmax=0.03,
+        s=18 + 55 * np.sqrt(south["population"].values / d["population"].max()),
+        edgecolors="#555555",
+        linewidths=0.25,
+        alpha=0.9,
+        zorder=3,
+    )
+    south_m = mh[mh["name"].isin(["Ludhiana", "Lahore", "Delhi", "Bhayandar", "Mumbai"])]
+    inset.scatter(south_m["X"], south_m["Y"], s=95, facecolors="none", edgecolors="#111111", linewidths=1.2, zorder=4)
+    inset.scatter(
+        south_m["X"],
+        south_m["Y"],
+        s=32,
+        c=np.where(south_m["dP"] > 0, RED, BLUE),
+        edgecolors="#111111",
+        linewidths=0.35,
+        zorder=5,
+    )
+    inset_offsets = {
+        "Ludhiana": (-9, 9, "right", "center"),
+        "Lahore": (5, -11, "left", "center"),
+        "Delhi": (-9, -11, "right", "center"),
+        "Bhayandar": (-9, -12, "right", "center"),
+    }
+    for _, r in south_m.iterrows():
+        if r["name"] == "Mumbai":
+            continue
+        label = "Mumbai-\nBhayandar" if r["name"] == "Bhayandar" else r["name"]
+        dx, dy, ha, va = inset_offsets.get(r["name"], (4, 4, "left", "center"))
+        inset.annotate(
+            label,
+            (r["X"], r["Y"]),
+            xytext=(dx, dy),
+            textcoords="offset points",
+            fontsize=5.2,
+            ha=ha,
+            va=va,
+            bbox=dict(boxstyle="round,pad=0.08", fc="white", ec="none", alpha=0.78),
+            path_effects=[pe.withStroke(linewidth=1.6, foreground="white")],
+            clip_on=True,
+            zorder=6,
+        )
+    inset.set_title("South Asia detail", fontsize=6.5, fontweight="bold", pad=4)
+    inset.set_xticks([])
+    inset.set_yticks([])
+    for spine in inset.spines.values():
+        spine.set_visible(True)
+        spine.set_edgecolor("#555555")
+        spine.set_linewidth(0.55)
 
     cb = fig.colorbar(sc, ax=ax, shrink=0.62, pad=0.01, extend="both")
     cb.set_label("Delta screening index\nfrom storage-derived change", fontsize=8.5)
@@ -432,7 +487,7 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
     ax.text(
         0.5,
         -0.04,
-        "Six material and FDR-significant screening units are ringed and labelled. GRACE/GRACE-FO is a regional driver; cities are exposure units.",
+        "Six material and FDR-significant screening units are ringed; South Asia units are labelled in the inset. GRACE/GRACE-FO is a regional driver; cities are exposure units.",
         transform=ax.transAxes,
         ha="center",
         va="top",
@@ -503,6 +558,31 @@ def fig3_regional(cohort: pd.DataFrame) -> None:
     cb = fig.colorbar(sc, ax=axes, shrink=0.55, pad=0.01, extend="both", location="right")
     cb.set_label("Delta screening index (2015-2024)", fontsize=8.8)
     fig.suptitle("Regional transferability of the groundwater-liquefaction trade-off", fontsize=11.0, fontweight="bold")
+    legend_handles = [
+        Line2D(
+            [0],
+            [0],
+            marker="o",
+            color="none",
+            markerfacecolor="white",
+            markeredgecolor="#222222",
+            markeredgewidth=1.1,
+            markersize=7.0,
+            label="FDR sign-detectable",
+        ),
+        Line2D(
+            [0],
+            [0],
+            marker="o",
+            color="none",
+            markerfacecolor="white",
+            markeredgecolor=RED,
+            markeredgewidth=2.0,
+            markersize=8.0,
+            label="CSR-material + FDR",
+        ),
+    ]
+    fig.legend(handles=legend_handles, loc="lower center", ncol=2, bbox_to_anchor=(0.5, 0.0), fontsize=7.4)
     save_figure(fig, "Fig3_regional")
 
 

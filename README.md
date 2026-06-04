@@ -1,8 +1,8 @@
-# Regional storage-derived water-table change and urban earthquake-liquefaction hazard
+# Regional water-storage trends and liquefaction-screening priorities
 
 This repository is the clean reproducibility package for the paper:
 
-**Regional water-storage trends indicate opposing liquefaction-screening priorities in seismic cities**
+**Regional water-storage trends define bidirectional liquefaction-screening priorities in seismic cities**
 
 The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but bidirectional regional shifts associated with recharge and depletion.
 

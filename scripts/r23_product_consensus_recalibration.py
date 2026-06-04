@@ -194,12 +194,12 @@ def make_fig7(multi: pd.DataFrame, consensus: pd.DataFrame, summary: dict[str, o
         dpi=240,
         gridspec_kw={"height_ratios": [1.65, 1.55, 1.1]},
     )
-    fig.suptitle("Product-consensus robustness: sign support is not materiality proof", fontsize=12, weight="bold")
+    fig.suptitle("CSR-GSFC product-consensus robustness: sign support is not materiality proof", fontsize=12, weight="bold")
 
     ordered = consensus.sort_values("csr_dP").reset_index(drop=True)
     y = np.arange(len(ordered))
     colors = np.where(ordered["csr_dP"] > 0, red, blue)
-    axes[0].barh(y, ordered["csr_dP"], color=colors, alpha=0.82, height=0.62, label="CSR Delta P")
+    axes[0].barh(y, ordered["csr_dP"], color=colors, alpha=0.82, height=0.62, label="CSR increment")
     axes[0].scatter(
         ordered["gsfc_recent_dP"],
         y,
@@ -209,7 +209,7 @@ def make_fig7(multi: pd.DataFrame, consensus: pd.DataFrame, summary: dict[str, o
         edgecolor=ink,
         lw=0.8,
         zorder=5,
-        label="GSFC Delta P",
+        label="GSFC increment",
     )
     axes[0].axvline(0, color=ink, lw=0.8)
     axes[0].axvline(MATERIAL, color="#777777", lw=0.7, ls="--")

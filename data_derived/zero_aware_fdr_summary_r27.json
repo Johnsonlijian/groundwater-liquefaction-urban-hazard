@@ -1,0 +1,26 @@
+{
+  "n_cities": 444,
+  "zero_exact_dP_rows": 15,
+  "original_bh_significant": 330,
+  "zero_aware_bh_significant": 311,
+  "zero_aware_by_significant": 245,
+  "zero_aware_material_bh": 6,
+  "zero_aware_material_by": 5,
+  "material_bh_names": [
+    "Yokohama",
+    "Bhayandar",
+    "Mumbai",
+    "Delhi",
+    "Lahore",
+    "Ludhiana"
+  ],
+  "material_by_names": [
+    "Yokohama",
+    "Bhayandar",
+    "Mumbai",
+    "Lahore",
+    "Ludhiana"
+  ],
+  "finite_monte_carlo_draws": 4000,
+  "add_one_minimum_p": 0.00024993751562109475
+}

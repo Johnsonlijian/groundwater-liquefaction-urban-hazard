@@ -56,6 +56,8 @@ def main() -> None:
     jpl_r25 = pd.read_csv(DER / "jpl_cri_earthdata_runner_status_r25.csv")
     local_registry_r25 = pd.read_csv(DER / "local_groundwater_evidence_registry_r25.csv")
     attribution_r25 = pd.read_csv(DER / "attribution_confidence_matrix_r25.csv")
+    zero_fdr = pd.read_csv(DER / "zero_aware_fdr_city_results_r27.csv")
+    zero_summary = json.loads((DER / "zero_aware_fdr_summary_r27.json").read_text(encoding="utf-8"))
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -139,6 +141,15 @@ def main() -> None:
     assert "Tokyo Bay / Yokohama" in set(local_registry_r25["city_or_region"])
     assert "Mumbai-Bhayandar" in set(local_registry_r25["city_or_region"])
     assert "medium-high sign / low-management" in set(attribution_r25["attribution_confidence"])
+    assert len(zero_fdr) == zero_summary["n_cities"] == 444
+    assert zero_summary["zero_exact_dP_rows"] == int(zero_fdr["zero_exact_dP"].sum()) == 15
+    assert zero_summary["original_bh_significant"] == int(cities["fdr_sig"].sum()) == 330
+    assert zero_summary["zero_aware_bh_significant"] == int(zero_fdr["fdr_bh_zero_aware"].sum()) == 311
+    assert zero_summary["zero_aware_by_significant"] == int(zero_fdr["fdr_by_zero_aware"].sum()) == 245
+    assert zero_summary["zero_aware_material_bh"] == int(zero_fdr["material_bh_zero_aware"].sum()) == 6
+    assert zero_summary["zero_aware_material_by"] == int(zero_fdr["material_by_zero_aware"].sum()) == 5
+    assert zero_summary["material_bh_names"] == ["Yokohama", "Bhayandar", "Mumbai", "Delhi", "Lahore", "Ludhiana"]
+    assert zero_summary["material_by_names"] == ["Yokohama", "Bhayandar", "Mumbai", "Lahore", "Ludhiana"]
 
     for stem in [
         "Fig1_mechanism",
@@ -160,7 +171,12 @@ def main() -> None:
 
     print("Derived-output verification passed.")
     print(f"Cities: {len(cities)}")
-    print(f"FDR-significant BH/BY: {int(cities['fdr_sig'].sum())}/{r20['city_by_fdr_sig']}")
+    print(f"FDR-significant BH/BY (original city table): {int(cities['fdr_sig'].sum())}/{r20['city_by_fdr_sig']}")
+    print(
+        "Zero-aware finite-Monte-Carlo BH/BY: "
+        f"{zero_summary['zero_aware_bh_significant']}/{zero_summary['zero_aware_by_significant']}; "
+        f"material BH/BY: {zero_summary['zero_aware_material_bh']}/{zero_summary['zero_aware_material_by']}"
+    )
     print(f"Material increases/decreases: {summary['n_material_inc']}/{summary['n_material_dec']}")
     print(f"Beijing dP: {beijing['dP']:+.6f}; TWS trend: {beijing['tws_cm_yr']:+.2f} cm yr-1")
     print(f"Sensitivity combinations: {len(grid)}; hotspot sign reversals: {int(grid['hotspot_sign_reversals'].sum())}")

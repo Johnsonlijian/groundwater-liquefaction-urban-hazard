@@ -31,6 +31,7 @@ python scripts\\r21_ghsl_gsfc_jpl_robustness.py
 python scripts\\r23_product_consensus_recalibration.py
 python scripts\\r24_jpl_cri_and_local_groundwater_evidence.py
 python scripts\\r25_tokyo_mumbai_evidence_deepening.py
+python scripts\\r27_zero_aware_fdr.py
 ```
 
 ## Minimum verification from included derived data
@@ -45,8 +46,10 @@ Expected summary:
 
 - Clean seismic cohort: 444 cities.
 - CI excludes zero: 319.
-- FDR-significant cities under primary Benjamini-Hochberg control: 330.
-- Stricter Benjamini-Yekutieli dependency-aware sensitivity: 261.
+- Original city-table FDR-significant cities under primary Benjamini-Hochberg control: 330.
+- Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261.
+- Zero-aware finite-Monte-Carlo FDR-sensitive cities: 311 under Benjamini-Hochberg and 245 under Benjamini-Yekutieli.
+- Zero-aware material hotspot count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.

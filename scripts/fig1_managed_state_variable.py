@@ -137,7 +137,7 @@ def main() -> None:
     ax.text(
         0.25,
         5.58,
-        "Regional storage driver -> water-table perturbation -> modelled probability change -> local follow-up gate",
+        "Regional storage driver -> water-table perturbation -> modelled probability change -> non-regulatory screening flag",
         fontsize=7.4,
         ha="left",
         va="top",
@@ -225,7 +225,7 @@ def main() -> None:
         (8.25, 2.36),
         1.62,
         0.62,
-        "Non-regulatory\nfollow-up flag",
+        "Screening-\npriority flag",
         COLORS["green_light"],
         COLORS["green"],
         6.8,

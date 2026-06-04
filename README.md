@@ -2,7 +2,7 @@
 
 This repository is the clean reproducibility package for the paper:
 
-**Regional storage-derived water-table change reshapes urban earthquake-liquefaction hazard in opposite directions**
+**Water-storage gains and losses indicate opposite liquefaction-screening priorities in seismic cities**
 
 The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but bidirectional regional shifts associated with recharge and depletion.
 
@@ -20,13 +20,15 @@ Raw third-party data, downloaded archives, active manuscripts, cover letters, re
 
 ## Core output
 
-The headline numbers are in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The final material, FDR-significant hotspot table is `data_derived/hotspot_table.csv`.
+The baseline city table is in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The zero-aware finite-Monte-Carlo FDR audit used in the current manuscript is in `data_derived/zero_aware_fdr_summary_r27.json` and `data_derived/zero_aware_fdr_city_results_r27.csv`. The material hotspot table is `data_derived/hotspot_table.csv`.
 
 Current summary:
 
 - City cohort: 444 seismically exposed cities.
-- FDR-significant detectable change under primary Benjamini-Hochberg control: 330 cities.
-- Stricter Benjamini-Yekutieli dependency-aware sensitivity: 261 cities.
+- Original city-table FDR-significant detectable change under primary Benjamini-Hochberg control: 330 cities.
+- Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261 cities.
+- Zero-aware finite-Monte-Carlo FDR-sensitive detectable change: 311 Benjamini-Hochberg cities and 245 Benjamini-Yekutieli cities.
+- Zero-aware material hotspot count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
 - Material and FDR-significant increases: 3 cities.
 - Material and FDR-significant decreases: 3 cities.
 - Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.
@@ -49,6 +51,7 @@ Current summary:
 - Spatial robustness summary: `data_derived/r20_spatial_trigger_summary.json`.
 - Metropolitan deduplication: `data_derived/metro_deduplication_r20.csv`.
 - Block-level FDR diagnostics: `data_derived/spatial_block_fdr_r20.csv`.
+- Zero-aware FDR audit: `data_derived/zero_aware_fdr_city_results_r27.csv`, `data_derived/zero_aware_fdr_summary_r27.json`.
 - Coastal robustness diagnostics: `data_derived/coastal_robustness_r20.csv`.
 - Available-driver sign checks: `data_derived/hotspot_driver_sign_robustness_r20.csv`.
 - Water-table-rise trigger table: `data_derived/water_table_trigger_r20.csv`.

@@ -1,0 +1,19 @@
+regional_setting,specific_yield,direction,n_units,n_material,median_abs_dP
+Punjab depletion,0.05,decrease,3,3,0.02654716472981418
+Punjab depletion,0.075,decrease,3,3,0.018362398361636403
+Punjab depletion,0.1,decrease,3,3,0.01402764954348884
+Punjab depletion,0.15,decrease,3,1,0.009525302057450502
+Punjab depletion,0.2,decrease,3,0,0.00720988051746306
+Punjab depletion,0.25,decrease,3,0,0.0057997488331199415
+recharge-side validation,0.05,increase,1,1,0.021894330287945296
+recharge-side validation,0.075,increase,1,1,0.017567444403292276
+recharge-side validation,0.1,increase,1,1,0.01318236006673068
+recharge-side validation,0.15,increase,1,0,0.00879230786484253
+recharge-side validation,0.2,increase,1,0,0.006595629446542239
+recharge-side validation,0.25,increase,1,0,0.005277142324523698
+western India candidate,0.05,increase,2,2,0.018957653783779504
+western India candidate,0.075,increase,2,2,0.015026608046042333
+western India candidate,0.1,increase,2,2,0.011293162044375221
+western India candidate,0.15,increase,2,0,0.007519137791447916
+western India candidate,0.2,increase,2,0,0.00563566283716041
+western India candidate,0.25,increase,2,0,0.004506739292502421

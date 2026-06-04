@@ -2,7 +2,7 @@
 
 This repository is the clean reproducibility package for the paper:
 
-**Water-storage gains and losses indicate opposite liquefaction-screening priorities in seismic cities**
+**Regional water-storage trends indicate opposing liquefaction-screening priorities in seismic cities**
 
 The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but bidirectional regional shifts associated with recharge and depletion.
 
@@ -20,7 +20,7 @@ Raw third-party data, downloaded archives, active manuscripts, cover letters, re
 
 ## Core output
 
-The baseline city table is in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The zero-aware finite-Monte-Carlo FDR audit used in the current manuscript is in `data_derived/zero_aware_fdr_summary_r27.json` and `data_derived/zero_aware_fdr_city_results_r27.csv`. The material hotspot table is `data_derived/hotspot_table.csv`.
+The baseline city table is in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The zero-aware finite-Monte-Carlo FDR audit used in the current manuscript is in `data_derived/zero_aware_fdr_summary_r27.json` and `data_derived/zero_aware_fdr_city_results_r27.csv`. The legacy material screening-unit table is `data_derived/hotspot_table.csv`.
 
 Current summary:
 
@@ -73,8 +73,11 @@ Current summary:
 - R25 CGWB access retry status: `data_derived/cgwb_access_retry_status_r25.csv`.
 - R25 Earthdata/JPL CRI runner status: `data_derived/jpl_cri_earthdata_runner_status_r25.csv`.
 - R25 updated local evidence registry and attribution matrix: `data_derived/local_groundwater_evidence_registry_r25.csv`, `data_derived/attribution_confidence_matrix_r25.csv`.
+- R28 specific-yield materiality thresholds: `data_derived/specific_yield_thresholds_r28.csv`.
+- R28 specific-yield scenario table: `data_derived/specific_yield_scenarios_r28.csv`.
+- R28 regional specific-yield materiality summary: `data_derived/specific_yield_region_summary_r28.csv`.
 
-The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material hotspots are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24/R25 local evidence upgrades Tokyo Bay/Yokohama to local and official sign-supported (Yokohama: 20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; Tokyo: 4 of 4 representative confined wells rising over 2015-2024 and 79 of 91 confined observation wells rising in the 2024 official regional summary). Mumbai-Bhayandar remains candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery and CGWB official raw endpoints were not accessible in this run.
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material screening units retain their baseline direction under 900 positive-scaling unit evaluations. The parameter-effect diagnostic identifies specific yield as the largest magnitude sensitivity factor in this deterministic grid. R28 adds unit-specific S_y* thresholds: the six CSR-material units retain |Delta P_liq| >= 0.01 only when S_y is at or below about 0.11-0.16; Beijing is sub-material across the tested range; Tokyo and Tianjin become material only at low S_y. GHSL urban-centre polygons and NASA GSFC mascons are ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material units are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24/R25 local evidence upgrades Tokyo Bay/Yokohama to local and official sign-supported (Yokohama: 20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; Tokyo: 4 of 4 representative confined wells rising over 2015-2024 and 79 of 91 confined observation wells rising in the 2024 official regional summary). Mumbai-Bhayandar remains candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery and CGWB official raw endpoints were not accessible in this run.
 
 ## Boundary of use
 

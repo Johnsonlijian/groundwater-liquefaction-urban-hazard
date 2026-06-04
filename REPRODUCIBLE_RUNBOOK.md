@@ -32,6 +32,7 @@ python scripts\\r23_product_consensus_recalibration.py
 python scripts\\r24_jpl_cri_and_local_groundwater_evidence.py
 python scripts\\r25_tokyo_mumbai_evidence_deepening.py
 python scripts\\r27_zero_aware_fdr.py
+python scripts\\r28_specific_yield_sensitivity.py
 ```
 
 ## Minimum verification from included derived data
@@ -75,6 +76,9 @@ Expected summary:
 - R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
 - R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
 - Largest hotspot-magnitude sensitivity factor in the deterministic grid: specific yield.
+- R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
+- Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
+- Tokyo/Tianjin R28 context: material only at low S_y.
 - Median +0.01 water-table-rise trigger: about 14.5 m.
 - Beijing +0.01 water-table-rise trigger: about 17.1 m.
 

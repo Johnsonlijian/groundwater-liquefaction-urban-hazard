@@ -58,6 +58,9 @@ def main() -> None:
     attribution_r25 = pd.read_csv(DER / "attribution_confidence_matrix_r25.csv")
     zero_fdr = pd.read_csv(DER / "zero_aware_fdr_city_results_r27.csv")
     zero_summary = json.loads((DER / "zero_aware_fdr_summary_r27.json").read_text(encoding="utf-8"))
+    sy_thresh = pd.read_csv(DER / "specific_yield_thresholds_r28.csv")
+    sy_scenarios = pd.read_csv(DER / "specific_yield_scenarios_r28.csv")
+    sy_region = pd.read_csv(DER / "specific_yield_region_summary_r28.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -150,6 +153,19 @@ def main() -> None:
     assert zero_summary["zero_aware_material_by"] == int(zero_fdr["material_by_zero_aware"].sum()) == 5
     assert zero_summary["material_bh_names"] == ["Yokohama", "Bhayandar", "Mumbai", "Delhi", "Lahore", "Ludhiana"]
     assert zero_summary["material_by_names"] == ["Yokohama", "Bhayandar", "Mumbai", "Lahore", "Ludhiana"]
+    assert len(sy_thresh) == 9
+    assert len(sy_scenarios) == 54
+    assert len(sy_region) >= 18
+    mat_names = {"Yokohama", "Bhayandar", "Mumbai", "Delhi", "Lahore", "Ludhiana"}
+    sy_mat = sy_thresh[sy_thresh["name"].isin(mat_names)].set_index("name")
+    assert set(sy_mat.index) == mat_names
+    assert sy_mat["sy_material_threshold"].notna().all()
+    assert sy_mat["sy_material_threshold"].between(0.10, 0.17).all()
+    assert 0.13 < float(sy_thresh.loc[sy_thresh["name"] == "Yokohama", "sy_material_threshold"].iloc[0]) < 0.14
+    assert 0.10 < float(sy_thresh.loc[sy_thresh["name"] == "Mumbai", "sy_material_threshold"].iloc[0]) < 0.11
+    assert pd.isna(sy_thresh.loc[sy_thresh["name"] == "Beijing", "sy_material_threshold"].iloc[0])
+    assert 0.08 < float(sy_thresh.loc[sy_thresh["name"] == "Tokyo", "sy_material_threshold"].iloc[0]) < 0.09
+    assert 0.07 < float(sy_thresh.loc[sy_thresh["name"] == "Tianjin", "sy_material_threshold"].iloc[0]) < 0.08
 
     for stem in [
         "Fig1_mechanism",
@@ -208,6 +224,13 @@ def main() -> None:
         f"{r25['tokyo_pdf_table5_2022']['n_positive_2022_minus_2021']}/91 positive in 2022"
     )
     print(f"R25 JPL runner status: {jpl_r25.iloc[0]['run_status']}")
+    print(
+        "R28 S_y thresholds: "
+        f"Yokohama {float(sy_thresh.loc[sy_thresh['name'] == 'Yokohama', 'sy_material_threshold'].iloc[0]):.3f}; "
+        "Beijing never material; "
+        f"Tokyo {float(sy_thresh.loc[sy_thresh['name'] == 'Tokyo', 'sy_material_threshold'].iloc[0]):.3f}; "
+        f"Tianjin {float(sy_thresh.loc[sy_thresh['name'] == 'Tianjin', 'sy_material_threshold'].iloc[0]):.3f}"
+    )
 
 
 if __name__ == "__main__":

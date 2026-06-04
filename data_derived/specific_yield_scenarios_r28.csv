@@ -1,0 +1,55 @@
+name,country,role,regional_setting,direction,specific_yield,dP,material
+Yokohama,JP,screening unit,recharge-side validation,increase,0.05,0.021894330287945296,True
+Yokohama,JP,screening unit,recharge-side validation,increase,0.075,0.017567444403292276,True
+Yokohama,JP,screening unit,recharge-side validation,increase,0.1,0.01318236006673068,True
+Yokohama,JP,screening unit,recharge-side validation,increase,0.15,0.00879230786484253,False
+Yokohama,JP,screening unit,recharge-side validation,increase,0.2,0.006595629446542239,False
+Yokohama,JP,screening unit,recharge-side validation,increase,0.25,0.005277142324523698,False
+Bhayandar,IN,screening unit,western India candidate,increase,0.05,0.02356035356785885,True
+Bhayandar,IN,screening unit,western India candidate,increase,0.075,0.015698262092384507,True
+Bhayandar,IN,screening unit,western India candidate,increase,0.1,0.011769730276460832,True
+Bhayandar,IN,screening unit,western India candidate,increase,0.15,0.007843520671101,False
+Bhayandar,IN,screening unit,western India candidate,increase,0.2,0.005881437787132515,False
+Bhayandar,IN,screening unit,western India candidate,increase,0.25,0.004704549816105963,False
+Mumbai,IN,screening unit,western India candidate,increase,0.05,0.01435495399970016,True
+Mumbai,IN,screening unit,western India candidate,increase,0.075,0.01435495399970016,True
+Mumbai,IN,screening unit,western India candidate,increase,0.1,0.01081659381228961,True
+Mumbai,IN,screening unit,western India candidate,increase,0.15,0.007194754911794832,False
+Mumbai,IN,screening unit,western India candidate,increase,0.2,0.005389887887188305,False
+Mumbai,IN,screening unit,western India candidate,increase,0.25,0.004308928768898879,False
+Delhi,IN,screening unit,Punjab depletion,decrease,0.05,-0.022174860653044942,True
+Delhi,IN,screening unit,Punjab depletion,decrease,0.075,-0.015039790798391378,True
+Delhi,IN,screening unit,Punjab depletion,decrease,0.1,-0.011376660800613142,True
+Delhi,IN,screening unit,Punjab depletion,decrease,0.15,-0.0076492370202549675,False
+Delhi,IN,screening unit,Punjab depletion,decrease,0.2,-0.005761293406501361,False
+Delhi,IN,screening unit,Punjab depletion,decrease,0.25,-0.004620746668093728,False
+Lahore,PK,screening unit,Punjab depletion,decrease,0.05,-0.02654716472981418,True
+Lahore,PK,screening unit,Punjab depletion,decrease,0.075,-0.018362398361636403,True
+Lahore,PK,screening unit,Punjab depletion,decrease,0.1,-0.01402764954348884,True
+Lahore,PK,screening unit,Punjab depletion,decrease,0.15,-0.009525302057450502,False
+Lahore,PK,screening unit,Punjab depletion,decrease,0.2,-0.00720988051746306,False
+Lahore,PK,screening unit,Punjab depletion,decrease,0.25,-0.0057997488331199415,False
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.05,-0.02756984927678316,True
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.075,-0.01974377415041658,True
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.1,-0.01535332120388333,True
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.15,-0.010614952651531874,True
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.2,-0.008108020755539375,False
+Ludhiana,IN,screening unit,Punjab depletion,decrease,0.25,-0.0065580606820205,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.05,0.0005105976948408756,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.075,0.0003382982384902526,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.1,0.0002529408037319717,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.15,0.00016810736694154726,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.2,0.0001258861701618711,False
+Beijing,CN,mechanism anchor,recharge-side validation,increase,0.25,0.00010061579465161889,False
+Tokyo,JP,regional context,recharge-side validation,increase,0.05,0.016873481799745904,True
+Tokyo,JP,regional context,recharge-side validation,increase,0.075,0.01112973800303832,True
+Tokyo,JP,regional context,recharge-side validation,increase,0.1,0.008302637258447737,False
+Tokyo,JP,regional context,recharge-side validation,increase,0.15,0.00550534296895791,False
+Tokyo,JP,regional context,recharge-side validation,increase,0.2,0.004117860641718929,False
+Tokyo,JP,regional context,recharge-side validation,increase,0.25,0.0032889406629783013,False
+Tianjin,CN,regional context,recharge-side validation,increase,0.05,0.014835812200878928,True
+Tianjin,CN,regional context,recharge-side validation,increase,0.075,0.00985132264308769,False
+Tianjin,CN,regional context,recharge-side validation,increase,0.1,0.007373635729423955,False
+Tianjin,CN,regional context,recharge-side validation,increase,0.15,0.004905788037384784,False
+Tianjin,CN,regional context,recharge-side validation,increase,0.2,0.0036755845834361422,False
+Tianjin,CN,regional context,recharge-side validation,increase,0.25,0.002938660002944682,False

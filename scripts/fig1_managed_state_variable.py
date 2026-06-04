@@ -225,7 +225,7 @@ def main() -> None:
         (8.25, 2.36),
         1.62,
         0.62,
-        "Non-regulatory\nfollow-up trigger",
+        "Non-regulatory\nfollow-up flag",
         COLORS["green_light"],
         COLORS["green"],
         6.8,

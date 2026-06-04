@@ -30,6 +30,13 @@ def main() -> None:
     signs = pd.read_csv(DER / "hotspot_driver_sign_robustness_r20.csv")
     trigger = pd.read_csv(DER / "water_table_trigger_r20.csv")
     external = pd.read_csv(DER / "external_product_status_r20.csv")
+    r21 = json.loads((DER / "r21_multi_product_polygon_summary.json").read_text(encoding="utf-8"))
+    ghsl_matches = pd.read_csv(DER / "ghsl_urban_centre_matches_r21.csv")
+    ghsl_aggregates = pd.read_csv(DER / "ghsl_urban_centre_aggregates_r21.csv")
+    hotspot_ghsl = pd.read_csv(DER / "hotspot_ghsl_polygon_robustness_r21.csv")
+    gsfc = pd.read_csv(DER / "gsfc_city_trends_r21.csv")
+    multiproduct = pd.read_csv(DER / "multi_product_sign_robustness_r21.csv")
+    r21_status = pd.read_csv(DER / "r21_external_data_status.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -64,6 +71,20 @@ def main() -> None:
     assert len(signs) == 6
     assert len(trigger) == 444
     assert set(external["status_in_this_project"]) >= {"ingested and used", "not yet ingested"}
+    assert r21["n_cities"] == 444
+    assert r21["n_ghsl_matched_cities"] == len(ghsl_matches) == 444
+    assert r21["n_ghsl_within_polygon"] == 436
+    assert r21["n_ghsl_nearest_le50km"] == 8
+    assert r21["n_material_ghsl_urban_centres"] == 5
+    assert r21["n_material_hotspots_csr_gsfc_recent_sign_match"] == 6
+    assert r21["n_material_hotspots_csr_gsfc_theilsen_sign_match"] == 6
+    assert r21["n_material_hotspots_csr_gsfc_ghsl_robust"] == 6
+    assert len(ghsl_aggregates) >= 1
+    assert len(hotspot_ghsl) == 6
+    assert len(gsfc) == 444
+    assert len(multiproduct) == 444
+    assert "auth-blocked" in str(r21["jpl_status"])
+    assert set(r21_status["status_in_this_project"]) >= {"ingested and used", "auth-blocked unless local Earthdata credentials are provided"}
 
     for stem in [
         "Fig1_mechanism",
@@ -72,6 +93,7 @@ def main() -> None:
         "Fig4_timeseries",
         "Fig5_policy_robustness",
         "Fig6_trigger_spatial_robustness",
+        "Fig7_ghsl_gsfc_robustness",
     ]:
         for ext in ["png", "svg", "pdf"]:
             assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
@@ -90,7 +112,9 @@ def main() -> None:
     print(f"Largest hotspot-magnitude sensitivity factor: {effects.iloc[0]['parameter']}")
     print(f"R20 metro/300km hotspot groups: {r20['n_material_metro_clusters_50km']}/{r20['n_material_300km_blocks']}")
     print(f"Median/Beijing +0.01 trigger: {r20['median_trigger_rise_m']:.2f}/{r20['beijing_trigger_rise_m']:.2f} m")
-    print(f"External products pending: {', '.join(r20['external_products_pending'])}")
+    print(f"GHSL matches: {r21['n_ghsl_matched_cities']}/444; material GHSL UCs: {r21['n_material_ghsl_urban_centres']}")
+    print(f"CSR-GSFC hotspot sign agreement: {r21['n_material_hotspots_csr_gsfc_recent_sign_match']}/6")
+    print(f"JPL status: {r21['jpl_status']}")
 
 
 if __name__ == "__main__":

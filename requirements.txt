@@ -2,6 +2,7 @@ numpy
 pandas
 scipy
 geopandas
+pyogrio
 xarray
 netCDF4
 matplotlib

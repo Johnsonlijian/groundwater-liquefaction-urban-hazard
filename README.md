@@ -30,8 +30,11 @@ Current summary:
 - Material and FDR-significant increases: 3 cities.
 - Material and FDR-significant decreases: 3 cities.
 - Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.
+- Material point-city hotspots after GHSL urban-centre aggregation: 5 urban centres.
 - Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
 - Positive material hotspots within 50 km of the coastline: 3 of 3.
+- GHSL R2024A polygon matches: 444/444 cities, including 436 within-polygon matches.
+- CSR-GSFC hotspot sign agreement: 6/6 material hotspots under OLS and Theil-Sen trends.
 - Cohort mean Delta P_liq: +0.00042.
 - Beijing is sign-positive but sub-material: Delta P_liq = +0.00025.
 - Extended parameter grid: `data_derived/sensitivity_grid_v2.csv`.
@@ -48,8 +51,12 @@ Current summary:
 - Available-driver sign checks: `data_derived/hotspot_driver_sign_robustness_r20.csv`.
 - Water-table-rise trigger table: `data_derived/water_table_trigger_r20.csv`.
 - Attribution-confidence matrix and external-product status: `data_derived/attribution_confidence_matrix_r20.csv`, `data_derived/external_product_status_r20.csv`.
+- GHSL urban-centre matches and aggregates: `data_derived/ghsl_urban_centre_matches_r21.csv`, `data_derived/ghsl_urban_centre_aggregates_r21.csv`.
+- GSFC independent mascon trends: `data_derived/gsfc_city_trends_r21.csv`.
+- Multi-product sign robustness: `data_derived/multi_product_sign_robustness_r21.csv`.
+- R21 external-data status: `data_derived/r21_external_data_status.csv`.
 
-The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. Independent multi-mascon coastal robustness is not claimed; JPL CRI-filtered mascons, NASA GSFC mascons and GHSL urban-centre polygons are recorded as pending follow-up products in `data_derived/external_product_status_r20.csv`.
+The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline material hotspots retain their baseline direction under 900 positive-scaling hotspot-city evaluations. The parameter-effect diagnostic identifies specific yield as the largest hotspot-magnitude sensitivity factor in this deterministic grid. GHSL urban-centre polygons and NASA GSFC mascons are now ingested and used. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims.
 
 ## Boundary of use
 

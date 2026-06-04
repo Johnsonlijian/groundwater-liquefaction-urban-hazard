@@ -1,0 +1,14 @@
+{
+  "n_cities": 444,
+  "n_ghsl_matched_cities": 444,
+  "n_ghsl_within_polygon": 436,
+  "n_ghsl_nearest_le50km": 8,
+  "n_material_point_hotspots": 6,
+  "n_material_ghsl_urban_centres": 5,
+  "n_material_hotspots_csr_gsfc_recent_sign_match": 6,
+  "n_material_hotspots_csr_gsfc_theilsen_sign_match": 6,
+  "n_material_hotspots_csr_gsfc_ghsl_robust": 6,
+  "all_city_csr_gsfc_recent_sign_agreement_fraction": 0.8040540540540541,
+  "all_city_csr_gsfc_theilsen_sign_agreement_fraction": 0.7815315315315315,
+  "jpl_status": "auth-blocked unless local Earthdata credentials are provided"
+}

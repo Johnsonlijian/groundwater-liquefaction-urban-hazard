@@ -27,6 +27,7 @@ python scripts\\groundwater_isolation.py
 python scripts\\analyze_v2.py
 python scripts\\make_nature_water_r19_figures.py
 python scripts\\r20_spatial_trigger_analysis.py
+python scripts\\r21_ghsl_gsfc_jpl_robustness.py
 ```
 
 ## Minimum verification from included derived data
@@ -46,8 +47,12 @@ Expected summary:
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city hotspots after 50 km metropolitan deduplication: 5 clusters.
+- Material point-city hotspots after GHSL urban-centre aggregation: 5 urban centres.
 - Material hotspot regions at GRACE-scale 300 km grouping: 2 regions.
 - Positive material hotspots within 50 km of the coastline: 3 of 3.
+- GHSL R2024A polygon matches: 444/444 cities.
+- CSR-GSFC hotspot sign agreement: 6/6 material hotspots.
+- JPL CRI-filtered mascon: protected by Earthdata authentication in this run.
 - Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
 - Sensitivity grid rows: 150.
 - Six-hotspot city-grid rows: 900.
@@ -80,6 +85,9 @@ Generated figures are stored under `figures/`:
 - `Fig6_trigger_spatial_robustness.png`
 - `Fig6_trigger_spatial_robustness.svg`
 - `Fig6_trigger_spatial_robustness.pdf`
+- `Fig7_ghsl_gsfc_robustness.png`
+- `Fig7_ghsl_gsfc_robustness.svg`
+- `Fig7_ghsl_gsfc_robustness.pdf`
 
 ## Guardrails
 

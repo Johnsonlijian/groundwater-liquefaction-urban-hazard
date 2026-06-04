@@ -1,0 +1,4 @@
+product_or_dataset,status_in_this_project,official_source,local_action
+GHSL Urban Centre Database R2024A,ingested and used,https://human-settlement.emergency.copernicus.eu/ghs_ucdb_2024.php,downloaded V1.1 GLOBE and MTUC packages; used GLOBE urban-centre polygons
+NASA GSFC GRACE/GRACE-FO RL06v2.0 mascon,ingested and used,https://earth.gsfc.nasa.gov/geo/data/grace-mascons,downloaded OBP/ICE6G-D half-degree NetCDF and sampled city trends
+JPL GRACE/GRACE-FO Mascon RL06.3Mv04 CRI-filtered,auth-blocked unless local Earthdata credentials are provided,https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4,CMR collection verified; no local .netrc/Earthdata credential and protected virtual HTTPS returned 403

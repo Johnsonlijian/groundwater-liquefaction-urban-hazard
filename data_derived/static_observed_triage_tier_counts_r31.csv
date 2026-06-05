@@ -1,0 +1,13 @@
+method,tier,n_point_city_units,population_million,n_increase_side,n_depletion_side,n_near_zero
+BH zero-aware,A material adjustment,6,42.936274,3,3,0
+BH zero-aware,B targeted follow-up,22,55.267641,16,6,0
+BH zero-aware,C detectable sub-material update,283,615.846344,179,104,0
+BH zero-aware,D static-routine baseline,133,280.122528,77,41,15
+BH zero-aware,A_or_B_followup,28,98.20391500000002,19,9,0
+BH zero-aware,detectable_A_B_C_update,311,714.0502590000001,198,113,0
+BY zero-aware,A material adjustment,5,31.901719,3,2,0
+BY zero-aware,B targeted follow-up,17,47.532004,12,5,0
+BY zero-aware,C detectable sub-material update,223,509.59608899999995,136,87,0
+BY zero-aware,D static-routine baseline,199,405.142975,124,60,15
+BY zero-aware,A_or_B_followup,22,79.43372300000001,15,7,0
+BY zero-aware,detectable_A_B_C_update,245,589.029812,151,94,0

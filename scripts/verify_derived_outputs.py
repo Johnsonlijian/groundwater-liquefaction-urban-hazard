@@ -63,6 +63,10 @@ def main() -> None:
     sy_region = pd.read_csv(DER / "specific_yield_region_summary_r28.csv")
     confidence_main = pd.read_csv(DER / "confidence_ledger_main_r29.csv")
     confidence_detail = pd.read_csv(DER / "confidence_ledger_detail_r29.csv")
+    r31 = json.loads((DER / "static_observed_triage_tier_summary_r31.json").read_text(encoding="utf-8"))
+    r31_change = pd.read_csv(DER / "static_observed_triage_tier_change_r31.csv")
+    r31_counts = pd.read_csv(DER / "static_observed_triage_tier_counts_r31.csv")
+    r31_wtd = pd.read_csv(DER / "static_observed_wtd_proxy_crossings_r31.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -184,6 +188,20 @@ def main() -> None:
         "low-contradictory",
         "high mechanism support",
     }
+    assert r31["n_cities"] == len(r31_change) == 444
+    assert r31["bh_ab_followup_units"] == int(r31_change["ab_followup_bh"].sum()) == 28
+    assert r31["bh_a_material_units"] == int((r31_change["observed_tier_bh"] == "A material adjustment").sum()) == 6
+    assert r31["bh_b_targeted_units"] == int((r31_change["observed_tier_bh"] == "B targeted follow-up").sum()) == 22
+    assert r31["bh_detectable_a_b_c_units"] == int(r31_change["detectable_update_bh"].sum()) == 311
+    assert r31["bh_ab_increase_side"] == int(((r31_change["ab_followup_bh"]) & (r31_change["direction_side"] == "increase-side")).sum()) == 19
+    assert r31["bh_ab_depletion_side"] == int(((r31_change["ab_followup_bh"]) & (r31_change["direction_side"] == "depletion-side")).sum()) == 9
+    assert r31["by_ab_followup_units"] == int(r31_change["ab_followup_by"].sum()) == 22
+    assert r31["by_a_material_units"] == int((r31_change["observed_tier_by"] == "A material adjustment").sum()) == 5
+    assert r31["by_b_targeted_units"] == int((r31_change["observed_tier_by"] == "B targeted follow-up").sum()) == 17
+    assert len(r31_counts) == 12
+    assert r31["wtd_proxy_crossing_units_sy010"] == len(r31_wtd) == 14
+    assert r31["wtd_proxy_becomes_shallow_units_sy010"] == int((r31_wtd["shallow_proxy_crossing_direction"] == "becomes_shallow_proxy").sum()) == 5
+    assert r31["wtd_proxy_leaves_shallow_units_sy010"] == int((r31_wtd["shallow_proxy_crossing_direction"] == "leaves_shallow_proxy").sum()) == 9
 
     for stem in [
         "Fig1_mechanism",
@@ -222,6 +240,19 @@ def main() -> None:
     print(f"CSR-GSFC hotspot sign agreement: {r21['n_material_hotspots_csr_gsfc_recent_sign_match']}/6")
     print(f"R23 GSFC-material hotspots: {r23['n_gsfc_material_hotspots']}/6; positive GSFC-material: {r23['n_positive_gsfc_material_hotspots']}/3")
     print(f"R29 confidence ledger rows: main={len(confidence_main)}, detail={len(confidence_detail)}")
+    print(
+        "R31 static-counterfactual A/B follow-up units: "
+        f"BH={r31['bh_ab_followup_units']} "
+        f"({r31['bh_a_material_units']} material, {r31['bh_b_targeted_units']} targeted; "
+        f"{r31['bh_ab_increase_side']} increase-side, {r31['bh_ab_depletion_side']} depletion-side); "
+        f"BY={r31['by_ab_followup_units']}"
+    )
+    print(
+        "R31 WTD proxy crossings at S_y=0.10: "
+        f"{r31['wtd_proxy_crossing_units_sy010']} total; "
+        f"{r31['wtd_proxy_becomes_shallow_units_sy010']} becomes shallow, "
+        f"{r31['wtd_proxy_leaves_shallow_units_sy010']} leaves shallow"
+    )
     print(f"JPL status: {r21['jpl_status']}")
     print(f"R24 JPL CRI status: {r24['jpl_cri_status']}; collection: {jpl_r24.iloc[0]['collection_id']}")
     print(

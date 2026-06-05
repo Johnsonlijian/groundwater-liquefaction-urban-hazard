@@ -34,6 +34,7 @@ python scripts\\r25_tokyo_mumbai_evidence_deepening.py
 python scripts\\r27_zero_aware_fdr.py
 python scripts\\r28_specific_yield_sensitivity.py
 python scripts\\r29_submission_polish_tables.py
+python scripts\\r31_static_observed_triage_change.py
 ```
 
 ## Minimum verification from included derived data
@@ -52,6 +53,8 @@ Expected summary:
 - Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261.
 - Zero-aware finite-Monte-Carlo FDR-sensitive cities: 311 under Benjamini-Hochberg and 245 under Benjamini-Yekutieli.
 - Zero-aware material screening-unit count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
+- R31 static-counterfactual A/B follow-up units: 28 under zero-aware Benjamini-Hochberg and 22 under zero-aware Benjamini-Yekutieli.
+- R31 static-counterfactual A/B split under zero-aware Benjamini-Hochberg: 6 material and 22 targeted units; 19 increase-side and 9 depletion-side units.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.

@@ -14,6 +14,7 @@ from the GRACE-derived city values.
 from __future__ import annotations
 
 import sys
+import subprocess
 from pathlib import Path
 
 import geopandas as gpd
@@ -246,7 +247,7 @@ def build_supplementary_tables(cohort: pd.DataFrame) -> tuple[pd.DataFrame, pd.D
 
 def fig1_mechanism() -> None:
     fig, axes = plt.subplots(1, 2, figsize=(11.8, 5.2))
-    fig.suptitle("Groundwater management changes the water-table term in liquefaction screening", fontsize=11.5, fontweight="bold")
+    fig.suptitle("Static water-table baseline corrected by observed regional storage change", fontsize=11.5, fontweight="bold")
 
     specs = [
         {
@@ -475,19 +476,19 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
         spine.set_linewidth(0.55)
 
     cb = fig.colorbar(sc, ax=ax, shrink=0.62, pad=0.01, extend="both")
-    cb.set_label("Delta screening index\nfrom storage-derived change", fontsize=8.5)
+    cb.set_label("Delta screening index\nfrom storage-derived WTD correction, 2015-2024", fontsize=8.5)
     for p, lab in [(1e6, "1M"), (5e6, "5M"), (15e6, "15M")]:
         ax.scatter([], [], s=10 + 95 * np.sqrt(p / d["population"].max()), c="#9aa0a6", edgecolors="k", linewidths=0.25, label=lab)
     ax.legend(title="City population", loc="lower left", fontsize=7.2, title_fontsize=7.4, labelspacing=1.0)
     ax.set_title(
-        "Global screen shows regional, bidirectional shifts rather than a diffuse worldwide increase",
+        "Geographic null not rejected: no diffuse global increase",
         fontsize=9.8,
         fontweight="bold",
     )
     ax.text(
         0.5,
         -0.04,
-        "Six material and FDR-significant screening units are ringed; South Asia units are labelled in the inset. GRACE/GRACE-FO is a regional driver; cities are exposure units.",
+        "Observed mean |Delta P_liq| = 0.00124; reassignment-null p = 1.00. Ringed units are direction-specific CSR-material screens; cities are exposure units.",
         transform=ax.transAxes,
         ha="center",
         va="top",
@@ -743,6 +744,9 @@ def main() -> None:
     fig3_regional(cohort)
     fig4_timeseries()
     fig5_policy_robustness(cohort, grid, envelope, effects)
+    # R28 owns the current four-panel Fig. 5. Keep this call last so rerunning
+    # the R19 bundle cannot silently restore the older three-panel Fig. 5.
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "r28_specific_yield_sensitivity.py")], check=True)
     print("R19 figure upgrade complete.")
     print("Sensitivity combinations:", len(grid))
     print("Hotspot city-grid rows:", len(city_grid))

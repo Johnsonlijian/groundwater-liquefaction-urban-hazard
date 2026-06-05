@@ -1,10 +1,10 @@
-# Regional water-storage trends and liquefaction-screening priorities
+# Regional water-storage trends and static liquefaction-screen correction
 
 This repository is the clean reproducibility package for the paper:
 
-**Regional water-storage trends define bidirectional liquefaction-screening priorities in seismic cities**
+**Regional water-storage trends flag directional bias in static water-table liquefaction screens for seismically exposed cities**
 
-The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but bidirectional regional shifts associated with recharge and depletion.
+The analysis couples observed GRACE/GRACE-FO terrestrial-water-storage change to the water-table term of a published global liquefaction model for seismically exposed cities. It perturbs only the storage-derived water-table driver and reports a bounded, regional screening result: no diffuse global increase, but sign-resolved regional corrections to static water-table screening assumptions.
 
 ## What is included
 
@@ -20,7 +20,7 @@ Raw third-party data, downloaded archives, active manuscripts, cover letters, re
 
 ## Core output
 
-The baseline city table is in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The zero-aware finite-Monte-Carlo FDR audit used in the current manuscript is in `data_derived/zero_aware_fdr_summary_r27.json` and `data_derived/zero_aware_fdr_city_results_r27.csv`. The legacy material screening-unit table is `data_derived/hotspot_table.csv`.
+The baseline city table is in `data_derived/core_summary_v2.json` and `data_derived/city_results_v2.csv`. The zero-aware finite-Monte-Carlo FDR audit used in the current manuscript is in `data_derived/zero_aware_fdr_summary_r27.json` and `data_derived/zero_aware_fdr_city_results_r27.csv`. The static-counterfactual diagnostic introduced in R31 is in `data_derived/static_observed_triage_tier_summary_r31.json`, `data_derived/static_observed_triage_tier_change_r31.csv`, `data_derived/static_observed_triage_tier_counts_r31.csv` and `data_derived/static_observed_wtd_proxy_crossings_r31.csv`. The legacy material screening-unit table is `data_derived/hotspot_table.csv`.
 
 Current summary:
 
@@ -29,6 +29,10 @@ Current summary:
 - Original stricter Benjamini-Yekutieli dependency-aware sensitivity: 261 cities.
 - Zero-aware finite-Monte-Carlo FDR-sensitive detectable change: 311 Benjamini-Hochberg cities and 245 Benjamini-Yekutieli cities.
 - Zero-aware material screening-unit count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
+- Static-counterfactual A/B follow-up units under zero-aware Benjamini-Hochberg: 28 point-city exposure units.
+- Static-counterfactual material/targeted split: 6 material and 22 targeted units.
+- Static-counterfactual A/B direction split: 19 increase-side and 9 depletion-side units.
+- Static-counterfactual Benjamini-Yekutieli sensitivity: 22 A/B follow-up units, including 5 material and 17 targeted units.
 - Material and FDR-significant increases: 3 cities.
 - Material and FDR-significant decreases: 3 cities.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
@@ -78,6 +82,7 @@ Current summary:
 - R28 regional specific-yield materiality summary: `data_derived/specific_yield_region_summary_r28.csv`.
 - R29 main-text confidence ledger: `data_derived/confidence_ledger_main_r29.csv`.
 - R29 detailed evidence-confidence ledger: `data_derived/confidence_ledger_detail_r29.csv`.
+- R31 static-counterfactual triage diagnostics: `data_derived/static_observed_triage_tier_summary_r31.json`, `data_derived/static_observed_triage_tier_change_r31.csv`, `data_derived/static_observed_triage_tier_counts_r31.csv`, `data_derived/static_observed_wtd_proxy_crossings_r31.csv`.
 
 The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and storage-trend magnitude. The number of cities crossing the material threshold changes across that grid, but the six baseline CSR-material screening units retain their baseline direction under 900 positive-scaling unit evaluations. The parameter-effect diagnostic identifies specific yield as the largest magnitude sensitivity factor in this deterministic grid. R28 adds unit-specific S_y* thresholds: the six CSR-material units retain |Delta P_liq| >= 0.01 only when S_y is at or below about 0.11-0.16; Beijing is sub-material across the tested range; Tokyo and Tianjin become material only at low S_y. R29 repackages the evidence hierarchy as a six-row main-text confidence ledger plus a seven-row detailed ledger that adds the Beijing mechanism anchor. GHSL urban-centre polygons and NASA GSFC mascons are ingested and used. GSFC is interpreted as an independent sign check, not as proof that all CSR-material units are material under another product. JPL CRI-filtered mascons remain an Earthdata-authentication boundary and are not used for claims. R24/R25 local evidence upgrades Tokyo Bay/Yokohama to local and official sign-supported (Yokohama: 20 of 23 trend-qualified municipal wells rising over 2015/04-2025/03; Tokyo: 4 of 4 representative confined wells rising over 2015-2024 and 79 of 91 confined observation wells rising in the 2024 official regional summary). Mumbai-Bhayandar remains candidate-only because DOI-verified Mumbai station evidence points toward groundwater-depth increase/depletion rather than positive recovery and CGWB official raw endpoints were not accessible in this run.
 

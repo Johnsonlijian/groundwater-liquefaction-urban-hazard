@@ -67,6 +67,14 @@ def main() -> None:
     r31_change = pd.read_csv(DER / "static_observed_triage_tier_change_r31.csv")
     r31_counts = pd.read_csv(DER / "static_observed_triage_tier_counts_r31.csv")
     r31_wtd = pd.read_csv(DER / "static_observed_wtd_proxy_crossings_r31.csv")
+    r33 = json.loads((DER / "statistical_object_audit_summary_r33.json").read_text(encoding="utf-8"))
+    r33_blocks = pd.read_csv(DER / "spatial_block_fdr_zero_aware_r33.csv")
+    r33_downstream = pd.read_csv(DER / "zero_aware_downstream_audit_r33.csv")
+    r33_materiality = pd.read_csv(DER / "materiality_uncertainty_table_r33.csv")
+    r33_independence = pd.read_csv(DER / "independence_scale_counts_r33.csv")
+    r33_product = pd.read_csv(DER / "product_support_table_r33.csv")
+    r33_product_summary = pd.read_csv(DER / "product_support_summary_r33.csv")
+    r33_local = pd.read_csv(DER / "local_evidence_sign_tests_r33.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -202,6 +210,40 @@ def main() -> None:
     assert r31["wtd_proxy_crossing_units_sy010"] == len(r31_wtd) == 14
     assert r31["wtd_proxy_becomes_shallow_units_sy010"] == int((r31_wtd["shallow_proxy_crossing_direction"] == "becomes_shallow_proxy").sum()) == 5
     assert r31["wtd_proxy_leaves_shallow_units_sy010"] == int((r31_wtd["shallow_proxy_crossing_direction"] == "leaves_shallow_proxy").sum()) == 9
+    assert r33["zero_aware_city_fdr_count"] == 311
+    assert r33["zero_aware_city_material_bh_count"] == 6
+    assert r33["zero_aware_city_material_by_count"] == 5
+    assert r33["zero_aware_block_fdr_counts"]["csr_grid_cell"] == int(
+        r33_blocks.loc[r33_blocks["block_type"] == "csr_grid_cell", "block_fdr_bh_zero_aware"].sum()
+    ) == 276
+    assert r33["zero_aware_block_fdr_counts"]["grace_scale_300km"] == int(
+        r33_blocks.loc[r33_blocks["block_type"] == "grace_scale_300km", "block_fdr_bh_zero_aware"].sum()
+    ) == 67
+    downstream_lookup = r33_downstream.set_index("diagnostic")["zero_aware_count"].to_dict()
+    assert int(downstream_lookup["static_counterfactual_A_B_followup"]) == 28
+    assert len(r33_materiality) == 6
+    assert set(r33_materiality["name"]) == mat_names
+    assert r33_materiality["mc_pr_abs_delta_p_ge_0p01"].between(0.29, 0.56).all()
+    assert 0.29 < r33["hotspot_materiality_probability_range"]["min"] < 0.31
+    assert 0.54 < r33["hotspot_materiality_probability_range"]["max"] < 0.56
+    bh_005 = r33_independence[
+        (r33_independence["method"] == "BH zero-aware")
+        & (r33_independence["abs_delta_p_threshold"] == 0.005)
+    ].iloc[0]
+    assert int(bh_005["n_point_city_units"]) == 28
+    assert int(bh_005["n_50km_metro_clusters"]) == 21
+    assert int(bh_005["n_ghsl_urban_centres"]) == 22
+    assert int(bh_005["n_300km_regional_groups"]) == 10
+    assert int(bh_005["largest_300km_group_n_point_cities"]) == 17
+    prod_summary = r33_product_summary.set_index("metric")["count"].to_dict()
+    assert int(prod_summary["GSFC direction match"]) == 6
+    assert int(prod_summary["GSFC statistical sign support p<0.05"]) == 4
+    assert int(prod_summary["GSFC material support"]) == 1
+    assert int(prod_summary["positive coastal GSFC material support"]) == 0
+    assert len(r33_product) == 6
+    assert len(r33_local) == 5
+    assert int(r33_local.loc[r33_local["evidence_layer"].str.startswith("Yokohama"), "n_positive_or_rising"].iloc[0]) == 20
+    assert int(r33_local.loc[r33_local["evidence_layer"] == "ministry_2024_regional_summary", "n_positive_or_rising"].iloc[0]) == 79
 
     for stem in [
         "Fig1_mechanism",
@@ -252,6 +294,24 @@ def main() -> None:
         f"{r31['wtd_proxy_crossing_units_sy010']} total; "
         f"{r31['wtd_proxy_becomes_shallow_units_sy010']} becomes shallow, "
         f"{r31['wtd_proxy_leaves_shallow_units_sy010']} leaves shallow"
+    )
+    print(
+        "R33 independence-scale audit: "
+        f"{int(bh_005['n_point_city_units'])} point-city A/B units; "
+        f"{int(bh_005['n_50km_metro_clusters'])} metro clusters; "
+        f"{int(bh_005['n_ghsl_urban_centres'])} GHSL centres; "
+        f"{int(bh_005['n_300km_regional_groups'])} 300-km groups"
+    )
+    print(
+        "R33 product support: "
+        f"direction match {int(prod_summary['GSFC direction match'])}/6; "
+        f"p<0.05 sign support {int(prod_summary['GSFC statistical sign support p<0.05'])}/6; "
+        f"GSFC-material {int(prod_summary['GSFC material support'])}/6"
+    )
+    print(
+        "R33 materiality probabilities under S_y prior: "
+        f"{r33['hotspot_materiality_probability_range']['min']:.2f}-"
+        f"{r33['hotspot_materiality_probability_range']['max']:.2f}"
     )
     print(f"JPL status: {r21['jpl_status']}")
     print(f"R24 JPL CRI status: {r24['jpl_cri_status']}; collection: {jpl_r24.iloc[0]['collection_id']}")

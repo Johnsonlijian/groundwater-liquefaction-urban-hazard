@@ -1,0 +1,55 @@
+{
+  "finite_monte_carlo_draws": 4000,
+  "rng_seed": 20260603,
+  "zero_aware_city_fdr_count": 311,
+  "zero_aware_city_material_bh_count": 6,
+  "zero_aware_city_material_by_count": 5,
+  "zero_aware_block_fdr_counts": {
+    "csr_grid_cell": 276,
+    "grace_scale_300km": 67
+  },
+  "ab_followup_bh_threshold_0p005": {
+    "n_point_city_units": 28,
+    "n_50km_metro_clusters": 21,
+    "n_ghsl_urban_centres": 22,
+    "n_300km_regional_groups": 10,
+    "n_increase_side": 19,
+    "n_depletion_side": 9,
+    "largest_300km_group_n_point_cities": 17
+  },
+  "product_support_counts": {
+    "CSR-material baseline units": {
+      "count": 6,
+      "denominator": 6
+    },
+    "GSFC direction match": {
+      "count": 6,
+      "denominator": 6
+    },
+    "GSFC statistical sign support p<0.05": {
+      "count": 4,
+      "denominator": 6
+    },
+    "GSFC material support": {
+      "count": 1,
+      "denominator": 6
+    },
+    "positive coastal GSFC material support": {
+      "count": 0,
+      "denominator": 3
+    }
+  },
+  "hotspot_materiality_probability_range": {
+    "min": 0.29675,
+    "max": 0.549
+  },
+  "outputs": [
+    "spatial_block_fdr_zero_aware_r33.csv",
+    "zero_aware_downstream_audit_r33.csv",
+    "materiality_uncertainty_table_r33.csv",
+    "independence_scale_counts_r33.csv",
+    "product_support_table_r33.csv",
+    "product_support_summary_r33.csv",
+    "local_evidence_sign_tests_r33.csv"
+  ]
+}

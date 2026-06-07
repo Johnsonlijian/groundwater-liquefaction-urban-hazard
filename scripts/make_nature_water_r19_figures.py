@@ -246,8 +246,48 @@ def build_supplementary_tables(cohort: pd.DataFrame) -> tuple[pd.DataFrame, pd.D
 
 
 def fig1_mechanism() -> None:
-    fig, axes = plt.subplots(1, 2, figsize=(11.8, 5.2))
+    fig = plt.figure(figsize=(11.8, 6.2))
+    gs = fig.add_gridspec(2, 2, height_ratios=[0.62, 4.9], hspace=0.08, wspace=0.12)
+    flow_ax = fig.add_subplot(gs[0, :])
+    axes = [fig.add_subplot(gs[1, 0]), fig.add_subplot(gs[1, 1])]
     fig.suptitle("Static water-table baseline corrected by observed regional storage change", fontsize=11.5, fontweight="bold")
+
+    flow_ax.set_axis_off()
+    flow_steps = [
+        ("Static WTD baseline", "Fan et al. layer"),
+        ("Regional storage trend", "GRACE/GRACE-FO ~300 km"),
+        ("Delta WTD", "Delta TWS / S_y"),
+        ("Water-table term only", "Zhu et al. screen"),
+        ("Follow-up flag", "local wells + sediments"),
+    ]
+    x_positions = np.linspace(0.09, 0.91, len(flow_steps))
+    for i, ((title, sub), x) in enumerate(zip(flow_steps, x_positions)):
+        flow_ax.add_patch(
+            FancyBboxPatch(
+                (x - 0.070, 0.23),
+                0.140,
+                0.50,
+                transform=flow_ax.transAxes,
+                boxstyle="round,pad=0.02",
+                facecolor="#f7f7f7",
+                edgecolor="#c9c9c9",
+                lw=0.9,
+            )
+        )
+        flow_ax.text(x, 0.58, title, transform=flow_ax.transAxes, ha="center", va="center", fontsize=7.6, fontweight="bold", color=INK)
+        flow_ax.text(x, 0.39, sub, transform=flow_ax.transAxes, ha="center", va="center", fontsize=6.4, color="#555555")
+        if i < len(flow_steps) - 1:
+            flow_ax.add_patch(
+                FancyArrowPatch(
+                    (x + 0.078, 0.48),
+                    (x_positions[i + 1] - 0.078, 0.48),
+                    transform=flow_ax.transAxes,
+                    arrowstyle="-|>",
+                    mutation_scale=9,
+                    lw=0.9,
+                    color="#777777",
+                )
+            )
 
     specs = [
         {
@@ -255,14 +295,14 @@ def fig1_mechanism() -> None:
             "case": "North China Plain / Beijing",
             "color": RED,
             "new_wt_shift": 1.55,
-            "risk": "P_liq increases",
+            "risk": "screening index\nincreases",
             "action": "Liquefaction monitoring",
             "steps": [
                 "water table rises",
                 "pore pressure u increases",
                 "effective stress decreases",
                 "liquefaction resistance decreases",
-                "modelled P_liq increases",
+                "screening index increases",
             ],
         },
         {
@@ -270,13 +310,13 @@ def fig1_mechanism() -> None:
             "case": "Punjab / Delhi-Lahore-Ludhiana",
             "color": BLUE,
             "new_wt_shift": -1.55,
-            "risk": "P_liq decreases, but subsidence risk rises",
+            "risk": "index decreases;\nsubsidence risk rises",
             "action": "Subsidence + water-security audit",
             "steps": [
                 "water table deepens",
                 "pore pressure u decreases",
                 "effective stress increases",
-                "modelled P_liq decreases",
+                "screening index decreases",
                 "subsidence and scarcity remain",
             ],
         },
@@ -327,7 +367,7 @@ def fig1_mechanism() -> None:
 
         ax.add_patch(
             FancyBboxPatch(
-                (0.60, 0.24),
+                (0.57, 0.24),
                 0.36,
                 0.105,
                 transform=ax.transAxes,
@@ -338,12 +378,12 @@ def fig1_mechanism() -> None:
                 lw=1.0,
             )
         )
-        ax.text(0.78, 0.292, spec["risk"], transform=ax.transAxes, ha="center", va="center", fontsize=8.1, color=spec["color"], fontweight="bold")
+        ax.text(0.75, 0.292, spec["risk"], transform=ax.transAxes, ha="center", va="center", fontsize=6.8, color=spec["color"], fontweight="bold", linespacing=1.05)
 
         ax.add_patch(
             FancyBboxPatch(
-                (0.58, 0.04),
-                0.39,
+                (0.55, 0.04),
+                0.38,
                 0.13,
                 transform=ax.transAxes,
                 boxstyle="round,pad=0.02",
@@ -352,8 +392,8 @@ def fig1_mechanism() -> None:
                 lw=1.2,
             )
         )
-        ax.text(0.775, 0.118, "Water-agency trigger", transform=ax.transAxes, ha="center", fontsize=7.0, color="#555555")
-        ax.text(0.775, 0.072, spec["action"], transform=ax.transAxes, ha="center", fontsize=8.2, color=spec["color"], fontweight="bold")
+        ax.text(0.74, 0.118, "Water-agency trigger", transform=ax.transAxes, ha="center", fontsize=6.8, color="#555555")
+        ax.text(0.74, 0.072, spec["action"], transform=ax.transAxes, ha="center", fontsize=7.1, color=spec["color"], fontweight="bold")
 
     fig.text(
         0.5,
@@ -363,7 +403,7 @@ def fig1_mechanism() -> None:
         fontsize=7.6,
         color="#555555",
     )
-    fig.tight_layout(rect=[0, 0.04, 1, 0.94])
+    fig.tight_layout(rect=[0, 0.04, 1, 0.93])
     save_figure(fig, "Fig1_mechanism")
 
 

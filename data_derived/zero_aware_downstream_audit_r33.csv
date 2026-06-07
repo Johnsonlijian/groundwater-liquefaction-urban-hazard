@@ -1,0 +1,7 @@
+diagnostic,old_field,old_count,zero_aware_field,zero_aware_count,interpretation
+city_fdr_detectable,fdr_sig,330.0,fdr_bh_zero_aware,311,finite Monte Carlo exact-zero rows assigned p=1 and zero counts add-one corrected
+city_material_bh,fdr_sig & |Delta P|>=0.01,6.0,material_bh_zero_aware,6,baseline material count after zero-aware p-value handling
+city_material_by,not reported as primary,,material_by_zero_aware,5,dependency-aware sensitivity retained as stricter guardrail
+csr_grid_cell_block_fdr,R20 Simes/BH using raw p_two,291.0,R33 Simes/BH using p_two_zero_aware,276,spatial block FDR should use the same zero-aware city p-values as downstream city diagnostics
+grace_scale_300km_block_fdr,R20 Simes/BH using raw p_two,69.0,R33 Simes/BH using p_two_zero_aware,67,spatial block FDR should use the same zero-aware city p-values as downstream city diagnostics
+static_counterfactual_A_B_followup,not applicable in static counterfactual,0.0,R31 observed_tier_bh A/B,28,non-regulatory operational payload; not a hazard-class transition

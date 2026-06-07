@@ -187,6 +187,23 @@ def build_tables() -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
         on=["name", "country", "lat", "lon"],
         validate="one_to_one",
     )
+    wtd = rounded_key(wtd).merge(
+        zero[
+            [
+                "name",
+                "country",
+                "dP_key",
+                "dP_lo_key",
+                "dP_hi_key",
+                "p_two_zero_aware",
+                "fdr_bh_zero_aware",
+                "fdr_by_zero_aware",
+            ]
+        ],
+        on=["name", "country", "dP_key", "dP_lo_key", "dP_hi_key"],
+        how="left",
+        validate="one_to_one",
+    )
     wtd["static_shallow_wtd_proxy_le_10m"] = wtd["wtd"] <= 10
     wtd["observed_wtd_sy010"] = np.maximum(
         wtd["wtd"] - wtd["recent_cumulative_water_table_rise_m_sy010"], 0.0
@@ -220,7 +237,9 @@ def build_tables() -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
         "shallow_proxy_crossing",
         "shallow_proxy_crossing_direction",
         "dP",
-        "fdr_sig",
+        "p_two_zero_aware",
+        "fdr_bh_zero_aware",
+        "fdr_by_zero_aware",
     ]
     wtd_crossings = wtd.loc[wtd["shallow_proxy_crossing"], wtd_cols].sort_values(
         "recent_cumulative_water_table_rise_m_sy010", ascending=False

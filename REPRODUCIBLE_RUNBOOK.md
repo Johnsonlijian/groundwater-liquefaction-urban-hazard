@@ -35,6 +35,8 @@ python scripts\\r27_zero_aware_fdr.py
 python scripts\\r28_specific_yield_sensitivity.py
 python scripts\\r29_submission_polish_tables.py
 python scripts\\r31_static_observed_triage_change.py
+python scripts\\r33_statistical_object_audit.py
+python scripts\\r32_decision_synthesis_fig7.py
 ```
 
 ## Minimum verification from included derived data
@@ -55,6 +57,11 @@ Expected summary:
 - Zero-aware material screening-unit count: 6 under Benjamini-Hochberg and 5 under Benjamini-Yekutieli.
 - R31 static-counterfactual A/B follow-up units: 28 under zero-aware Benjamini-Hochberg and 22 under zero-aware Benjamini-Yekutieli.
 - R31 static-counterfactual A/B split under zero-aware Benjamini-Hochberg: 6 material and 22 targeted units; 19 increase-side and 9 depletion-side units.
+- R33 independence-scale audit for those 28 A/B point-city units: 21 50 km metropolitan clusters, 22 GHSL urban centres and 10 GRACE-scale 300 km regional groups.
+- R33 zero-aware block FDR counts: 276 CSR grid-cell blocks and 67 GRACE-scale 300 km blocks.
+- R33 GSFC statistical sign support: 4/6 CSR-material baseline units at p < 0.05.
+- R33 GSFC material support: 1/6 CSR-material baseline units; positive coastal GSFC material support: 0/3.
+- R33 Monte Carlo materiality probabilities for the six baseline CSR-material units under the stated S_y prior: 0.30-0.55.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.

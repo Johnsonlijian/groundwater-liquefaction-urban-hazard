@@ -37,6 +37,7 @@ python scripts\\r29_submission_polish_tables.py
 python scripts\\r31_static_observed_triage_change.py
 python scripts\\r33_statistical_object_audit.py
 python scripts\\r32_decision_synthesis_fig7.py
+python scripts\\r34_reference_claim_journal_audit.py
 ```
 
 ## Minimum verification from included derived data
@@ -62,6 +63,8 @@ Expected summary:
 - R33 GSFC statistical sign support: 4/6 CSR-material baseline units at p < 0.05.
 - R33 GSFC material support: 1/6 CSR-material baseline units; positive coastal GSFC material support: 0/3.
 - R33 Monte Carlo materiality probabilities for the six baseline CSR-material units under the stated S_y prior: 0.30-0.55.
+- R34 source registry and claim-evidence map present at repository root.
+- R34 reference audit covers 36 manuscript references: 28 Crossref-verified, 3 DOI-resolver verified, 4 URL-reachable, and 1 CSR dataset DOI target-page warning.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.

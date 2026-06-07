@@ -75,6 +75,7 @@ def main() -> None:
     r33_product = pd.read_csv(DER / "product_support_table_r33.csv")
     r33_product_summary = pd.read_csv(DER / "product_support_summary_r33.csv")
     r33_local = pd.read_csv(DER / "local_evidence_sign_tests_r33.csv")
+    r34_ref = pd.read_csv(ROOT / "docs" / "Reference_Audit_R34.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -244,6 +245,14 @@ def main() -> None:
     assert len(r33_local) == 5
     assert int(r33_local.loc[r33_local["evidence_layer"].str.startswith("Yokohama"), "n_positive_or_rising"].iloc[0]) == 20
     assert int(r33_local.loc[r33_local["evidence_layer"] == "ministry_2024_regional_summary", "n_positive_or_rising"].iloc[0]) == 79
+    assert (ROOT / "02_source_registry.md").exists()
+    assert (ROOT / "03_claim_evidence_map.md").exists()
+    assert (ROOT / "docs" / "Reference_Audit_R34.md").exists()
+    assert len(r34_ref) == 36
+    assert int((r34_ref["status"] == "verified_crossref").sum()) == 28
+    assert int((r34_ref["status"] == "verified_doi_resolves").sum()) == 3
+    assert int((r34_ref["status"] == "verified_url_reachable").sum()) == 4
+    assert int((r34_ref["status"] == "warning_doi_target").sum()) == 1
 
     for stem in [
         "Fig1_mechanism",
@@ -312,6 +321,12 @@ def main() -> None:
         "R33 materiality probabilities under S_y prior: "
         f"{r33['hotspot_materiality_probability_range']['min']:.2f}-"
         f"{r33['hotspot_materiality_probability_range']['max']:.2f}"
+    )
+    print(
+        "R34 reference audit: "
+        f"{len(r34_ref)} references; "
+        f"{int((r34_ref['status'] == 'verified_crossref').sum())} Crossref; "
+        f"{int((r34_ref['status'] == 'warning_doi_target').sum())} DOI target warning"
     )
     print(f"JPL status: {r21['jpl_status']}")
     print(f"R24 JPL CRI status: {r24['jpl_cri_status']}; collection: {jpl_r24.iloc[0]['collection_id']}")

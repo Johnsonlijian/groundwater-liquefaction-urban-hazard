@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper and archived release."
-title: "Regional water-storage trends reveal directional bias in static liquefaction screens"
+title: "Regional water-storage change creates bidirectional liquefaction-screening priorities in seismic cities"
 authors:
   - family-names: Ren
     given-names: Lijian
     affiliation: Inner Mongolia University of Technology
 repository-code: "https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard"
-date-released: 2026-06-07
-version: "0.4.0-submission-prep"
+date-released: 2026-06-08
+version: "0.5.0-submission-prep"
 license: MIT
 doi: "10.5281/zenodo.TO-BE-MINTED"

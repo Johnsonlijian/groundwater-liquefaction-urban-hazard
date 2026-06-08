@@ -74,7 +74,7 @@ Expected summary:
 - R37 CSR-GFZ leakage-adjusted sign agreement: 69.1% across all cities and 6/6 CSR-material units.
 - R37 GFZ-material counts at S_y = 0.10: 14 all-city raw TWS units and 33 all-city leakage-adjusted units; these are stress-test diagnostics, not replacement main results.
 - R37 engineering-context enrichment: low Vs30, near-water proximity, at least two proxies and at least three proxies pass one-sided Fisher tests; high PGA and shallow WTD alone are not used as enrichment claims.
-- R37 policy protocol tables present: `preimplementation_policy_protocol_r37.csv`, `regional_validation_scorecard_r37.csv`, and `external_collaborator_role_matrix_r37.csv`.
+- R37 policy protocol tables present: `preimplementation_policy_protocol_r37.csv`, `regional_evidence_scorecard_r37.csv`, and `external_collaborator_role_matrix_r37.csv`.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.

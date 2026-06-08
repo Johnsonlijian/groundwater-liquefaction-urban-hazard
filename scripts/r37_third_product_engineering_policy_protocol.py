@@ -832,7 +832,7 @@ def make_supplementary_figure_s4(material: pd.DataFrame, enrichment: pd.DataFram
     )
 
     fig.suptitle(
-        "Evidence-gated upgrade from regional storage signal to local review",
+        "Evidence-gated path from regional storage signal to local review",
         x=0.02,
         y=1.03,
         ha="left",

@@ -4,7 +4,7 @@ This package supports a directional screening analysis.
 
 ## Supported claims
 
-- Observed groundwater change creates regional, bidirectional shifts in the modelled liquefaction-screening index.
+- Observed groundwater change exposes regional, bidirectional shifts in the modelled liquefaction-screening index.
 - The global mean response across the screened city cohort is near zero.
 - Six point-city exposure units are both material under the chosen threshold and FDR-significant in the recent-window analysis.
 - The six baseline material screening units keep their direction across the reported 150-combination sensitivity grid and 900 unit evaluations.
@@ -17,7 +17,7 @@ This package supports a directional screening analysis.
 - Liquefaction hazard is increasing everywhere.
 - GRACE/GRACE-FO resolves city- or neighbourhood-scale shallow groundwater.
 - The reported city values are precise engineering predictions or factor-of-safety estimates.
-- The screening tiers in `policy_priority_table_v2.csv` are regulatory thresholds.
+- The screening tiers in `policy_followup_table_v2.csv` are regulatory thresholds.
 - The population-weighted exposure summary is an engineering loss estimate.
 - Groundwater depletion is a seismic-safety benefit.
 

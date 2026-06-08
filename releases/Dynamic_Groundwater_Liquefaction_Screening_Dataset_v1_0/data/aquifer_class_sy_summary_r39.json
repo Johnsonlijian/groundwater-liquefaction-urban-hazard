@@ -1,0 +1,46 @@
+{
+  "n_cities": 444,
+  "class_counts": {
+    "stiff/deep low-sensitivity control": 217,
+    "mixed urban aquifer context": 114,
+    "alluvial-delta floodplain proxy": 91,
+    "alluvial/basin-fill depletion": 16,
+    "coastal mixed/delta-reclaimed review": 4,
+    "semi-confined basin-fill recovery": 2
+  },
+  "n_material_at_class_mid": 3,
+  "n_material_at_class_high": 0,
+  "material_units_at_class_mid": [
+    {
+      "name": "Yokohama",
+      "country": "JP",
+      "material_at_sy_mid": true
+    },
+    {
+      "name": "Bhayandar",
+      "country": "IN",
+      "material_at_sy_mid": false
+    },
+    {
+      "name": "Mumbai",
+      "country": "IN",
+      "material_at_sy_mid": false
+    },
+    {
+      "name": "Delhi",
+      "country": "IN",
+      "material_at_sy_mid": false
+    },
+    {
+      "name": "Lahore",
+      "country": "PK",
+      "material_at_sy_mid": true
+    },
+    {
+      "name": "Ludhiana",
+      "country": "IN",
+      "material_at_sy_mid": true
+    }
+  ],
+  "boundary": "Aquifer classes are review priors and do not replace local S_y or liquefiable-layer data."
+}

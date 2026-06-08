@@ -1,0 +1,6 @@
+metric,count,denominator,interpretation
+CSR-material baseline units,6,6,primary product baseline at S_y=0.10
+GSFC direction match,6,6,OLS and Theil-Sen signs match CSR baseline
+GSFC statistical sign support p<0.05,4,6,direction match plus GSFC OLS trend p<0.05
+GSFC material support,1,6,independent-product magnitude crosses |Delta P|>=0.01
+positive coastal GSFC material support,0,3,"positive coastal screens remain sign-supported/candidate, not independent material discoveries"

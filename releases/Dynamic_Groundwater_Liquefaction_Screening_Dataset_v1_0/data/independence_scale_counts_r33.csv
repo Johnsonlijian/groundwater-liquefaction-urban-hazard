@@ -1,0 +1,7 @@
+method,abs_delta_p_threshold,n_point_city_units,n_50km_metro_clusters,n_ghsl_urban_centres,n_300km_regional_groups,n_increase_side,n_depletion_side,largest_300km_group_id,largest_300km_group_n_point_cities,point_city_names
+BH zero-aware,0.005,28,21,22,10,19,9,2,17,Yokohama; Bhayandar; Mumbai; Dar es Salaam; Surat; Nashik; Bhiwandi; Thāne; Dombivali; Tokyo; Tianjin; Varanasi; Patna; Kanpur; Barcelona; Prayagraj; Kalyān; Makassar; Luzhou; Diyarbakır; Turin; Puebla; Seattle; Srinagar; Faridabad; Delhi; Lahore; Ludhiana
+BH zero-aware,0.0075,15,9,10,3,10,5,2,12,Yokohama; Bhayandar; Mumbai; Dar es Salaam; Surat; Nashik; Bhiwandi; Thāne; Dombivali; Tokyo; Srinagar; Faridabad; Delhi; Lahore; Ludhiana
+BH zero-aware,0.01,6,5,5,2,3,3,2,5,Yokohama; Bhayandar; Mumbai; Delhi; Lahore; Ludhiana
+BY zero-aware,0.005,22,16,17,9,15,7,2,13,Yokohama; Bhayandar; Mumbai; Dar es Salaam; Surat; Nashik; Bhiwandi; Thāne; Dombivali; Tokyo; Tianjin; Varanasi; Prayagraj; Kalyān; Makassar; Diyarbakır; Turin; Puebla; Seattle; Srinagar; Lahore; Ludhiana
+BY zero-aware,0.0075,13,8,9,3,10,3,2,10,Yokohama; Bhayandar; Mumbai; Dar es Salaam; Surat; Nashik; Bhiwandi; Thāne; Dombivali; Tokyo; Srinagar; Lahore; Ludhiana
+BY zero-aware,0.01,5,4,4,2,3,2,2,4,Yokohama; Bhayandar; Mumbai; Lahore; Ludhiana

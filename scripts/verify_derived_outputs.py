@@ -52,7 +52,13 @@ def main() -> None:
     gfz_material = pd.read_csv(DER / "material_unit_gfz_gravis_stress_test_r37.csv")
     engineering = pd.read_csv(DER / "engineering_susceptibility_enrichment_r37.csv")
     protocol = pd.read_csv(DER / "preimplementation_policy_protocol_r37.csv")
-    scorecard = pd.read_csv(DER / "regional_validation_scorecard_r37.csv")
+    scorecard = pd.read_csv(DER / "regional_evidence_scorecard_r37.csv")
+    jpl_r39 = pd.read_csv(DER / "jpl_cri_article_status_r39.csv").iloc[0]
+    aquifer_priors = pd.read_csv(DER / "aquifer_class_sy_priors_r39.csv")
+    city_sy = pd.read_csv(DER / "city_aquifer_class_sy_results_r39.csv")
+    aquifer_phase = pd.read_csv(DER / "material_unit_aquifer_class_phase_r39.csv")
+    evidence_cards = pd.read_csv(DER / "evidence_tier_cards_r39.csv")
+    r39 = read_json("r39_article_dataset_release_summary.json")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -126,6 +132,18 @@ def main() -> None:
     assert len(enriched) == 4
     assert len(protocol) == 7
     assert len(scorecard) == 5
+    assert jpl_r39["run_status"] in {
+        "earthdata_authentication_required_not_ingested",
+        "credentials_detected_but_no_local_netcdf",
+        "local_authenticated_netcdf_available",
+    }
+    assert len(aquifer_priors) == 6
+    assert len(city_sy) == 444
+    assert len(aquifer_phase) == 6
+    assert len(evidence_cards) == 5
+    assert r39["n_city_sy_rows"] == 444
+    assert r39["n_evidence_cards"] == 5
+    assert (ROOT / "releases" / "Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip").exists()
 
     for path in [
         DER / "policy_followup_table_v2.csv",
@@ -147,6 +165,8 @@ def main() -> None:
         "Fig4_timeseries",
         "Fig5_policy_robustness",
         "Fig6_evidence_boundary",
+        "Fig4_evidence_tier_cards_article",
+        "Fig5_aquifer_class_phase_article",
         "FigS1_yokohama_local_groundwater_r24",
         "FigS2_tokyo_representative_groundwater_r25",
         "FigS3_water_table_followup_flag_spatial_robustness",
@@ -203,6 +223,12 @@ def main() -> None:
     print(
         "R37 engineering/protocol: "
         f"{len(enriched)} enriched proxy tests, {len(protocol)} protocol steps, {len(scorecard)} regional scorecard rows"
+    )
+    print(
+        "R39 Article-route package: "
+        f"JPL status = {jpl_r39['run_status']}; "
+        f"{len(aquifer_priors)} aquifer-context S_y priors, {len(evidence_cards)} evidence cards; "
+        "named local release zip present"
     )
 
 

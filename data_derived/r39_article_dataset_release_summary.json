@@ -1,0 +1,10 @@
+{
+  "jpl_status": "earthdata_authentication_required_not_ingested",
+  "n_aquifer_prior_classes": 6,
+  "n_city_sy_rows": 444,
+  "n_evidence_cards": 5,
+  "dataset_release_dir": "releases\\Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0",
+  "dataset_release_zip": "releases\\Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip",
+  "zip_bytes": 12363536,
+  "boundary": "R39 completes local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided."
+}

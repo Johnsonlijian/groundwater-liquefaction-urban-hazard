@@ -1,0 +1,7 @@
+aquifer_context_class,sy_low,sy_mid,sy_high,basis,source_basis
+semi-confined basin-fill recovery,0.05,0.1,0.15,managed basin-fill/recovery setting; use low-to-moderate unconfined-equivalent S_y review range,USGS WSP 1662-D; Lv et al. 2021; project proxy bins
+coastal mixed/delta-reclaimed review,0.06,0.12,0.18,coastal mixed aquifer/reclamation/leakage review; not a local shallow-head calibration,USGS WSP 1662-D; Lv et al. 2021; project proxy bins
+alluvial/basin-fill depletion,0.08,0.14,0.22,alluvial or basin-fill depletion setting; moderate-to-high review range,USGS WSP 1662-D; Lv et al. 2021; project proxy bins
+alluvial-delta floodplain proxy,0.08,0.16,0.25,low Vs30 and near-water proxy for unconsolidated alluvial/delta/floodplain context,USGS WSP 1662-D; Lv et al. 2021; project proxy bins
+mixed urban aquifer context,0.05,0.12,0.2,default review range when no stronger context proxy is available,USGS WSP 1662-D; Lv et al. 2021; project proxy bins
+stiff/deep low-sensitivity control,0.03,0.06,0.1,"control class for stiff, deep-water or far-from-water settings; not used to expand claims",USGS WSP 1662-D; Lv et al. 2021; project proxy bins

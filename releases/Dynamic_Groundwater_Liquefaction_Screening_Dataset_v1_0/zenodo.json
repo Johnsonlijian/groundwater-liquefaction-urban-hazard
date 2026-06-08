@@ -1,0 +1,19 @@
+{
+  "title": "Dynamic Groundwater-Liquefaction Screening Dataset v1.0",
+  "upload_type": "dataset",
+  "description": "Derived city, regional-group, product-consensus, aquifer-context and evidence-tier tables for a dynamic groundwater-liquefaction screening study.",
+  "creators": [
+    {
+      "name": "Ren, Lijian",
+      "affiliation": "Inner Mongolia University of Technology"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "GRACE",
+    "groundwater",
+    "liquefaction",
+    "urban risk",
+    "specific yield"
+  ]
+}

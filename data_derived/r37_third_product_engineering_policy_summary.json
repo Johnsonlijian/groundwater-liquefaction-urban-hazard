@@ -1,0 +1,14 @@
+{
+  "gfz_file_present": true,
+  "gfz_file_size_bytes": 526702876,
+  "n_cities": 444,
+  "all_city_csr_gfz_sign_match_fraction": 0.8603603603603603,
+  "all_city_csr_gfz_leakage_corrected_sign_match_fraction": 0.6914414414414415,
+  "material_unit_csr_gfz_sign_match_fraction": 1.0,
+  "material_unit_csr_gfz_leakage_corrected_sign_match_fraction": 1.0,
+  "gfz_material_sy010_count_all": 14,
+  "gfz_leakage_corrected_material_sy010_count_all": 33,
+  "engineering_enriched_proxy_count_p_lt_0p05": 4,
+  "n_region_scorecard_rows": 5,
+  "safe_boundary": "GFZ strengthens independent TWS/leakage stress testing; JPL CRI remains Earthdata-protected and not ingested; engineering proxies support follow-up context but not site-specific hazard classes."
+}

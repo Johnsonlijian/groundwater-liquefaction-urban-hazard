@@ -39,6 +39,7 @@ python scripts\\r33_statistical_object_audit.py
 python scripts\\r32_decision_synthesis_fig7.py
 python scripts\\r34_reference_claim_journal_audit.py
 python scripts\\r36_threshold_controls_and_regional_units.py
+python scripts\\r37_third_product_engineering_policy_protocol.py
 ```
 
 ## Minimum verification from included derived data
@@ -65,10 +66,15 @@ Expected summary:
 - R33 GSFC material support: 1/6 CSR-material baseline units; positive coastal GSFC material support: 0/3.
 - R33 Monte Carlo materiality probabilities for the six baseline CSR-material units under the stated S_y prior: 0.30-0.55.
 - R34 source registry and claim-evidence map present at repository root.
-- R34 reference audit covers 36 manuscript references: 28 Crossref-verified, 3 DOI-resolver verified, 4 URL-reachable, and 1 CSR dataset DOI target-page warning.
+- R34 reference audit covers 37 manuscript references: 28 Crossref-verified, 3 DOI-resolver verified, 3 URL-reachable, 2 network warnings, and 1 CSR dataset DOI target-page warning.
 - R36 reporting-threshold interpretation: abs(Delta P_liq) >= 0.01 is near the 98.6th percentile of the cohort.
 - R36 regional payload: 28 A/B point-city units occupy 10 GRACE-scale 300 km regional groups, with 17 point-city units in the largest group.
 - R36 negative-control style strata: maximum material-unit count is 0 across the reported low-sensitivity strata.
+- R37 CSR-GFZ raw TWS sign agreement: 86.0% across all cities and 6/6 CSR-material units.
+- R37 CSR-GFZ leakage-adjusted sign agreement: 69.1% across all cities and 6/6 CSR-material units.
+- R37 GFZ-material counts at S_y = 0.10: 14 all-city raw TWS units and 33 all-city leakage-adjusted units; these are stress-test diagnostics, not replacement main results.
+- R37 engineering-context enrichment: low Vs30, near-water proximity, at least two proxies and at least three proxies pass one-sided Fisher tests; high PGA and shallow WTD alone are not used as enrichment claims.
+- R37 policy protocol tables present: `preimplementation_policy_protocol_r37.csv`, `regional_validation_scorecard_r37.csv`, and `external_collaborator_role_matrix_r37.csv`.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
@@ -134,6 +140,9 @@ Generated figures are stored under `figures/`:
 - `FigS3_water_table_followup_flag_spatial_robustness.png`
 - `FigS3_water_table_followup_flag_spatial_robustness.svg`
 - `FigS3_water_table_followup_flag_spatial_robustness.pdf`
+- `FigS4_r37_third_product_engineering_protocol.png`
+- `FigS4_r37_third_product_engineering_protocol.svg`
+- `FigS4_r37_third_product_engineering_protocol.pdf`
 
 ## Guardrails
 

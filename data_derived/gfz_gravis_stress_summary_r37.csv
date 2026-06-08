@@ -1,0 +1,3 @@
+set,n,csr_gfz_sign_match_fraction,csr_gfz_leakage_corrected_sign_match_fraction,three_product_sign_consensus_fraction,three_product_plus_leakage_sign_consensus_fraction,gfz_material_sy010_count,gfz_leakage_corrected_material_sy010_count
+all 444 city exposure units,444,0.8603603603603603,0.6914414414414415,0.7545045045045045,0.5720720720720721,14,33
+six CSR-material point-city units,6,1.0,1.0,1.0,1.0,4,5

@@ -1,0 +1,29 @@
+name,country,lat,lon,population_million,dP,screening_tier,direction_side,ab_followup_bh,material_bh_zero_aware,soft_soil_proxy_vs30_le_360,shallow_wtd_proxy_le_10m,near_water_proxy_le_5km,high_shaking_proxy_pga_ge_0p2g,susceptibility_proxy_count
+Yokohama,JP,35.43333,139.65,3.777491,0.0131823600667306,A material hotspot,increase-side,True,True,True,True,True,True,4
+Bhayandar,IN,19.30157,72.85107,0.809378,0.0117697302764608,A material hotspot,increase-side,True,True,True,True,True,False,3
+Mumbai,IN,19.07283,72.88261,12.691836,0.0108165938122896,A material hotspot,increase-side,True,True,True,True,True,False,3
+Delhi,IN,28.65195,77.23149,11.034555,-0.0113766608006131,A material hotspot,depletion-side,True,True,True,False,True,True,3
+Lahore,PK,31.558,74.35071,13.004135,-0.0140276495434888,A material hotspot,depletion-side,True,True,True,True,False,False,2
+Ludhiana,IN,30.91204,75.85379,1.618879,-0.0153533212038833,A material hotspot,depletion-side,True,True,True,False,False,True,2
+Dar es Salaam,TZ,-6.82349,39.26951,5.383728,0.0099400650158641,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Surat,IN,21.19594,72.83023,4.591246,0.0096221809737705,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Nashik,IN,19.99727,73.79096,1.486053,0.009150408807873,B targeted regional monitoring,increase-side,True,False,False,True,True,False,2
+Bhiwandi,IN,19.30023,73.05881,0.874032,0.0086312201636333,B targeted regional monitoring,increase-side,True,False,True,True,False,False,2
+Thāne,IN,19.19704,72.96355,1.841488,0.0084105762061177,B targeted regional monitoring,increase-side,True,False,False,True,True,False,2
+Dombivali,IN,19.21667,73.08333,1.247327,0.0083292880236759,B targeted regional monitoring,increase-side,True,False,False,True,True,False,2
+Tokyo,JP,35.6895,139.69171,9.733276,0.0083026372584477,B targeted regional monitoring,increase-side,True,False,True,True,False,True,3
+Tianjin,CN,39.14222,117.17667,11.090314,0.0073736357294239,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Varanasi,IN,25.31668,83.01041,1.164404,0.0064547441040125,B targeted regional monitoring,increase-side,True,False,True,False,True,False,2
+Patna,IN,25.59408,85.13563,1.684297,0.0060981198108892,B targeted regional monitoring,increase-side,True,False,True,True,False,False,2
+Kanpur,IN,26.46523,80.34975,2.823249,0.0059558101069985,B targeted regional monitoring,increase-side,True,False,True,False,True,False,2
+Barcelona,VE,10.1384,-64.68769,0.815141,0.0055937627238466,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Prayagraj,IN,25.44478,81.84322,1.073438,0.005399910094125,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Kalyān,IN,19.2437,73.13554,1.262255,0.0053812979642205,B targeted regional monitoring,increase-side,True,False,True,True,False,False,2
+Makassar,ID,-5.14861,119.43194,1.423877,0.005239330970689,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Luzhou,CN,28.8903,105.42575,0.9989,0.0050042128246746,B targeted regional monitoring,increase-side,True,False,True,True,True,False,3
+Diyarbakır,TR,37.91363,40.21721,1.833684,-0.0055730278091667,B targeted regional monitoring,depletion-side,True,False,True,True,True,False,3
+Turin,IT,45.07049,7.68682,0.847287,-0.0058121023331525,B targeted regional monitoring,depletion-side,True,False,True,False,True,False,2
+Puebla,MX,19.04778,-98.20723,1.692181,-0.006715498408346,B targeted regional monitoring,depletion-side,True,False,True,False,True,True,3
+Seattle,US,47.60621,-122.33207,0.780995,-0.0067245943704312,B targeted regional monitoring,depletion-side,True,False,True,True,True,True,4
+Srinagar,IN,34.08565,74.80555,1.206419,-0.0086285932427188,B targeted regional monitoring,depletion-side,True,False,True,True,False,True,3
+Faridabad,IN,28.41124,77.31316,1.41405,-0.0096483135253369,B targeted regional monitoring,depletion-side,True,False,True,True,False,True,3

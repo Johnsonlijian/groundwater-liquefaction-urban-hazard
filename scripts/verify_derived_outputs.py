@@ -47,6 +47,12 @@ def main() -> None:
     policy = pd.read_csv(DER / "policy_followup_table_v2.csv")
     product_units = pd.read_csv(DER / "product_consensus_material_units_r23.csv")
     ref_audit = pd.read_csv(ROOT / "docs" / "Reference_Audit_R34.csv")
+    r37 = read_json("r37_third_product_engineering_policy_summary.json")
+    gfz_summary = pd.read_csv(DER / "gfz_gravis_stress_summary_r37.csv")
+    gfz_material = pd.read_csv(DER / "material_unit_gfz_gravis_stress_test_r37.csv")
+    engineering = pd.read_csv(DER / "engineering_susceptibility_enrichment_r37.csv")
+    protocol = pd.read_csv(DER / "preimplementation_policy_protocol_r37.csv")
+    scorecard = pd.read_csv(DER / "regional_validation_scorecard_r37.csv")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -103,6 +109,23 @@ def main() -> None:
     assert {"Yokohama", "Bhayandar", "Mumbai", "Delhi", "Lahore", "Ludhiana"} <= set(sy_ledger["name"])
     assert len(water_flag) == 444
     assert len(policy) == 444
+    assert r37["n_cities"] == 444
+    assert 0.85 < r37["all_city_csr_gfz_sign_match_fraction"] < 0.87
+    assert 0.68 < r37["all_city_csr_gfz_leakage_corrected_sign_match_fraction"] < 0.70
+    assert r37["material_unit_csr_gfz_sign_match_fraction"] == 1.0
+    assert r37["material_unit_csr_gfz_leakage_corrected_sign_match_fraction"] == 1.0
+    assert r37["gfz_material_sy010_count_all"] == 14
+    assert r37["gfz_leakage_corrected_material_sy010_count_all"] == 33
+    assert len(gfz_summary) == 2
+    assert len(gfz_material) == 6
+    assert bool(gfz_material["three_product_plus_leakage_sign_consensus"].all())
+    enriched = engineering[
+        (engineering["fisher_greater_p"] < 0.05)
+        & (engineering["followup_fraction_with_proxy"] > engineering["cohort_fraction_with_proxy"])
+    ]
+    assert len(enriched) == 4
+    assert len(protocol) == 7
+    assert len(scorecard) == 5
 
     for path in [
         DER / "policy_followup_table_v2.csv",
@@ -112,7 +135,7 @@ def main() -> None:
     ]:
         assert_no_legacy_labels(path)
 
-    assert len(ref_audit) == 36
+    assert len(ref_audit) == 37
     assert int((ref_audit["status"] == "verified_crossref").sum()) == 28
     assert (ROOT / "02_source_registry.md").exists()
     assert (ROOT / "03_claim_evidence_map.md").exists()
@@ -127,6 +150,7 @@ def main() -> None:
         "FigS1_yokohama_local_groundwater_r24",
         "FigS2_tokyo_representative_groundwater_r25",
         "FigS3_water_table_followup_flag_spatial_robustness",
+        "FigS4_r37_third_product_engineering_protocol",
     ]:
         for ext in ["png", "svg", "pdf"]:
             assert (ROOT / "figures" / f"{stem}.{ext}").exists(), f"missing {stem}.{ext}"
@@ -170,6 +194,15 @@ def main() -> None:
     print(
         "Local sign checks: "
         "Yokohama 20/23 rising; Tokyo official regional summary 79/91 rising"
+    )
+    print(
+        "R37 GFZ stress test: "
+        f"CSR-GFZ raw sign agreement {100*r37['all_city_csr_gfz_sign_match_fraction']:.1f}% all-city and 6/6 material; "
+        f"leakage-adjusted agreement {100*r37['all_city_csr_gfz_leakage_corrected_sign_match_fraction']:.1f}% all-city and 6/6 material"
+    )
+    print(
+        "R37 engineering/protocol: "
+        f"{len(enriched)} enriched proxy tests, {len(protocol)} protocol steps, {len(scorecard)} regional scorecard rows"
     )
 
 

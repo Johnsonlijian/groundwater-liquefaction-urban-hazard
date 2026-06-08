@@ -1,0 +1,10 @@
+screening_tier,direction,n_cities,population_million,population_weighted_abs_dP
+A material follow-up unit,material decrease,3,25.657569,0.3328090069941474
+A material follow-up unit,material increase,3,17.278705000000002,0.1966048420067299
+B targeted regional monitoring,sub-material decrease,6,7.774616,0.0558123006390322
+B targeted regional monitoring,sub-material increase,17,51.970663,0.4066698315417538
+C detectable but sub-material,near zero,15,26.232143,0.0
+C detectable but sub-material,sub-material decrease,105,202.150075,0.1292974879337235
+C detectable but sub-material,sub-material increase,181,418.412838,0.3620378030518852
+D routine periodic update,sub-material decrease,40,85.229506,0.057265898325766
+D routine periodic update,sub-material increase,74,159.466672,0.1161206720571785

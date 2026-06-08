@@ -1,0 +1,7 @@
+region_or_city,groundwater_or_storage_sign,independent_groundwater_evidence,management_or_abstraction_evidence,attribution_confidence,main_text_use
+North China Plain / Beijing,positive recent TWS; well-supported recovery,Regional well network and Beijing urban-well liquefaction study,South-North Water Transfer and managed aquifer recovery,high,management-supported recharge case
+Delhi,negative recent TWS,CGWB station analyses show increasing depth to groundwater in most of the Delhi Metropolitan Region,abstraction/depletion context,medium-high,depletion-side case
+Lahore,negative recent TWS,"Borehole depth-to-water, GRACE and InSAR subsidence evidence",abstraction/depletion context,medium-high,depletion-side case
+Ludhiana / Punjab,negative recent TWS,NW India/Punjab depletion context from GRACE and groundwater-level syntheses,regional abstraction/depletion context,medium,"depletion-side follow-up screen, not a safety benefit"
+Yokohama / Tokyo Bay,positive recent TWS,local 2015-2024 groundwater evidence not yet ingested,"long-term Tokyo-area groundwater regulation is a candidate context, not proof of the 2015-2024 GRACE sign",low-pending,coastal-sensitive positive CSR screening unit pending product/local evidence
+Mumbai-Bhayandar cluster,positive recent TWS,local 2015-2024 groundwater evidence not yet ingested,unclear,low-pending,metro-deduplicated coastal-sensitive positive CSR screening unit pending product/local evidence

@@ -6,6 +6,7 @@ ledger. It uses only already-derived tables.
 
 Outputs:
 - figures/Fig7_ghsl_gsfc_robustness.{png,svg,pdf}
+- figures/Fig6_evidence_boundary.{png,svg,pdf}
 """
 from __future__ import annotations
 
@@ -121,9 +122,9 @@ def make_figure() -> None:
     ax0.text(
         0.01,
         -0.27,
-        "CSR defines the primary screen; GSFC retains all six signs, four at p < 0.05; only Delhi remains GSFC-material.",
+        "CSR-material = baseline screen; GSFC diamond = independent check. Tokyo Bay/Yokohama is GSFC-sub-material with local sign support; Mumbai/Bhayandar remains candidate/contradictory; only Delhi is GSFC-material.",
         transform=ax0.transAxes,
-        fontsize=7,
+        fontsize=6.8,
         color="#555555",
     )
 
@@ -197,10 +198,10 @@ def make_figure() -> None:
     )
     card(
         ax2,
-        (0.16, 0.12),
-        (0.68, 0.22),
+        (0.16, 0.10),
+        (0.68, 0.25),
         "Common endpoint",
-        "Use GRACE/GRACE-FO as a regional trigger. Replace the static water-table assumption with local hydrogeology before engineering design.",
+        "Regional screening cue: replace the static water-table assumption with local hydrogeology before engineering design.",
         "#f3f3f3",
         edge="#cfcfcf",
         title_color=ink,
@@ -209,6 +210,7 @@ def make_figure() -> None:
     ax2.annotate("", xy=(0.51, 0.42), xytext=(0.70, 0.53), xycoords=ax2.transAxes, textcoords=ax2.transAxes, arrowprops=dict(arrowstyle="->", lw=1.1, color="#777777"))
 
     for ext in ["png", "svg", "pdf"]:
+        fig.savefig(FIG / f"Fig6_evidence_boundary.{ext}", bbox_inches="tight")
         fig.savefig(FIG / f"Fig7_ghsl_gsfc_robustness.{ext}", bbox_inches="tight")
     plt.close(fig)
 

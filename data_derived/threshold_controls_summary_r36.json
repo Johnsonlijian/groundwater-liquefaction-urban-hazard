@@ -1,0 +1,16 @@
+{
+  "n_cities": 444,
+  "mean_delta_p": 0.0004227366998274846,
+  "mean_abs_delta_p": 0.0012439934361959159,
+  "raw_abs_delta_p_ge_0p01_count": 6,
+  "zero_aware_material_bh_count": 6,
+  "ab_followup_count": 28,
+  "ab_followup_300km_groups": 10,
+  "largest_ab_group_n_point_city_units": 17,
+  "threshold_0p01_percentile_rank_all_cities": 0.9864864864864865,
+  "control_strata_max_material_count": 0,
+  "sy_material_threshold_range_for_six_material_units": [
+    0.108111175298082,
+    0.1599491208561837
+  ]
+}

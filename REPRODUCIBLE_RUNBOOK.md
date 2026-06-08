@@ -38,6 +38,7 @@ python scripts\\r31_static_observed_triage_change.py
 python scripts\\r33_statistical_object_audit.py
 python scripts\\r32_decision_synthesis_fig7.py
 python scripts\\r34_reference_claim_journal_audit.py
+python scripts\\r36_threshold_controls_and_regional_units.py
 ```
 
 ## Minimum verification from included derived data
@@ -65,6 +66,9 @@ Expected summary:
 - R33 Monte Carlo materiality probabilities for the six baseline CSR-material units under the stated S_y prior: 0.30-0.55.
 - R34 source registry and claim-evidence map present at repository root.
 - R34 reference audit covers 36 manuscript references: 28 Crossref-verified, 3 DOI-resolver verified, 4 URL-reachable, and 1 CSR dataset DOI target-page warning.
+- R36 reporting-threshold interpretation: abs(Delta P_liq) >= 0.01 is near the 98.6th percentile of the cohort.
+- R36 regional payload: 28 A/B point-city units occupy 10 GRACE-scale 300 km regional groups, with 17 point-city units in the largest group.
+- R36 negative-control style strata: maximum material-unit count is 0 across the reported low-sensitivity strata.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
@@ -78,26 +82,26 @@ Expected summary:
 - JPL CRI-filtered mascon: protected by Earthdata authentication in this run.
 - Beijing: Delta P_liq approximately +0.0003, positive interval, recent TWS trend +0.57 cm yr-1.
 - Sensitivity grid rows: 150.
-- Six screening-priority-unit city-grid rows: 900.
+- Six follow-up-unit city-grid rows: 900.
 - Six baseline material screening units: all retain baseline direction under the positive-scaling sensitivity grid.
 - R23 product-consensus table: GSFC is an independent sign check, not a materiality proof for every CSR-material unit.
 - R24 JPL CRI status: correct CRI-filtered collection verified; protected NetCDF remains Earthdata-authentication blocked unless local credentials or an authenticated file are supplied.
 - R24 Yokohama local groundwater evidence: 3,781 monthly records parsed from official municipal PDFs; 20 of 23 trend-qualified wells rise over 2015/04-2025/03; median slope about +0.0418 m yr-1.
-- R24 Mumbai-Bhayandar local evidence status: DOI-verified Mumbai station evidence is contradictory to positive-recovery attribution, so the hotspot remains candidate-only.
+- R24 Mumbai-Bhayandar local evidence status: DOI-verified Mumbai station evidence is contradictory to positive-recovery attribution, so the CSR-positive screen remains candidate-only.
 - R25 Tokyo official representative groundwater evidence: 4 of 4 representative confined wells rise over 2015-2024; median OLS slope about +0.608 m yr-1.
 - R25 Tokyo 2024 regional summary: 79 of 91 confined observation wells rising.
 - R25 Tokyo Open Data / official PDF annual-table checks: 78 of 90 valid 2016 changes positive and 75 of 91 extracted 2022 changes positive.
 - R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
 - R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
-- Largest hotspot-magnitude sensitivity factor in the deterministic grid: specific yield.
+- Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
 - Tokyo/Tianjin R28 context: material only at low S_y.
 - R29 confidence ledger rows: 6 main-text rows and 7 detailed rows including the Beijing mechanism anchor.
-- Median +0.01 water-table-rise trigger: about 14.5 m.
-- Beijing +0.01 water-table-rise trigger: about 17.1 m.
+- Median +0.01 water-table-rise flag: about 14.5 m.
+- Beijing +0.01 water-table-rise flag: about 17.1 m.
 
-`scripts\\analyze_v2.py` reconstructs the final city table and hotspot table, but it expects the Natural Earth lake boundary data under `data_raw/` so that the inland-water-body exclusion can be recomputed.
+`scripts\\analyze_v2.py` reconstructs the final city table and baseline material-unit table, but it expects the Natural Earth lake boundary data under `data_raw/` so that the inland-water-body exclusion can be recomputed.
 
 ## Figure outputs
 
@@ -118,18 +122,18 @@ Generated figures are stored under `figures/`:
 - `Fig5_policy_robustness.png`
 - `Fig5_policy_robustness.svg`
 - `Fig5_policy_robustness.pdf`
-- `Fig6_trigger_spatial_robustness.png`
-- `Fig6_trigger_spatial_robustness.svg`
-- `Fig6_trigger_spatial_robustness.pdf`
-- `Fig7_ghsl_gsfc_robustness.png`
-- `Fig7_ghsl_gsfc_robustness.svg`
-- `Fig7_ghsl_gsfc_robustness.pdf`
+- `Fig6_evidence_boundary.png`
+- `Fig6_evidence_boundary.svg`
+- `Fig6_evidence_boundary.pdf`
 - `FigS1_yokohama_local_groundwater_r24.png`
 - `FigS1_yokohama_local_groundwater_r24.svg`
 - `FigS1_yokohama_local_groundwater_r24.pdf`
 - `FigS2_tokyo_representative_groundwater_r25.png`
 - `FigS2_tokyo_representative_groundwater_r25.svg`
 - `FigS2_tokyo_representative_groundwater_r25.pdf`
+- `FigS3_water_table_followup_flag_spatial_robustness.png`
+- `FigS3_water_table_followup_flag_spatial_robustness.svg`
+- `FigS3_water_table_followup_flag_spatial_robustness.pdf`
 
 ## Guardrails
 

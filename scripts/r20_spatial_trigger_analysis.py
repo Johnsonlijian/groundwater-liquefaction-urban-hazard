@@ -562,7 +562,7 @@ def make_fig6(trigger: pd.DataFrame, spatial: pd.DataFrame) -> None:
     ax1.set_yscale("log")
     ax1.set_xlabel("Baseline modelled liquefaction probability")
     ax1.set_ylabel("Water-table rise needed for +0.01 Delta P_liq (m)")
-    ax1.set_title("a  A policy trigger for managed recovery", loc="left", fontweight="bold")
+    ax1.set_title("a  A follow-up cue for managed recovery", loc="left", fontweight="bold")
     ax1.grid(alpha=0.22, which="both")
     cb = fig.colorbar(sc, ax=ax1, shrink=0.75, pad=0.01)
     cb.set_label("Recent TWS trend (cm yr-1)", fontsize=7)
@@ -582,7 +582,7 @@ def make_fig6(trigger: pd.DataFrame, spatial: pd.DataFrame) -> None:
     ax2.set_yticks(y)
     ax2.set_yticklabels(labels)
     ax2.set_xlabel("Cumulative Delta P_liq, 2015-2024")
-    ax2.set_title("b  Point hotspots after spatial/coastal checks", loc="left", fontweight="bold")
+    ax2.set_title("b  Point exposure units grouped by storage setting", loc="left", fontweight="bold")
     for i, (_, r) in enumerate(hs.iterrows()):
         txt = f"metro {int(r['metro_cluster_50km'])}; 300 km block {int(r['grace_scale_cluster_300km'])}"
         ax2.text(0.001 if r["dP"] < 0 else -0.001, i, txt, va="center", ha="left" if r["dP"] < 0 else "right", fontsize=6.3, color="#555555")
@@ -591,10 +591,11 @@ def make_fig6(trigger: pd.DataFrame, spatial: pd.DataFrame) -> None:
         Line2D([0], [0], color=BLUE, lw=5, label="decrease"),
     ]
     ax2.legend(handles=handles, loc="lower right", fontsize=7)
-    fig.suptitle("Water-table-rise trigger and spatial robustness for policy screening", fontsize=11, fontweight="bold")
+    fig.suptitle("Water-table-rise follow-up flag and spatial robustness", fontsize=11, fontweight="bold")
     fig.tight_layout()
     for ext, kwargs in {"png": {"dpi": 400}, "svg": {}, "pdf": {}}.items():
         fig.savefig(FIG / f"Fig6_trigger_spatial_robustness.{ext}", bbox_inches="tight", **kwargs)
+        fig.savefig(FIG / f"FigS3_water_table_followup_flag_spatial_robustness.{ext}", bbox_inches="tight", **kwargs)
     plt.close(fig)
 
 

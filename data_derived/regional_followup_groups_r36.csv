@@ -1,0 +1,11 @@
+grace_scale_cluster_300km,n_point_city_units,n_metro_clusters_50km,n_countries,n_increase_side,n_depletion_side,n_material_units,population_million_sum,mean_abs_delta_p,max_abs_delta_p,representative_names,interpretation
+2,17,11,2,12,5,5,59.827040999999994,0.009120848156476905,0.0153533212038833,Lahore; Mumbai; Delhi; Surat; Kanpur; Thāne; Patna; Ludhiana,regional storage-setting follow-up group; point cities are exposure locators
+1,2,1,1,2,0,1,13.510767,0.01074249866258915,0.0131823600667306,Tokyo; Yokohama,regional storage-setting follow-up group; point cities are exposure locators
+5,2,2,1,2,0,0,12.089214,0.00618892427704925,0.0073736357294239,Tianjin; Luzhou,regional storage-setting follow-up group; point cities are exposure locators
+3,1,1,1,1,0,0,5.383728,0.0099400650158641,0.0099400650158641,Dar es Salaam,regional storage-setting follow-up group; point cities are exposure locators
+81,1,1,1,0,1,0,0.780995,0.0067245943704312,0.0067245943704312,Seattle,regional storage-setting follow-up group; point cities are exposure locators
+64,1,1,1,0,1,0,1.692181,0.006715498408346,0.006715498408346,Puebla,regional storage-setting follow-up group; point cities are exposure locators
+71,1,1,1,0,1,0,0.847287,0.0058121023331525,0.0058121023331525,Turin,regional storage-setting follow-up group; point cities are exposure locators
+6,1,1,1,1,0,0,0.815141,0.0055937627238466,0.0055937627238466,Barcelona,regional storage-setting follow-up group; point cities are exposure locators
+28,1,1,1,0,1,0,1.833684,0.0055730278091667,0.0055730278091667,Diyarbakır,regional storage-setting follow-up group; point cities are exposure locators
+7,1,1,1,1,0,0,1.423877,0.005239330970689,0.005239330970689,Makassar,regional storage-setting follow-up group; point cities are exposure locators

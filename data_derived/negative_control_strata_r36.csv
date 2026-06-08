@@ -1,0 +1,7 @@
+control_stratum,n,mean_abs_delta_p,max_abs_delta_p,n_zero_aware_fdr_detectable,n_ab_followup,n_material,ab_followup_fraction,largest_names,interpretation
+low shaking PGA475 < 0.10 g,154,0.0010663955373502985,0.0096221809737705,101,7,0,0.045454545454545456,Surat; Nashik; Varanasi; Patna; Kanpur,negative-control style stratum; strong A/B updates should be rare or absent
+stiff-site proxy Vs30 > 500 m s-1,38,0.0002356119899254392,0.0029827278373295,15,0,0,0.0,Maracaibo; Panzhihua; Tianshui; Haiphong; Ankang,negative-control style stratum; strong A/B updates should be rare or absent
+deep baseline water table > 30 m,33,0.0002973385790930828,0.0015988441037686,24,0,0,0.0,Belgrade; Neijiang; Rabat; Oran; Chongqing,negative-control style stratum; strong A/B updates should be rare or absent
+low baseline model index P0 < 0.05,265,0.0002042999258333211,0.004915952855939,186,0,0,0.0,Ciudad Guayana; Accra; Rohini; Narela; Al Mawşil al Jadīdah,negative-control style stratum; strong A/B updates should be rare or absent
+low susceptibility proxy count <= 1,122,0.0003679244054806123,0.004915952855939,86,0,0,0.0,Ciudad Guayana; Accra; Jabalpur; Jamshedpur; Dalian,negative-control style stratum; strong A/B updates should be rare or absent
+far from mapped water distance > 20 km,190,2.917477917792519e-05,0.0007796467880671,136,0,0,0.0,Sialkot; Najafgarh; Adana; Kayseri; Sofia,negative-control style stratum; strong A/B updates should be rare or absent

@@ -392,7 +392,7 @@ def fig1_mechanism() -> None:
                 lw=1.2,
             )
         )
-        ax.text(0.74, 0.118, "Water-agency trigger", transform=ax.transAxes, ha="center", fontsize=6.8, color="#555555")
+        ax.text(0.74, 0.118, "Water-agency screening cue", transform=ax.transAxes, ha="center", fontsize=6.8, color="#555555")
         ax.text(0.74, 0.072, spec["action"], transform=ax.transAxes, ha="center", fontsize=7.1, color=spec["color"], fontweight="bold")
 
     fig.text(
@@ -528,7 +528,7 @@ def fig2_global_map(cohort: pd.DataFrame) -> None:
     ax.text(
         0.5,
         -0.04,
-        "Observed mean |Delta P_liq| = 0.00124; reassignment-null p = 1.00. Ringed units are direction-specific CSR-material screens; cities are exposure units.",
+        "Observed mean |Delta P_liq| = 0.00124; reassignment-null p = 1.00. Ringed points are exposure locators; inference is regional.",
         transform=ax.transAxes,
         ha="center",
         va="top",
@@ -544,9 +544,9 @@ def fig3_regional(cohort: pd.DataFrame) -> None:
     world = gpd.read_file(f"zip://{NE / 'ne_50m_admin_0_countries.zip'}")
     rivers = gpd.read_file(f"zip://{NE / 'ne_50m_rivers_lake_centerlines.zip'}")
     regions = [
-        ("A  North China Plain", "Recharge-sensitive screening zone", RED, (112.5, 122.5, 33.5, 41.5), ["Beijing", "Tianjin", "Tangshan", "Baoding", "Zhengzhou"]),
-        ("B  Punjab / NW India-Pakistan", "Depletion-subsidence audit zone", BLUE, (72, 80.5, 26, 33.5), ["Delhi", "Lahore", "Ludhiana", "Amritsar", "Chandigarh", "Meerut"]),
-        ("C  Japan", "High-shaking recharge-side screening belt", RED, (133, 142.5, 33, 40.5), ["Yokohama", "Tokyo", "Nagoya", "Osaka", "Sendai"]),
+        ("A  North China Plain", "NCP recharge mechanism anchor", RED, (112.5, 122.5, 33.5, 41.5), ["Beijing", "Tianjin", "Tangshan", "Baoding", "Zhengzhou"]),
+        ("B  Punjab / NW India-Pakistan", "Punjab depletion regional audit setting", BLUE, (72, 80.5, 26, 33.5), ["Delhi", "Lahore", "Ludhiana", "Amritsar", "Chandigarh", "Meerut"]),
+        ("C  Japan", "Tokyo Bay sign-supported coastal setting", RED, (133, 142.5, 33, 40.5), ["Yokohama", "Tokyo", "Nagoya", "Osaka", "Sendai"]),
     ]
     label_offsets = {
         "Beijing": (8, 8),

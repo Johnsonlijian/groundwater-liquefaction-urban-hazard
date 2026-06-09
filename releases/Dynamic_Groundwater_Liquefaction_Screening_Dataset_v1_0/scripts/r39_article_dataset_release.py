@@ -613,6 +613,14 @@ def build_release_package(jpl: JplStatus) -> Path:
         "regional_evidence_scorecard_r37.csv",
         "preimplementation_policy_protocol_r37.csv",
         "external_collaborator_role_matrix_r37.csv",
+        "event_hindcast_inventory_registry_r40.csv",
+        "event_hindcast_samples_r40.csv",
+        "event_hindcast_metrics_r40.csv",
+        "event_hindcast_summary_r40.json",
+        "regional_hierarchical_evidence_model_r41.csv",
+        "four_product_evidence_ladder_r41.csv",
+        "article_readiness_dashboard_r41.csv",
+        "article_readiness_summary_r41.json",
     ]
     copied = []
     for name in files:
@@ -627,6 +635,9 @@ def build_release_package(jpl: JplStatus) -> Path:
         "Fig3_regional",
         "Fig4_timeseries",
         "Fig4_evidence_tier_cards_article",
+        "Fig2_event_hindcast_article",
+        "Fig3_regional_hierarchical_screen_article",
+        "Fig4_four_product_evidence_ladder_article",
         "Fig5_aquifer_class_phase_article",
         "Fig6_evidence_boundary",
     ]:
@@ -642,6 +653,8 @@ def build_release_package(jpl: JplStatus) -> Path:
         "r28_specific_yield_sensitivity.py",
         "r37_third_product_engineering_policy_protocol.py",
         "r39_article_dataset_release.py",
+        "r40_event_hindcast_article_validation.py",
+        "r41_article_hierarchy_and_evidence_ladder.py",
         "verify_derived_outputs.py",
     ]:
         src = ROOT / "scripts" / script
@@ -658,6 +671,7 @@ This derived-data release supports the manuscript route "A dynamic groundwater s
 ## Contents
 
 - 444 city exposure units and modelled Delta P_liq outputs.
+- Historical-event inventory benchmark tables for Article claim calibration.
 - Zero-aware FDR and static-counterfactual review tiers.
 - 50 km / GHSL / 300 km independence-scale diagnostics.
 - CSR, GSFC and GFZ product-support tables.
@@ -738,7 +752,7 @@ def main() -> None:
         "dataset_release_dir": str(REL.relative_to(ROOT)),
         "dataset_release_zip": str(zip_path.relative_to(ROOT)),
         "zip_bytes": zip_path.stat().st_size,
-        "boundary": "R39 completes local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided.",
+        "boundary": "R39/R40/R41 complete local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided.",
     }
     (DER / "r39_article_dataset_release_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))

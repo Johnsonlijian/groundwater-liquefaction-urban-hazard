@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-06-09T01:24:12.171015+00:00",
+  "article_readiness_score": 88,
+  "article_readiness_max": 110,
+  "n_regional_hierarchy_rows": 10,
+  "n_evidence_ladder_rows": 5,
+  "event_benchmark_interpretation": "The event-inventory benchmark is neutral/negative for broad event-prediction improvement; therefore it is used as a claim boundary, not as proof of dynamic model superiority."
+}

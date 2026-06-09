@@ -1,12 +1,13 @@
 # Dynamic Groundwater-Liquefaction Screening Dataset v1.0
 
-Local release prepared: 2026-06-08T15:22:09.053197+00:00
+Local release prepared: 2026-06-09T01:30:28.137404+00:00
 
 This derived-data release supports the manuscript route "A dynamic groundwater screen for liquefaction review in seismic urban water management".
 
 ## Contents
 
 - 444 city exposure units and modelled Delta P_liq outputs.
+- Historical-event inventory benchmark tables for Article claim calibration.
 - Zero-aware FDR and static-counterfactual review tiers.
 - 50 km / GHSL / 300 km independence-scale diagnostics.
 - CSR, GSFC and GFZ product-support tables.

@@ -1,0 +1,6 @@
+regional_card,CSR,GSFC,GFZ raw,GFZ leakage,JPL CRI,Local,Claim class
+NCP / Beijing,Sign+,Sign,Sign,Sign,Auth boundary,High mechanism,Mechanism anchor
+Tokyo Bay / Yokohama,Material,Sign,Sign,Sign,Auth boundary,Rising wells,Sign-supported coastal case
+Mumbai / Bhayandar,Material,Weak sign,Sign,Sign,Auth boundary,Contradicts recovery,Candidate-only boundary
+Delhi,Material,Material,Sign,Sign,Auth boundary,Depletion,Product-material depletion
+Lahore / Punjab,Material,Near/sign,Sign,Sign,Auth boundary,Borehole + InSAR,Regional depletion review

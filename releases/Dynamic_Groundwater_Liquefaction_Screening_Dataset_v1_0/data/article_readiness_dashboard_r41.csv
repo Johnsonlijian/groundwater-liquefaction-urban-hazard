@@ -1,0 +1,8 @@
+module,score,reason,max_score,fraction
+Article identity,16,Article package exists; central claim now framed as DGLS framework.,20,0.8
+Evidence robustness,17,CSR/GSFC/GFZ plus JPL access ledger; JPL not numerically ingested.,20,0.85
+Event benchmark,10,1 events improve AUC; 3 are neutral or worse.,20,0.5
+Aquifer S_y module,14,Aquifer-context priors and phase diagram completed; local calibration remains future replacement.,15,0.9333333333333333
+Regional hierarchy,14,"City markers nested to 50-km, GHSL and 300-km groups; table and figure completed.",15,0.9333333333333333
+Data product,8,Named local release exists; Zenodo DOI pending.,10,0.8
+Figure storyline,9,Article-level figure set assembled; final visual polish still possible.,10,0.9

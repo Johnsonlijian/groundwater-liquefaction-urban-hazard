@@ -40,6 +40,8 @@ python scripts\\r32_decision_synthesis_fig7.py
 python scripts\\r34_reference_claim_journal_audit.py
 python scripts\\r36_threshold_controls_and_regional_units.py
 python scripts\\r37_third_product_engineering_policy_protocol.py
+python scripts\\r40_event_hindcast_article_validation.py
+python scripts\\r41_article_hierarchy_and_evidence_ladder.py
 python scripts\\r39_article_dataset_release.py
 ```
 
@@ -80,6 +82,10 @@ Expected summary:
 - R39 aquifer-context specific-yield products present: 6 review-prior classes, 444 city rows and 6 material-unit phase rows.
 - R39 evidence-tier cards present: 5 regional cards.
 - R39 named local release present: `releases/Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip`.
+- R40 event-inventory benchmark present: 4 events, 326 observed liquefaction samples and 403 controls.
+- R40 benchmark interpretation: dynamic groundwater update changes AUC by only -0.0025 to +0.0008, so it is a claim-boundary diagnostic.
+- R41 regional hierarchy present: 10 GRACE-scale regional groups.
+- R41 four-product evidence ladder present: 5 regional rows.
 - Material + FDR-significant increases: 3.
 - Material + FDR-significant decreases: 3.
 - Material point-city screening units after 50 km metropolitan deduplication: 5 clusters.
@@ -105,7 +111,7 @@ Expected summary:
 - R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
 - R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
 - R39 JPL CRI status: Article-route ledger generated; no JPL-derived numerical result is asserted without authenticated ingestion.
-- R39 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata and derived tables; DOI minting remains a post-upload step.
+- R39/R40/R41 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables and derived tables; DOI minting remains a post-upload step.
 - Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
@@ -138,9 +144,18 @@ Generated figures are stored under `figures/`:
 - `Fig6_evidence_boundary.png`
 - `Fig6_evidence_boundary.svg`
 - `Fig6_evidence_boundary.pdf`
+- `Fig2_event_hindcast_article.png`
+- `Fig2_event_hindcast_article.svg`
+- `Fig2_event_hindcast_article.pdf`
+- `Fig3_regional_hierarchical_screen_article.png`
+- `Fig3_regional_hierarchical_screen_article.svg`
+- `Fig3_regional_hierarchical_screen_article.pdf`
 - `Fig4_evidence_tier_cards_article.png`
 - `Fig4_evidence_tier_cards_article.svg`
 - `Fig4_evidence_tier_cards_article.pdf`
+- `Fig4_four_product_evidence_ladder_article.png`
+- `Fig4_four_product_evidence_ladder_article.svg`
+- `Fig4_four_product_evidence_ladder_article.pdf`
 - `Fig5_aquifer_class_phase_article.png`
 - `Fig5_aquifer_class_phase_article.svg`
 - `Fig5_aquifer_class_phase_article.pdf`

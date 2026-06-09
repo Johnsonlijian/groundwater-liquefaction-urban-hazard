@@ -59,6 +59,14 @@ def main() -> None:
     aquifer_phase = pd.read_csv(DER / "material_unit_aquifer_class_phase_r39.csv")
     evidence_cards = pd.read_csv(DER / "evidence_tier_cards_r39.csv")
     r39 = read_json("r39_article_dataset_release_summary.json")
+    event_registry = pd.read_csv(DER / "event_hindcast_inventory_registry_r40.csv")
+    event_samples = pd.read_csv(DER / "event_hindcast_samples_r40.csv")
+    event_metrics = pd.read_csv(DER / "event_hindcast_metrics_r40.csv")
+    r40 = read_json("event_hindcast_summary_r40.json")
+    regional_hierarchy = pd.read_csv(DER / "regional_hierarchical_evidence_model_r41.csv")
+    product_ladder = pd.read_csv(DER / "four_product_evidence_ladder_r41.csv")
+    readiness = pd.read_csv(DER / "article_readiness_dashboard_r41.csv")
+    r41 = read_json("article_readiness_summary_r41.json")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -144,6 +152,16 @@ def main() -> None:
     assert r39["n_city_sy_rows"] == 444
     assert r39["n_evidence_cards"] == 5
     assert (ROOT / "releases" / "Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip").exists()
+    assert len(event_registry) == 4
+    assert len(event_metrics) == 4
+    assert r40["n_events_with_metrics"] == 4
+    assert r40["n_total_positive_samples"] == int((event_samples["label"] == 1).sum()) == 326
+    assert r40["n_total_control_samples"] == int((event_samples["label"] == 0).sum()) == 403
+    assert event_metrics["delta_auc_dynamic_minus_static"].between(-0.003, 0.001).all()
+    assert len(regional_hierarchy) == 10
+    assert len(product_ladder) == 5
+    assert len(readiness) == 7
+    assert r41["article_readiness_score"] == int(readiness["score"].sum())
 
     for path in [
         DER / "policy_followup_table_v2.csv",
@@ -165,7 +183,10 @@ def main() -> None:
         "Fig4_timeseries",
         "Fig5_policy_robustness",
         "Fig6_evidence_boundary",
+        "Fig2_event_hindcast_article",
+        "Fig3_regional_hierarchical_screen_article",
         "Fig4_evidence_tier_cards_article",
+        "Fig4_four_product_evidence_ladder_article",
         "Fig5_aquifer_class_phase_article",
         "FigS1_yokohama_local_groundwater_r24",
         "FigS2_tokyo_representative_groundwater_r25",
@@ -229,6 +250,12 @@ def main() -> None:
         f"JPL status = {jpl_r39['run_status']}; "
         f"{len(aquifer_priors)} aquifer-context S_y priors, {len(evidence_cards)} evidence cards; "
         "named local release zip present"
+    )
+    print(
+        "R40/R41 Article-route additions: "
+        f"{len(event_metrics)} event benchmarks "
+        f"({r40['n_total_positive_samples']} positives, {r40['n_total_control_samples']} controls); "
+        f"{len(regional_hierarchy)} regional hierarchy rows; {len(product_ladder)} evidence-ladder rows"
     )
 
 

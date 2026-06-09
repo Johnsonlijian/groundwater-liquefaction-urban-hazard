@@ -1,0 +1,50 @@
+{
+  "checked_at_utc": "2026-06-09T01:20:47.150142+00:00",
+  "n_events_attempted": 4,
+  "n_events_with_metrics": 4,
+  "n_total_positive_samples": 326,
+  "n_total_control_samples": 403,
+  "events": [
+    {
+      "event_key": "tohoku_2011",
+      "n_observed_liquefaction": 166,
+      "n_controls": 166,
+      "control_design": "pseudo-controls outside buffered inventory; hard cells from upper static-probability background",
+      "static_auc": 0.7472056902308027,
+      "dynamic_auc_sy010": 0.7458992596893599,
+      "delta_auc_dynamic_minus_static": -0.00130643054144286,
+      "delta_brier_dynamic_minus_static": 1.7361298753126864e-05
+    },
+    {
+      "event_key": "wenchuan_2008",
+      "n_observed_liquefaction": 116,
+      "n_controls": 116,
+      "control_design": "pseudo-controls outside buffered inventory; hard cells from upper static-probability background",
+      "static_auc": 0.9376486325802618,
+      "dynamic_auc_sy010": 0.9351218787158144,
+      "delta_auc_dynamic_minus_static": -0.0025267538644473397,
+      "delta_brier_dynamic_minus_static": 0.00037207609497036387
+    },
+    {
+      "event_key": "nepal_2015",
+      "n_observed_liquefaction": 12,
+      "n_controls": 40,
+      "control_design": "pseudo-controls outside buffered inventory; hard cells from upper static-probability background",
+      "static_auc": 0.7937500000000001,
+      "dynamic_auc_sy010": 0.79375,
+      "delta_auc_dynamic_minus_static": -1.1102230246251565e-16,
+      "delta_brier_dynamic_minus_static": 0.0005311149384759628
+    },
+    {
+      "event_key": "puerto_rico_2020",
+      "n_observed_liquefaction": 32,
+      "n_controls": 81,
+      "control_design": "published_nullpoints",
+      "static_auc": 0.2689043209876544,
+      "dynamic_auc_sy010": 0.26967592592592593,
+      "delta_auc_dynamic_minus_static": 0.0007716049382715529,
+      "delta_brier_dynamic_minus_static": -9.65918756307138e-06
+    }
+  ],
+  "claim_boundary": "R40 is an event-inventory benchmark using public observed liquefaction features, USGS Zhu event rasters and a CSR pre-event storage anomaly update. It is not site-specific engineering validation and pseudo-controls are labelled."
+}

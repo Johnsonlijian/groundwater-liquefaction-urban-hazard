@@ -5,6 +5,6 @@
   "n_evidence_cards": 5,
   "dataset_release_dir": "releases\\Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0",
   "dataset_release_zip": "releases\\Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip",
-  "zip_bytes": 12363536,
-  "boundary": "R39 completes local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided."
+  "zip_bytes": 13591430,
+  "boundary": "R39/R40/R41 complete local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided."
 }

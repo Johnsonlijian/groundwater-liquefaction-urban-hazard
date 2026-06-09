@@ -1,1 +1,1 @@
-Ren, L. DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins. Zenodo DOI to be minted.
+Ren, L. DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins. GitHub release v0.8.0-nature-water-article-r42. https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42. Zenodo DOI pending author-controlled publication.

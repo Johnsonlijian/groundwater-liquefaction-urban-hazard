@@ -36,4 +36,6 @@ This is a derived screening dataset, not a hazard map, city ranking, regulatory 
 
 ## DOI
 
-Zenodo DOI: to be minted by the author after repository upload/release approval.
+GitHub release: https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42
+
+Zenodo DOI: pending author-controlled Zenodo publication. No placeholder DOI should be cited.

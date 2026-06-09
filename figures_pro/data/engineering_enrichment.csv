@@ -1,0 +1,8 @@
+proxy,proxy_label,followup_with_proxy,followup_without_proxy,nonfollowup_with_proxy,nonfollowup_without_proxy,followup_fraction_with_proxy,cohort_fraction_with_proxy,odds_ratio_followup_enrichment,fisher_greater_p,safe_interpretation
+soft_soil_proxy_vs30_le_360,low Vs30 proxy (<=360 m s-1),25,3,284,132,0.8928571428571429,0.6959459459459459,3.8732394366197185,0.011832773184253888,enriched among A/B follow-up units; use as engineering-context support
+shallow_wtd_proxy_le_10m,shallow baseline water table proxy (<=10 m),22,6,274,142,0.7857142857142857,0.6666666666666666,1.900243309002433,0.11834211553759222,not enriched at this threshold; do not use as an enrichment claim
+near_water_proxy_le_5km,near mapped water proxy (<=5 km),20,8,130,286,0.7142857142857143,0.33783783783783783,5.5,2.9780262169798836e-05,enriched among A/B follow-up units; use as engineering-context support
+high_shaking_proxy_pga_ge_0p2g,high PGA475 proxy (>=0.2 g),8,20,151,265,0.2857142857142857,0.3581081081081081,0.7019867549668874,0.8485797505930376,not enriched at this threshold; do not use as an enrichment claim
+susceptibility_proxy_count_ge_2,at least 2 engineering-context proxies,28,0,294,122,1.0,0.7252252252252253,inf,8.828086659623538e-05,enriched among A/B follow-up units; use as engineering-context support
+susceptibility_proxy_count_ge_3,at least 3 engineering-context proxies,17,11,132,284,0.6071428571428571,0.3355855855855856,3.325068870523416,0.0021738623439849255,enriched among A/B follow-up units; use as engineering-context support
+susceptibility_proxy_count_ge_4,at least 4 engineering-context proxies,2,26,21,395,0.07142857142857142,0.0518018018018018,1.4468864468864469,0.43405098886980525,not enriched at this threshold; do not use as an enrichment claim

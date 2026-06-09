@@ -1,0 +1,17 @@
+{
+  "name": "dgls-nature-water-figures",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Editable, reproducible figure factory for the DGLS Nature Water Article.",
+  "scripts": {
+    "doctor": "python python/doctor.py",
+    "build": "python python/build_svg_suite.py && python python/build_pptx_deck.py",
+    "audit": "python python/audit_figures.py"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "pptxgenjs": "^3.12.0",
+    "sharp": "^0.33.5",
+    "topojson-client": "^3.1.0"
+  }
+}

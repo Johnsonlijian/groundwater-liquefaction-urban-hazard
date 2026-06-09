@@ -1,0 +1,23 @@
+name: dgls-nature-water-figures
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - geopandas
+  - shapely
+  - pyproj
+  - pillow
+  - jinja2
+  - pip
+  - pip:
+      - python-pptx
+      - pymupdf
+      - svgwrite
+      - drawsvg
+      - cairosvg
+      - svglib
+      - reportlab

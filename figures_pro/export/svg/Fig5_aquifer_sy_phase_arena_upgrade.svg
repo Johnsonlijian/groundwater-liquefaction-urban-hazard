@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1b3a" flood-opacity="0.16"/></filter>
+<linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#8BD5F7" stop-opacity=".9"/><stop offset="1" stop-color="#1B77B9" stop-opacity=".9"/></linearGradient>
+<linearGradient id="soil" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C28B59"/><stop offset=".55" stop-color="#B1784A"/><stop offset="1" stop-color="#7C4D2D"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#081B4A"/></marker>
+<marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2467AE"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C84C3A"/></marker>
+</defs>
+<rect x="0" y="0" width="2200" height="1500" rx="0" fill="#F5F8FC"/>
+<text x="1100.0" y="58.0" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">FIGURE 5  |  AQUIFER-CLASS S_Y PHASE ARENA</text>
+<text x="1100.0" y="102.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="middle" fill="#081B4A" opacity="1.0" style="font-style:italic;">Product sign is tested; materiality is aquifer-conditioned</text>
+<rect x="32" y="128" width="2164" height="1270" rx="28" fill="#FFFFFF" stroke="#A9BCD6" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<circle cx="82" cy="185" r="25" fill="#C84C3A" stroke="white" stroke-width="3"/><text x="82.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">A</text>
+<text x="121.0" y="193.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">S_y prior bands and materiality gate</text>
+<rect x="120" y="285" width="970" height="760" rx="22" fill="#FBFCFE" stroke="#C7D3E4" stroke-width="2" opacity="1"/>
+<line x1="482.0" y1="375" x2="482.0" y2="935" stroke="#D7DFEA" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 7" opacity="1"/>
+<text x="482.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">0.05</text>
+<line x1="594.0" y1="375" x2="594.0" y2="935" stroke="#D7DFEA" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 7" opacity="1"/>
+<text x="594.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">0.10</text>
+<line x1="706.0" y1="375" x2="706.0" y2="935" stroke="#D7DFEA" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 7" opacity="1"/>
+<text x="706.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">0.15</text>
+<line x1="818.0" y1="375" x2="818.0" y2="935" stroke="#D7DFEA" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 7" opacity="1"/>
+<text x="818.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">0.20</text>
+<line x1="930.0" y1="375" x2="930.0" y2="935" stroke="#D7DFEA" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 7" opacity="1"/>
+<text x="930.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">0.25</text>
+<text x="640.0" y="1015.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">specific yield S_y</text>
+<text x="155.0" y="407.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Yokohama (JP)</text>
+<line x1="504.4" y1="400" x2="773.2" y2="400" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="638.8" cy="400" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="960.0" y="407.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#C84C3A" opacity="1.0" style="">material</text>
+<text x="155.0" y="499.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Bhayandar (IN)</text>
+<line x1="504.4" y1="492" x2="773.2" y2="492" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="638.8" cy="492" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="960.0" y="499.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">sub-material</text>
+<text x="155.0" y="591.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Mumbai (IN)</text>
+<line x1="504.4" y1="584" x2="773.2" y2="584" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="638.8" cy="584" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="960.0" y="591.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">sub-material</text>
+<text x="155.0" y="683.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Delhi (IN)</text>
+<line x1="549.2" y1="676" x2="862.8" y2="676" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="683.6" cy="676" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="960.0" y="683.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">sub-material</text>
+<text x="155.0" y="775.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Lahore (PK)</text>
+<line x1="549.2" y1="768" x2="862.8" y2="768" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="683.6" cy="768" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="960.0" y="775.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#2467AE" opacity="1.0" style="">material</text>
+<text x="155.0" y="867.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Ludhiana (IN)</text>
+<line x1="549.2" y1="860" x2="862.8" y2="860" stroke="#B6C0CC" stroke-width="9" stroke-linecap="round" opacity="1"/>
+<circle cx="683.6" cy="860" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="960.0" y="867.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#2467AE" opacity="1.0" style="">material</text>
+<line x1="594.0" y1="365" x2="594.0" y2="957" stroke="#081B4A" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 8" opacity="1"/>
+<text x="604.0" y="360.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">baseline S_y=0.10</text>
+<circle cx="1190" cy="185" r="25" fill="#2467AE" stroke="white" stroke-width="3"/><text x="1190.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">B</text>
+<text x="1230.0" y="193.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">ΔP_liq range under class priors</text>
+<rect x="1190" y="285" width="910" height="760" rx="22" fill="#FBFCFE" stroke="#C7D3E4" stroke-width="2" opacity="1"/>
+<line x1="1855.0" y1="375" x2="1855.0" y2="935" stroke="#111827" stroke-width="2.0" stroke-linecap="round" opacity="1"/>
+<line x1="1776.6666666666667" y1="375" x2="1776.6666666666667" y2="935" stroke="#2467AE" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="1"/>
+<line x1="1933.3333333333335" y1="375" x2="1933.3333333333335" y2="935" stroke="#C84C3A" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="1"/>
+<text x="1698.3" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">-0.02</text>
+<text x="1776.7" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">-0.01</text>
+<text x="1855.0" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">+0.00</text>
+<text x="1933.3" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">+0.01</text>
+<text x="2011.7" y="975.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">+0.02</text>
+<text x="1820.0" y="1015.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">ΔP_liq under class S_y</text>
+<text x="1225.0" y="407.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Yokohama</text>
+<line x1="1912.4024288323903" y1="400" x2="2026.5055872555708" y2="400" stroke="#C84C3A" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1941.0719841316711" cy="400" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="1225.0" y="499.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Bhayandar</text>
+<line x1="1906.193839435254" y1="492" x2="2008.757614583376" y2="492" stroke="#C84C3A" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1931.8160555208015" cy="492" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="1225.0" y="591.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Mumbai</text>
+<line x1="1901.9299521446787" y1="584" x2="1967.4471396643175" y2="584" stroke="#C84C3A" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1925.52875660809" cy="584" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="1225.0" y="683.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Delhi</text>
+<line x1="1744.3148932835295" y1="676" x2="1813.925232753263" y2="676" stroke="#2467AE" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1790.878860221956" cy="676" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="1225.0" y="775.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Lahore</text>
+<line x1="1719.5289432303039" y1="768" x2="1803.528238136027" y2="768" stroke="#2467AE" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1775.2650828511987" cy="768" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="1225.0" y="867.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Ludhiana</text>
+<line x1="1708.6926623021427" y1="860" x2="1796.9721612139435" y2="860" stroke="#2467AE" stroke-width="7" stroke-linecap="round" opacity="1"/>
+<circle cx="1766.3733472700387" cy="860" r="12" fill="#2467AE" stroke="white" stroke-width="3"/>
+<circle cx="1190" cy="1115" r="25" fill="#2E7D3A" stroke="white" stroke-width="3"/><text x="1190.0" y="1124.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">C</text>
+<text x="1230.0" y="1123.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Replacement rule</text>
+<rect x="1240" y="1168" width="270" height="115" rx="18" fill="#EAF5E8" stroke="#B7D1B2" stroke-width="2" opacity="1"/>
+<text x="1264.0" y="1210.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">Sign</text>
+<text x="1264.0" y="1244.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">constrained by</text>
+<text x="1264.0" y="1264.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">CSR/GSFC/GFZ</text>
+<rect x="1540" y="1168" width="270" height="115" rx="18" fill="#EAF5E8" stroke="#B7D1B2" stroke-width="2" opacity="1"/>
+<text x="1564.0" y="1210.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">Materiality</text>
+<text x="1564.0" y="1244.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">replace S_y prior</text>
+<text x="1564.0" y="1264.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">with local aquifer</text>
+<text x="1564.0" y="1284.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">data</text>
+<rect x="1840" y="1168" width="270" height="115" rx="18" fill="#EAF5E8" stroke="#B7D1B2" stroke-width="2" opacity="1"/>
+<text x="1864.0" y="1210.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">Use</text>
+<text x="1864.0" y="1244.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">review cue, not</text>
+<text x="1864.0" y="1264.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">design threshold</text>
+</svg>

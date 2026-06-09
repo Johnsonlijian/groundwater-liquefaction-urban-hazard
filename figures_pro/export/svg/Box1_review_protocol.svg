@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1b3a" flood-opacity="0.16"/></filter>
+<linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#8BD5F7" stop-opacity=".9"/><stop offset="1" stop-color="#1B77B9" stop-opacity=".9"/></linearGradient>
+<linearGradient id="soil" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C28B59"/><stop offset=".55" stop-color="#B1784A"/><stop offset="1" stop-color="#7C4D2D"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#081B4A"/></marker>
+<marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2467AE"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C84C3A"/></marker>
+</defs>
+<rect x="0" y="0" width="2200" height="1500" rx="0" fill="#F5F8FC"/>
+<text x="1100.0" y="58.0" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">BOX 1  |  DYNAMIC GROUNDWATER-LIQUEFACTION REVIEW PROTOCOL</text>
+<text x="1100.0" y="102.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="middle" fill="#081B4A" opacity="1.0" style="font-style:italic;">A non-regulatory local-data replacement workflow</text>
+<rect x="32" y="128" width="2164" height="1270" rx="28" fill="#FFFFFF" stroke="#A9BCD6" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<rect x="105" y="270" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="159" cy="328" r="34" fill="#081B4A" stroke="white" stroke-width="4"/>
+<text x="159.0" y="340.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="210.0" y="322.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Eligibility screen</text>
+<text x="143.0" y="398.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Seismic urban basin, susceptible ground</text>
+<text x="143.0" y="418.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">proxy, water-management action or observed</text>
+<text x="143.0" y="438.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">storage change.</text>
+<rect x="137" y="488" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="151.0" y="512.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Routine update or enter dynamic groundwater</text>
+<text x="151.0" y="529.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">review.</text>
+<line x1="560" y1="404" x2="605" y2="404" stroke="#081B4A" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="615" y="270" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="669" cy="328" r="34" fill="#2467AE" stroke="white" stroke-width="4"/>
+<text x="669.0" y="340.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="720.0" y="322.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Storage-direction check</text>
+<text x="653.0" y="398.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Regional GRACE/GRACE-FO sign and, where</text>
+<text x="653.0" y="418.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">available, local well or InSAR sign.</text>
+<rect x="647" y="488" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="661.0" y="512.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Recharge-side, depletion-side, mixed or</text>
+<text x="661.0" y="529.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">contradicted evidence class.</text>
+<line x1="1070" y1="404" x2="1115" y2="404" stroke="#2467AE" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="1125" y="270" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1179" cy="328" r="34" fill="#C84C3A" stroke="white" stroke-width="4"/>
+<text x="1179.0" y="340.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="1230.0" y="322.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Screening-magnitude</text>
+<text x="1230.0" y="351.5" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">phase</text>
+<text x="1163.0" y="398.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Delta P_liq tier, uncertainty, FDR status</text>
+<text x="1163.0" y="418.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">and aquifer-context S_y prior.</text>
+<rect x="1157" y="488" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="1171.0" y="512.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">A material, B targeted, C detectable or D</text>
+<text x="1171.0" y="529.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">routine follow-up class.</text>
+<line x1="1580" y1="404" x2="1625" y2="404" stroke="#C84C3A" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="1635" y="270" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1689" cy="328" r="34" fill="#F2B84B" stroke="white" stroke-width="4"/>
+<text x="1689.0" y="340.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="1740.0" y="322.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Coastal and leakage</text>
+<text x="1740.0" y="351.5" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">guardrail</text>
+<text x="1673.0" y="398.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Independent mascon products, leakage</text>
+<text x="1673.0" y="418.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">diagnostics, coastline/reclamation context</text>
+<text x="1673.0" y="438.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">and JPL CRI status if authenticated.</text>
+<rect x="1667" y="488" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="1681.0" y="512.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Product-material, sign-supported, candidate-only</text>
+<text x="1681.0" y="529.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">or contradicted guardrail.</text>
+<rect x="105" y="650" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="159" cy="708" r="34" fill="#2E7D3A" stroke="white" stroke-width="4"/>
+<text x="159.0" y="720.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">5</text>
+<text x="210.0" y="702.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local hydrogeology</text>
+<text x="210.0" y="731.5" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">replacement</text>
+<text x="143.0" y="778.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Observation wells, aquifer class,</text>
+<text x="143.0" y="798.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">confined/unconfined setting,</text>
+<text x="143.0" y="818.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">pumping/recharge records and local S_y</text>
+<text x="143.0" y="838.2" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">estimate.</text>
+<rect x="137" y="868" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="151.0" y="892.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Replace regional storage prior or keep as</text>
+<text x="151.0" y="909.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">screening-only cue.</text>
+<line x1="560" y1="784" x2="605" y2="784" stroke="#2E7D3A" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="615" y="650" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="669" cy="708" r="34" fill="#2F9EB0" stroke="white" stroke-width="4"/>
+<text x="669.0" y="720.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">6</text>
+<text x="720.0" y="702.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Geotechnical translation</text>
+<text x="653.0" y="778.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">CPT/SPT, boreholes, young alluvium,</text>
+<text x="653.0" y="798.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">reclaimed/fill ground, distance to water</text>
+<text x="653.0" y="818.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">and historical liquefaction evidence.</text>
+<rect x="647" y="868" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="661.0" y="892.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Local liquefaction assessment need; no</text>
+<text x="661.0" y="909.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">engineering design value is inferred from DGLS</text>
+<text x="661.0" y="927.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">alone.</text>
+<line x1="1070" y1="784" x2="1115" y2="784" stroke="#2F9EB0" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="1125" y="650" width="455" height="270" rx="22" fill="#FBFCFE" stroke="#B8C8DD" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1179" cy="708" r="34" fill="#5E6A7D" stroke="white" stroke-width="4"/>
+<text x="1179.0" y="720.0" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">7</text>
+<text x="1230.0" y="702.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Governance action</text>
+<text x="1163.0" y="778.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Water-security objective, subsidence risk,</text>
+<text x="1163.0" y="798.1" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">seismic exposure and local-data readiness.</text>
+<rect x="1157" y="868" width="390" height="38" rx="13" fill="#EEF5FF" stroke="#D3DBE7" stroke-width="1.2" opacity="1"/>
+<text x="1171.0" y="892.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Monitoring, targeted data collection, local</text>
+<text x="1171.0" y="909.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">geotechnical review or multi-hazard audit.</text>
+<rect x="110" y="1110" width="1980" height="170" rx="24" fill="#EEF5FF" stroke="#B8C8DD" stroke-width="2" opacity="1"/>
+<text x="145.0" y="1170.0" font-family="Arial" font-size="30" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Outcome classes</text>
+<rect x="430" y="1138" width="310" height="40" rx="20" fill="#5E6A7D" stroke="#5E6A7D" stroke-width="1.5" opacity="1"/><text x="585.0" y="1165.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">routine monitoring</text>
+<rect x="775" y="1138" width="380" height="40" rx="20" fill="#D86B20" stroke="#D86B20" stroke-width="1.5" opacity="1"/><text x="965.0" y="1165.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">targeted data collection</text>
+<rect x="1195" y="1138" width="390" height="40" rx="20" fill="#2467AE" stroke="#2467AE" stroke-width="1.5" opacity="1"/><text x="1390.0" y="1165.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">local geotechnical review</text>
+<rect x="1625" y="1138" width="310" height="40" rx="20" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1.5" opacity="1"/><text x="1780.0" y="1165.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">multi-hazard audit</text>
+<text x="145.0" y="1232.0" font-family="Arial" font-size="24" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Protocol output is a review action. It does not create a regulatory threshold, hazard map, event-prediction model, or factor</text>
+<text x="145.0" y="1260.3" font-family="Arial" font-size="24" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">of safety.</text>
+</svg>

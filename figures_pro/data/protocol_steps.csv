@@ -1,0 +1,8 @@
+step,review_step,required_evidence,decision_output
+1,Eligibility screen,"Seismic urban basin, susceptible ground proxy, water-management action or observed storage change.",Routine update or enter dynamic groundwater review.
+2,Storage-direction check,"Regional GRACE/GRACE-FO sign and, where available, local well or InSAR sign.","Recharge-side, depletion-side, mixed or contradicted evidence class."
+3,Screening-magnitude phase,"Delta P_liq tier, uncertainty, FDR status and aquifer-context S_y prior.","A material, B targeted, C detectable or D routine follow-up class."
+4,Coastal and leakage guardrail,"Independent mascon products, leakage diagnostics, coastline/reclamation context and JPL CRI status if authenticated.","Product-material, sign-supported, candidate-only or contradicted guardrail."
+5,Local hydrogeology replacement,"Observation wells, aquifer class, confined/unconfined setting, pumping/recharge records and local S_y estimate.",Replace regional storage prior or keep as screening-only cue.
+6,Geotechnical translation,"CPT/SPT, boreholes, young alluvium, reclaimed/fill ground, distance to water and historical liquefaction evidence.",Local liquefaction assessment need; no engineering design value is inferred from DGLS alone.
+7,Governance action,"Water-security objective, subsidence risk, seismic exposure and local-data readiness.","Monitoring, targeted data collection, local geotechnical review or multi-hazard audit."

@@ -46,6 +46,10 @@ python scripts\\r42_article_display_reorder_and_protocol.py
 python scripts\\r39_article_dataset_release.py
 python scripts\\build_nature_water_visual_upgrade_pack.py
 python scripts\\build_3d_dgls_hero.py
+python figures_pro\\python\\doctor.py
+python figures_pro\\python\\build_svg_suite.py
+python figures_pro\\python\\build_3d_dgls_hero.py
+python figures_pro\\python\\audit_figures.py
 ```
 
 ## Minimum verification from included derived data
@@ -117,6 +121,11 @@ Expected summary:
 - R39/R40/R41/R42 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables, display-order products and derived tables; GitHub release `v0.8.0-nature-water-article-r42` is published at `https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42`; Zenodo DOI minting remains pending author-controlled Zenodo publication.
 - R42 Article display repair: `Fig2_global_payload_article.*`, `Fig3_regional_evidence_cards_article.*`, `Fig6_engineering_event_boundary_article.*`, `review_protocol_box1_r42.csv` and `article_display_reorder_summary_r42.json` are present.
 - R45 visual-upgrade figure pack: `figures/visual_upgrade/` contains six code-generated SVG/PDF/PNG upgraded display candidates, an optional 3D mechanism hero and a contact sheet. These are visual re-expressions of the existing evidence and do not add new numerical claims.
+- R46 formal figure factory: `figures_pro/` contains mirrored derived inputs,
+  SVG/PDF/PNG/PPTX outputs, Blender source scripts, a Nature Water policy note,
+  SHA-256 manifest and `audit_report.md`. The audit verifies file completeness,
+  editable SVG provenance, selected numerical labels, preview resolution,
+  placeholder/identity scans and the local Blender availability boundary.
 - Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
@@ -196,6 +205,21 @@ Visual-upgrade candidates are stored under `figures/visual_upgrade/`:
 - `Fig6_engineering_event_protocol_arena_upgrade.*`
 - `GraphicalAbstract_3D_DGLS_mechanism_hero.*`
 - `contact_sheet.png`
+
+The formal Nature Water figure factory is stored under `figures_pro/`:
+
+- `figures_pro/export/svg/`: editable SVG sources for Fig. 1-Fig. 6, Box 1 and
+  the optional graphical abstract.
+- `figures_pro/export/pdf/`: vector PDF derivatives.
+- `figures_pro/export/png_600dpi/`: high-resolution previews and contact sheet.
+- `figures_pro/export/pptx/NatureWater_Editable_Figure_Upgrade_Pack.pptx`:
+  editable deck for author micro-adjustment.
+- `figures_pro/blender/`: Blender Python source for the Fig. 1 3D aquifer
+  cutaway scene. A `.blend` render requires a local Blender installation.
+- `figures_pro/audit_report.md` and `figures_pro/export/manifest_sha256.txt`:
+  figure-integrity audit and checksums.
+- `figures_pro/journal_policy_note.md`: Nature Water Article, double-anonymized
+  review and AI-image policy notes checked on 2026-06-09.
 
 ## Guardrails
 

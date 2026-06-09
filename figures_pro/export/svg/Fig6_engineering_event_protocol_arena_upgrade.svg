@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1b3a" flood-opacity="0.16"/></filter>
+<linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#8BD5F7" stop-opacity=".9"/><stop offset="1" stop-color="#1B77B9" stop-opacity=".9"/></linearGradient>
+<linearGradient id="soil" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C28B59"/><stop offset=".55" stop-color="#B1784A"/><stop offset="1" stop-color="#7C4D2D"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#081B4A"/></marker>
+<marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2467AE"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C84C3A"/></marker>
+</defs>
+<rect x="0" y="0" width="2200" height="1500" rx="0" fill="#F5F8FC"/>
+<text x="1100.0" y="58.0" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">FIGURE 6  |  ENGINEERING CONTEXT AND EVENT BOUNDARY</text>
+<text x="1100.0" y="102.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="middle" fill="#081B4A" opacity="1.0" style="font-style:italic;">A stress test for interpretation, not a proof of event-scale prediction</text>
+<rect x="32" y="128" width="2164" height="1270" rx="28" fill="#FFFFFF" stroke="#A9BCD6" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<circle cx="85" cy="185" r="25" fill="#2E7D3A" stroke="white" stroke-width="3"/><text x="85.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">A</text>
+<text x="124.0" y="193.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Engineering-context enrichment</text>
+<rect x="110" y="260" width="980" height="650" rx="24" fill="#FBFCFE" stroke="#C7D3E4" stroke-width="2" opacity="1"/>
+<text x="145.0" y="338.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">low Vs30 proxy (&lt;=360 m s-1)</text>
+<rect x="540" y="327" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="327" width="278.3783783783784" height="24" rx="12" fill="#C7D3E4" stroke="#C7D3E4" stroke-width="1" opacity="1"/>
+<rect x="540" y="362" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="362" width="357.14285714285717" height="24" rx="12" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1" opacity="1"/>
+<text x="960.0" y="348.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">cohort 0.70</text>
+<text x="960.0" y="385.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">A/B 0.89</text>
+<text x="1050.0" y="367.0" font-family="Arial" font-size="32" font-weight="700" text-anchor="middle" fill="#2E7D3A" opacity="1.0" style="">✓</text>
+<text x="145.0" y="443.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">shallow baseline water table proxy</text>
+<text x="145.0" y="464.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">(&lt;=10 m)</text>
+<rect x="540" y="432" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="432" width="266.66666666666663" height="24" rx="12" fill="#C7D3E4" stroke="#C7D3E4" stroke-width="1" opacity="1"/>
+<rect x="540" y="467" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="467" width="314.2857142857143" height="24" rx="12" fill="#B6C0CC" stroke="#B6C0CC" stroke-width="1" opacity="1"/>
+<text x="960.0" y="453.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">cohort 0.67</text>
+<text x="960.0" y="490.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="start" fill="#B6C0CC" opacity="1.0" style="">A/B 0.79</text>
+<text x="1050.0" y="472.0" font-family="Arial" font-size="32" font-weight="700" text-anchor="middle" fill="#B6C0CC" opacity="1.0" style="">–</text>
+<text x="145.0" y="548.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">near mapped water proxy (&lt;=5 km)</text>
+<rect x="540" y="537" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="537" width="135.1351351351351" height="24" rx="12" fill="#C7D3E4" stroke="#C7D3E4" stroke-width="1" opacity="1"/>
+<rect x="540" y="572" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="572" width="285.7142857142857" height="24" rx="12" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1" opacity="1"/>
+<text x="960.0" y="558.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">cohort 0.34</text>
+<text x="960.0" y="595.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">A/B 0.71</text>
+<text x="1050.0" y="577.0" font-family="Arial" font-size="32" font-weight="700" text-anchor="middle" fill="#2E7D3A" opacity="1.0" style="">✓</text>
+<text x="145.0" y="653.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">high PGA475 proxy (&gt;=0.2 g)</text>
+<rect x="540" y="642" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="642" width="143.24324324324326" height="24" rx="12" fill="#C7D3E4" stroke="#C7D3E4" stroke-width="1" opacity="1"/>
+<rect x="540" y="677" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="677" width="114.28571428571428" height="24" rx="12" fill="#B6C0CC" stroke="#B6C0CC" stroke-width="1" opacity="1"/>
+<text x="960.0" y="663.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">cohort 0.36</text>
+<text x="960.0" y="700.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="start" fill="#B6C0CC" opacity="1.0" style="">A/B 0.29</text>
+<text x="1050.0" y="682.0" font-family="Arial" font-size="32" font-weight="700" text-anchor="middle" fill="#B6C0CC" opacity="1.0" style="">–</text>
+<text x="145.0" y="758.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">at least 2 engineering-context</text>
+<text x="145.0" y="779.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">proxies</text>
+<rect x="540" y="747" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="747" width="290.0900900900901" height="24" rx="12" fill="#C7D3E4" stroke="#C7D3E4" stroke-width="1" opacity="1"/>
+<rect x="540" y="782" width="400" height="24" rx="12" fill="#E5EAF1" stroke="#E5EAF1" stroke-width="1" opacity="1"/>
+<rect x="540" y="782" width="400.0" height="24" rx="12" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1" opacity="1"/>
+<text x="960.0" y="768.0" font-family="Arial" font-size="17" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">cohort 0.73</text>
+<text x="960.0" y="805.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">A/B 1.00</text>
+<text x="1050.0" y="787.0" font-family="Arial" font-size="32" font-weight="700" text-anchor="middle" fill="#2E7D3A" opacity="1.0" style="">✓</text>
+<rect x="145" y="850" width="550" height="40" rx="20" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1.5" opacity="1"/><text x="420.0" y="877.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">enriched proxies support context, not local design</text>
+<circle cx="1180" cy="185" r="25" fill="#2467AE" stroke="white" stroke-width="3"/><text x="1180.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">B</text>
+<text x="1219.0" y="193.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Historical-event boundary benchmark</text>
+<rect x="1180" y="260" width="980" height="650" rx="24" fill="#FBFCFE" stroke="#C7D3E4" stroke-width="2" opacity="1"/>
+<line x1="1700" y1="350" x2="1700" y2="715" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity="1"/>
+<text x="1700.0" y="320.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">ΔAUC dynamic - static</text>
+<rect x="1543.228335026864" y="362" width="156.77166497313598" height="36" rx="8" fill="#B51F2B" stroke="#B51F2B" stroke-width="1" opacity="1"/>
+<text x="1225.0" y="388.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">2011 Tohoku Japan M9.1</text>
+<text x="1945.0" y="388.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#B51F2B" opacity="1.0" style="">-0.0013</text>
+<rect x="1396.789536266324" y="452" width="303.21046373367597" height="36" rx="8" fill="#B51F2B" stroke="#B51F2B" stroke-width="1" opacity="1"/>
+<text x="1225.0" y="478.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">2008 Wenchuan China M7.9</text>
+<text x="1945.0" y="478.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#B51F2B" opacity="1.0" style="">-0.0025</text>
+<rect x="1699.9999999999866" y="542" width="1.3322676295501875e-11" height="36" rx="8" fill="#B6C0CC" stroke="#B6C0CC" stroke-width="1" opacity="1"/>
+<text x="1225.0" y="568.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">2015 Gorkha Nepal M7.8</text>
+<text x="1945.0" y="568.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#B6C0CC" opacity="1.0" style="">-0.0000</text>
+<rect x="1700" y="632" width="92.59259259258" height="36" rx="8" fill="#2E7D3A" stroke="#2E7D3A" stroke-width="1" opacity="1"/>
+<text x="1225.0" y="658.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">2020 Puerto Rico M6.4</text>
+<text x="1945.0" y="658.0" font-family="Arial" font-size="22" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">+0.0008</text>
+<rect x="1235" y="765" width="870" height="90" rx="18" fill="#FFF3F1" stroke="#E8B6AA" stroke-width="2" opacity="1"/>
+<text x="1265.0" y="802.0" font-family="Arial" font-size="22" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Neutral/negative event benchmark delimits the claim: DGLS flags stale</text>
+<text x="1265.0" y="828.0" font-family="Arial" font-size="22" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">water-table assumptions before local modelling; it is not an event-</text>
+<text x="1265.0" y="853.9" font-family="Arial" font-size="22" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">prediction engine.</text>
+<circle cx="85" cy="990" r="25" fill="#081B4A" stroke="white" stroke-width="3"/><text x="85.0" y="999.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">C</text>
+<text x="124.0" y="998.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Seven-step non-regulatory protocol</text>
+<circle cx="148" cy="1095" r="30" fill="#081B4A" stroke="white" stroke-width="4"/>
+<text x="148.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="190.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Eligibility screen</text>
+<line x1="325" y1="1095" x2="375" y2="1095" stroke="#081B4A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="440" cy="1095" r="30" fill="#2467AE" stroke="white" stroke-width="4"/>
+<text x="440.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="482.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Storage-direction</text>
+<text x="482.0" y="1105.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">check</text>
+<line x1="617" y1="1095" x2="667" y2="1095" stroke="#2467AE" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="732" cy="1095" r="30" fill="#C84C3A" stroke="white" stroke-width="4"/>
+<text x="732.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="774.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Screening-magnitude</text>
+<text x="774.0" y="1105.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">phase</text>
+<line x1="909" y1="1095" x2="959" y2="1095" stroke="#C84C3A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="1024" cy="1095" r="30" fill="#F2B84B" stroke="white" stroke-width="4"/>
+<text x="1024.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="1066.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Coastal and leakage</text>
+<text x="1066.0" y="1105.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">guardrail</text>
+<line x1="1201" y1="1095" x2="1251" y2="1095" stroke="#F2B84B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="1316" cy="1095" r="30" fill="#2E7D3A" stroke="white" stroke-width="4"/>
+<text x="1316.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">5</text>
+<text x="1358.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local hydrogeology</text>
+<text x="1358.0" y="1105.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">replacement</text>
+<line x1="1493" y1="1095" x2="1543" y2="1095" stroke="#2E7D3A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="1608" cy="1095" r="30" fill="#2F9EB0" stroke="white" stroke-width="4"/>
+<text x="1608.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">6</text>
+<text x="1650.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Geotechnical</text>
+<text x="1650.0" y="1105.2" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">translation</text>
+<line x1="1785" y1="1095" x2="1835" y2="1095" stroke="#2F9EB0" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<circle cx="1900" cy="1095" r="30" fill="#5E6A7D" stroke="white" stroke-width="4"/>
+<text x="1900.0" y="1105.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">7</text>
+<text x="1942.0" y="1084.0" font-family="Arial" font-size="18" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Governance action</text>
+<rect x="110" y="1245" width="1980" height="100" rx="22" fill="#EEF5FF" stroke="#B8C8DD" stroke-width="2" opacity="1"/>
+<text x="145.0" y="1284.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Use both diagnostics together: engineering context says where local review is plausible; event benchmark prevents overclaiming</text>
+<text x="145.0" y="1313.5" font-family="Arial" font-size="25" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">dynamic event prediction.</text>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1b3a" flood-opacity="0.16"/></filter>
+<linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#8BD5F7" stop-opacity=".9"/><stop offset="1" stop-color="#1B77B9" stop-opacity=".9"/></linearGradient>
+<linearGradient id="soil" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C28B59"/><stop offset=".55" stop-color="#B1784A"/><stop offset="1" stop-color="#7C4D2D"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#081B4A"/></marker>
+<marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2467AE"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C84C3A"/></marker>
+</defs>
+<rect x="0" y="0" width="2200" height="1500" rx="0" fill="#F5F8FC"/>
+<text x="1100.0" y="58.0" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">FIGURE 1  |  DYNAMIC GROUNDWATER REVIEW SCREEN</text>
+<text x="1100.0" y="102.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="middle" fill="#081B4A" opacity="1.0" style="font-style:italic;">A 3D state-variable mechanism, not a site-scale hazard map</text>
+<rect x="32" y="128" width="2164" height="1270" rx="28" fill="#FFFFFF" stroke="#A9BCD6" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<circle cx="88" cy="185" r="25" fill="#2467AE" stroke="white" stroke-width="3"/><text x="88.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">A</text>
+<text x="126.0" y="193.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">3D aquifer-state mechanism</text>
+<polygon points="130,500 740,580 740,950 130,870" fill="url(#soil)" stroke="#8A5A37" stroke-width="3" opacity="1"/>
+<polygon points="740,580 910,400 910,750 740,950" fill="#9D6941" stroke="#7A5032" stroke-width="3" opacity="1"/>
+<polygon points="200,680 770,740 870,630 280,570" fill="url(#water)" stroke="#1B77B9" stroke-width="2.5" opacity="0.78"/>
+<polygon points="310,330 910,400 740,580 130,500" fill="#7FA16C" stroke="#5D764D" stroke-width="3" opacity="1"/>
+<path d="M220,675 C400,635 555,735 780,725" fill="none" stroke="#DDF7FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="470.0" y="768.0" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#0E5D8F" opacity="1.0" style="">regional water-table perturbation</text>
+<text x="472.0" y="794.0" font-family="Arial" font-size="19" font-weight="400" text-anchor="middle" fill="#0E5D8F" opacity="1.0" style="">ΔWTD = storage trend / S_y</text>
+<rect x="210" y="265" width="55" height="85" rx="4" fill="#D9E5F3" stroke="#6A7A8C" stroke-width="2" opacity="1"/>
+<polygon points="210,265 238,243 293,243 265,265" fill="#EEF4FA" stroke="#6A7A8C" stroke-width="1.5" opacity="1"/>
+<rect x="290" y="235" width="55" height="130" rx="4" fill="#C7D8EA" stroke="#6A7A8C" stroke-width="2" opacity="1"/>
+<polygon points="290,235 318,213 373,213 345,235" fill="#EEF4FA" stroke="#6A7A8C" stroke-width="1.5" opacity="1"/>
+<rect x="380" y="245" width="55" height="105" rx="4" fill="#B7CDE2" stroke="#6A7A8C" stroke-width="2" opacity="1"/>
+<polygon points="380,245 408,223 463,223 435,245" fill="#EEF4FA" stroke="#6A7A8C" stroke-width="1.5" opacity="1"/>
+<rect x="510" y="220" width="55" height="150" rx="4" fill="#D5DFEA" stroke="#6A7A8C" stroke-width="2" opacity="1"/>
+<polygon points="510,220 538,198 593,198 565,220" fill="#EEF4FA" stroke="#6A7A8C" stroke-width="1.5" opacity="1"/>
+<circle cx="215" cy="810" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="276" cy="847" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="337" cy="884" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="398" cy="831" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="459" cy="868" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="520" cy="815" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="581" cy="852" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="642" cy="889" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="703" cy="836" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="244" cy="873" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="305" cy="820" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="366" cy="857" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="427" cy="894" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="488" cy="841" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="549" cy="878" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="610" cy="825" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="671" cy="862" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="732" cy="899" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="273" cy="846" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="334" cy="883" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="395" cy="830" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="456" cy="867" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="517" cy="814" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="578" cy="851" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="639" cy="888" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="700" cy="835" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="241" cy="872" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="302" cy="819" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="363" cy="856" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="424" cy="893" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="485" cy="840" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="546" cy="877" r="9" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="607" cy="824" r="10" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="668" cy="861" r="8" fill="#D6B08A" stroke="#7B5132" stroke-width="1"/>
+<circle cx="620" cy="760" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="638" cy="751" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="656" cy="742" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="674" cy="733" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="692" cy="724" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="710" cy="715" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="728" cy="706" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="746" cy="697" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="764" cy="688" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="782" cy="679" r="7" fill="#E9FCFF" stroke="#65B8D9" stroke-width="1.2"/>
+<circle cx="900" cy="185" r="25" fill="#2F9EB0" stroke="white" stroke-width="3"/><text x="900.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">B</text>
+<text x="940.0" y="193.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GRACE regional storage</text>
+<circle cx="1090" cy="275" r="52" fill="#1F4D83" stroke="#D6E7FF" stroke-width="4"/>
+<polygon points="945,255 1028,227 1050,257 968,287" fill="#D8EAFE" stroke="#356CA8" stroke-width="2" opacity="1"/>
+<polygon points="1152,227 1235,255 1212,287 1130,257" fill="#D8EAFE" stroke="#356CA8" stroke-width="2" opacity="1"/>
+<text x="1090.0" y="285.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">GRACE</text>
+<path d="M1070,347 C900,445 730,475 840,480" fill="none" stroke="#2F9EB0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="935" y="380" width="245" height="40" rx="20" fill="#2F9EB0" stroke="#2F9EB0" stroke-width="1.5" opacity="1"/><text x="1057.5" y="407.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">300-km storage signal</text>
+<text x="945.0" y="455.0" font-family="Arial" font-size="19" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Regional driver; city is the</text>
+<text x="945.0" y="477.4" font-family="Arial" font-size="19" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">exposure marker, not an</text>
+<text x="945.0" y="499.8" font-family="Arial" font-size="19" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">independent groundwater well.</text>
+<circle cx="1255" cy="185" r="25" fill="#C84C3A" stroke="white" stroke-width="3"/><text x="1255.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">C</text>
+<text x="1295.0" y="193.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Published water-table term</text>
+<rect x="1245" y="245" width="460" height="510" rx="24" fill="#FFF7F2" stroke="#F0B09E" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<text x="1475.0" y="300.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">Zhu et al. geospatial screen</text>
+<text x="1475.0" y="350.0" font-family="Arial" font-size="19" font-weight="400" text-anchor="middle" fill="#5E6A7D" opacity="1.0" style="">all non-groundwater predictors fixed</text>
+<line x1="1320" y1="500" x2="1620" y2="500" stroke="#9AA8B8" stroke-width="4" stroke-linecap="round" opacity="1"/>
+<path d="M1325,500 A150,150 0 0,1 1625,500" fill="none" stroke="#9AA8B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1475,500 L1578,415" fill="none" stroke="#C84C3A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<circle cx="1475" cy="500" r="12" fill="#C84C3A" stroke="white" stroke-width="3"/>
+<text x="1475.0" y="610.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="middle" fill="#C84C3A" opacity="1.0" style="">water-table coefficient only</text>
+<text x="1475.0" y="648.0" font-family="Arial" font-size="23" font-weight="400" text-anchor="middle" fill="#111827" opacity="1.0" style="">ΔP_liq screening increment</text>
+<path d="M925,650 C970,535 1110,535 1245,565" fill="none" stroke="#081B4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" opacity="1"/>
+<text x="970.0" y="670.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">specific-yield phase</text>
+<circle cx="1748" cy="185" r="25" fill="#2E7D3A" stroke="white" stroke-width="3"/><text x="1748.0" y="194.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">D</text>
+<text x="1788.0" y="193.0" font-family="Arial" font-size="25" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local review action</text>
+<rect x="1740" y="245" width="430" height="510" rx="24" fill="#F7FBF6" stroke="#A8CFA3" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1800" cy="315" r="26" fill="#B51F2B" stroke="white" stroke-width="3"/>
+<text x="1800.0" y="323.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">A</text>
+<text x="1842.0" y="313.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">material follow-up</text>
+<text x="1842.0" y="343.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">local wells + CPT/SPT + sediment</text>
+<text x="1842.0" y="361.9" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">review</text>
+<circle cx="1800" cy="397" r="26" fill="#D86B20" stroke="white" stroke-width="3"/>
+<text x="1800.0" y="405.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">B</text>
+<text x="1842.0" y="395.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">targeted local data</text>
+<text x="1842.0" y="425.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">local wells + CPT/SPT + sediment</text>
+<text x="1842.0" y="443.9" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">review</text>
+<circle cx="1800" cy="479" r="26" fill="#2467AE" stroke="white" stroke-width="3"/>
+<text x="1800.0" y="487.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">C</text>
+<text x="1842.0" y="477.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">detectable update</text>
+<text x="1842.0" y="507.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">local wells + CPT/SPT + sediment</text>
+<text x="1842.0" y="525.9" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">review</text>
+<circle cx="1800" cy="561" r="26" fill="#5E6A7D" stroke="white" stroke-width="3"/>
+<text x="1800.0" y="569.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">D</text>
+<text x="1842.0" y="559.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">routine refresh</text>
+<text x="1842.0" y="589.0" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">local wells + CPT/SPT + sediment</text>
+<text x="1842.0" y="607.9" font-family="Arial" font-size="16" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">review</text>
+<path d="M1706,535 C1770,535 1775,535 1740,535" fill="none" stroke="#2E7D3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowBlue)" opacity="1"/>
+<rect x="70" y="1130" width="2050" height="230" rx="24" fill="#F6F9FD" stroke="#B8C8DD" stroke-width="2" opacity="1"/>
+<text x="108.0" y="1180.0" font-family="Arial" font-size="27" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">KEY MECHANISM</text>
+<rect x="340" y="1150" width="430" height="40" rx="20" fill="#C84C3A" stroke="#C84C3A" stroke-width="1.5" opacity="1"/><text x="555.0" y="1177.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">recharge → shallower WTD → P_liq ↑</text>
+<rect x="820" y="1150" width="430" height="40" rx="20" fill="#2467AE" stroke="#2467AE" stroke-width="1.5" opacity="1"/><text x="1035.0" y="1177.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">depletion → deeper WTD → P_liq ↓</text>
+<rect x="1300" y="1150" width="420" height="40" rx="20" fill="#F2B84B" stroke="#F2B84B" stroke-width="1.5" opacity="1"/><text x="1510.0" y="1177.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">subsidence + water-security audit</text>
+<text x="108.0" y="1236.0" font-family="Arial" font-size="24" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">The scientific contribution is a dynamic groundwater state-variable screen. It flags where a static water-table assumption becomes stale;</text>
+<text x="108.0" y="1264.3" font-family="Arial" font-size="24" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">it does not predict earthquakes, local damage, or engineering factor of safety.</text>
+</svg>

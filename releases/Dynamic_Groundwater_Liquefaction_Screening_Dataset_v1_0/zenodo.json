@@ -2,12 +2,15 @@
   "title": "DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins",
   "upload_type": "dataset",
   "description": "Derived city, regional-group, product-consensus, aquifer-context, evidence-tier, event-boundary and protocol tables for a dynamic groundwater-liquefaction screening study.",
+  "publication_date": "2026-06-09",
+  "version": "0.8.0-nature-water-article-r42",
   "creators": [
     {
       "name": "Ren, Lijian",
       "affiliation": "Inner Mongolia University of Technology"
     }
   ],
+  "access_right": "open",
   "license": "cc-by-4.0",
   "keywords": [
     "GRACE",
@@ -15,5 +18,12 @@
     "liquefaction",
     "urban risk",
     "specific yield"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ]
 }

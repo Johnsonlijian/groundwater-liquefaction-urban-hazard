@@ -707,11 +707,13 @@ This is a derived screening dataset, not a hazard map, city ranking, regulatory 
 
 ## DOI
 
-Zenodo DOI: to be minted by the author after repository upload/release approval.
+GitHub release: https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42
+
+Zenodo DOI: pending author-controlled Zenodo publication. No placeholder DOI should be cited.
 """
     (REL / "README.md").write_text(readme, encoding="utf-8")
     (REL / "DATASET_CITATION.txt").write_text(
-        "Ren, L. DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins. Zenodo DOI to be minted.\n",
+        "Ren, L. DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins. GitHub release v0.8.0-nature-water-article-r42. https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42. Zenodo DOI pending author-controlled publication.\n",
         encoding="utf-8",
     )
     (REL / "zenodo.json").write_text(
@@ -720,9 +722,19 @@ Zenodo DOI: to be minted by the author after repository upload/release approval.
                 "title": "DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins",
                 "upload_type": "dataset",
                 "description": "Derived city, regional-group, product-consensus, aquifer-context, evidence-tier, event-boundary and protocol tables for a dynamic groundwater-liquefaction screening study.",
+                "publication_date": "2026-06-09",
+                "version": "0.8.0-nature-water-article-r42",
                 "creators": [{"name": "Ren, Lijian", "affiliation": "Inner Mongolia University of Technology"}],
+                "access_right": "open",
                 "license": "cc-by-4.0",
                 "keywords": ["GRACE", "groundwater", "liquefaction", "urban risk", "specific yield"],
+                "related_identifiers": [
+                    {
+                        "identifier": "https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42",
+                        "relation": "isSupplementTo",
+                        "scheme": "url",
+                    }
+                ],
             },
             indent=2,
         ),

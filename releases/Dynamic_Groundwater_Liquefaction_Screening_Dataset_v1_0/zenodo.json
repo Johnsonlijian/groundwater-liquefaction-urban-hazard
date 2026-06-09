@@ -1,7 +1,7 @@
 {
-  "title": "Dynamic Groundwater-Liquefaction Screening Dataset v1.0",
+  "title": "DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins",
   "upload_type": "dataset",
-  "description": "Derived city, regional-group, product-consensus, aquifer-context and evidence-tier tables for a dynamic groundwater-liquefaction screening study.",
+  "description": "Derived city, regional-group, product-consensus, aquifer-context, evidence-tier, event-boundary and protocol tables for a dynamic groundwater-liquefaction screening study.",
   "creators": [
     {
       "name": "Ren, Lijian",

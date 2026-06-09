@@ -42,6 +42,7 @@ python scripts\\r36_threshold_controls_and_regional_units.py
 python scripts\\r37_third_product_engineering_policy_protocol.py
 python scripts\\r40_event_hindcast_article_validation.py
 python scripts\\r41_article_hierarchy_and_evidence_ladder.py
+python scripts\\r42_article_display_reorder_and_protocol.py
 python scripts\\r39_article_dataset_release.py
 ```
 
@@ -78,7 +79,7 @@ Expected summary:
 - R37 GFZ-material counts at S_y = 0.10: 14 all-city raw TWS units and 33 all-city leakage-adjusted units; these are stress-test diagnostics, not replacement main results.
 - R37 engineering-context enrichment: low Vs30, near-water proximity, at least two proxies and at least three proxies pass one-sided Fisher tests; high PGA and shallow WTD alone are not used as enrichment claims.
 - R37 policy protocol tables present: `preimplementation_policy_protocol_r37.csv`, `regional_evidence_scorecard_r37.csv`, and `external_collaborator_role_matrix_r37.csv`.
-- R39 JPL CRI Article-route status file present; status remains Earthdata-authentication protected unless credentials or an authenticated local NetCDF are supplied.
+- R39 JPL CRI Article status file present; status remains Earthdata-authentication protected unless credentials or an authenticated local NetCDF are supplied.
 - R39 aquifer-context specific-yield products present: 6 review-prior classes, 444 city rows and 6 material-unit phase rows.
 - R39 evidence-tier cards present: 5 regional cards.
 - R39 named local release present: `releases/Dynamic_Groundwater_Liquefaction_Screening_Dataset_v1_0.zip`.
@@ -110,8 +111,9 @@ Expected summary:
 - R25 Tokyo Open Data / official PDF annual-table checks: 78 of 90 valid 2016 changes positive and 75 of 91 extracted 2022 changes positive.
 - R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
 - R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
-- R39 JPL CRI status: Article-route ledger generated; no JPL-derived numerical result is asserted without authenticated ingestion.
-- R39/R40/R41 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables and derived tables; DOI minting remains a post-upload step.
+- R39 JPL CRI status: Article ledger generated; no JPL-derived numerical result is asserted without authenticated ingestion.
+- R39/R40/R41/R42 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables, display-order products and derived tables; DOI minting remains a post-upload step.
+- R42 Article display repair: `Fig2_global_payload_article.*`, `Fig3_regional_evidence_cards_article.*`, `Fig6_engineering_event_boundary_article.*`, `review_protocol_box1_r42.csv` and `article_display_reorder_summary_r42.json` are present.
 - Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
@@ -147,6 +149,12 @@ Generated figures are stored under `figures/`:
 - `Fig2_event_hindcast_article.png`
 - `Fig2_event_hindcast_article.svg`
 - `Fig2_event_hindcast_article.pdf`
+- `Fig2_global_payload_article.png`
+- `Fig2_global_payload_article.svg`
+- `Fig2_global_payload_article.pdf`
+- `Fig3_regional_evidence_cards_article.png`
+- `Fig3_regional_evidence_cards_article.svg`
+- `Fig3_regional_evidence_cards_article.pdf`
 - `Fig3_regional_hierarchical_screen_article.png`
 - `Fig3_regional_hierarchical_screen_article.svg`
 - `Fig3_regional_hierarchical_screen_article.pdf`
@@ -159,6 +167,9 @@ Generated figures are stored under `figures/`:
 - `Fig5_aquifer_class_phase_article.png`
 - `Fig5_aquifer_class_phase_article.svg`
 - `Fig5_aquifer_class_phase_article.pdf`
+- `Fig6_engineering_event_boundary_article.png`
+- `Fig6_engineering_event_boundary_article.svg`
+- `Fig6_engineering_event_boundary_article.pdf`
 - `FigS1_yokohama_local_groundwater_r24.png`
 - `FigS1_yokohama_local_groundwater_r24.svg`
 - `FigS1_yokohama_local_groundwater_r24.pdf`

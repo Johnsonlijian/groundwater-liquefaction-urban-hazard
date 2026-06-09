@@ -67,6 +67,8 @@ def main() -> None:
     product_ladder = pd.read_csv(DER / "four_product_evidence_ladder_r41.csv")
     readiness = pd.read_csv(DER / "article_readiness_dashboard_r41.csv")
     r41 = read_json("article_readiness_summary_r41.json")
+    protocol_r42 = pd.read_csv(DER / "review_protocol_box1_r42.csv")
+    r42 = read_json("article_display_reorder_summary_r42.json")
 
     material = cities[cities["fdr_sig"] & (cities["dP"].abs() >= MATERIAL)]
     assert summary["n"] == len(cities) == 444
@@ -162,6 +164,13 @@ def main() -> None:
     assert len(product_ladder) == 5
     assert len(readiness) == 7
     assert r41["article_readiness_score"] == int(readiness["score"].sum())
+    assert len(protocol_r42) == 7
+    assert r42["protocol_steps"] == 7
+    assert r42["global_payload_counts"]["n_cities"] == 444
+    assert r42["global_payload_counts"]["detectable"] == 311
+    assert r42["global_payload_counts"]["ab"] == 28
+    assert r42["global_payload_counts"]["regional"] == 10
+    assert "delimit" in r42["claim_boundary"]
 
     for path in [
         DER / "policy_followup_table_v2.csv",
@@ -184,10 +193,13 @@ def main() -> None:
         "Fig5_policy_robustness",
         "Fig6_evidence_boundary",
         "Fig2_event_hindcast_article",
+        "Fig2_global_payload_article",
+        "Fig3_regional_evidence_cards_article",
         "Fig3_regional_hierarchical_screen_article",
         "Fig4_evidence_tier_cards_article",
         "Fig4_four_product_evidence_ladder_article",
         "Fig5_aquifer_class_phase_article",
+        "Fig6_engineering_event_boundary_article",
         "FigS1_yokohama_local_groundwater_r24",
         "FigS2_tokyo_representative_groundwater_r25",
         "FigS3_water_table_followup_flag_spatial_robustness",
@@ -246,16 +258,24 @@ def main() -> None:
         f"{len(enriched)} enriched proxy tests, {len(protocol)} protocol steps, {len(scorecard)} regional scorecard rows"
     )
     print(
-        "R39 Article-route package: "
+        "R39 Article package: "
         f"JPL status = {jpl_r39['run_status']}; "
         f"{len(aquifer_priors)} aquifer-context S_y priors, {len(evidence_cards)} evidence cards; "
         "named local release zip present"
     )
     print(
-        "R40/R41 Article-route additions: "
+        "R40/R41 Article additions: "
         f"{len(event_metrics)} event benchmarks "
         f"({r40['n_total_positive_samples']} positives, {r40['n_total_control_samples']} controls); "
         f"{len(regional_hierarchy)} regional hierarchy rows; {len(product_ladder)} evidence-ladder rows"
+    )
+    print(
+        "R42 Article display repair: "
+        f"{r42['global_payload_counts']['n_cities']} cities -> "
+        f"{r42['global_payload_counts']['detectable']} detectable -> "
+        f"{r42['global_payload_counts']['ab']} A/B units -> "
+        f"{r42['global_payload_counts']['regional']} regional groups; "
+        f"{len(protocol_r42)} protocol steps"
     )
 
 

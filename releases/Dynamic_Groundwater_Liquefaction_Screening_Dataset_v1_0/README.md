@@ -1,8 +1,8 @@
-# Dynamic Groundwater-Liquefaction Screening Dataset v1.0
+# DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins
 
-Local release prepared: 2026-06-09T01:30:28.137404+00:00
+Local release prepared: 2026-06-09T02:59:55.436626+00:00
 
-This derived-data release supports the manuscript route "A dynamic groundwater screen for liquefaction review in seismic urban water management".
+This derived-data release supports the manuscript "Dynamic groundwater trajectories define review needs for liquefaction-sensitive water management".
 
 ## Contents
 
@@ -14,7 +14,21 @@ This derived-data release supports the manuscript route "A dynamic groundwater s
 - JPL CRI access status: `earthdata_authentication_required_not_ingested`. The protected NetCDF is not redistributed and is not used as a claim unless authenticated sampling is completed.
 - Aquifer-context S_y review priors and phase calculations.
 - Evidence-tier cards for regional sign and claim class.
-- Engineering-context enrichment diagnostics and non-regulatory review protocol.
+- Article display-order products, engineering-context enrichment diagnostics and non-regulatory review protocol.
+
+## Article display sequence
+
+The current Article display sequence is:
+
+1. `Fig1_mechanism.*`
+2. `Fig2_global_payload_article.*`
+3. `Fig3_regional_evidence_cards_article.*`
+4. `Fig4_four_product_evidence_ladder_article.*`
+5. `Fig5_aquifer_class_phase_article.*`
+6. `Fig6_engineering_event_boundary_article.*`
+7. main-text Table/Box 1 protocol (`review_protocol_box1_r42.csv`)
+
+Legacy/supporting figure stems such as `Fig2_global_signresolved.*`, `Fig2_event_hindcast_article.*`, `Fig3_regional.*` and `Fig6_evidence_boundary.*` are retained for reproducibility and audit trail. They are not the current Article display order.
 
 ## Boundary
 

@@ -1,0 +1,44 @@
+{
+  "round": "R42",
+  "purpose": "Nature Water Article display-order repair and protocol foregrounding",
+  "new_or_updated_figures": [
+    "figures/Fig2_global_payload_article.{svg,pdf,png}",
+    "figures/Fig3_regional_evidence_cards_article.{svg,pdf,png}",
+    "figures/Fig6_engineering_event_boundary_article.{svg,pdf,png}"
+  ],
+  "new_protocol_table": "data_derived/review_protocol_box1_r42.csv",
+  "display_sequence": [
+    "Figure 1 dynamic groundwater review screen",
+    "Figure 2 global null plus regional review payload",
+    "Figure 3 regional evidence cards",
+    "Figure 4 four-product evidence ladder",
+    "Figure 5 aquifer-context S_y phase diagram",
+    "Figure 6 engineering context plus event-scale boundary",
+    "Table/Box 1 non-regulatory review protocol"
+  ],
+  "global_payload_counts": {
+    "n_cities": 444,
+    "mean_dp": 0.00041902342063920834,
+    "null_p": 1.0,
+    "detectable": 311,
+    "ab": 28,
+    "material": 6,
+    "targeted": 22,
+    "metro": 21,
+    "ghsl": 22,
+    "regional": 10,
+    "largest_group": 17,
+    "increase_ab": 19,
+    "depletion_ab": 9,
+    "ab_pop": 98.20391500000002
+  },
+  "protocol_steps": 7,
+  "claim_boundary": "Historical-event benchmark remains neutral-to-negative and is used to delimit, not validate, event prediction.",
+  "remaining_human_or_auth_boundaries": [
+    "Zenodo DOI publication",
+    "GitHub release/archive DOI publication",
+    "Earthdata-authenticated JPL CRI NetCDF ingestion",
+    "funding, CRediT and competing-interest statements",
+    "external collaborator decisions"
+  ]
+}

@@ -1,4 +1,4 @@
-"""R39 Article-route evidence products and named dataset release.
+"""R39 Article evidence products and named dataset release.
 
 This round adds four Article-facing products without weakening the existing
 Nature Water Analysis package:
@@ -621,6 +621,9 @@ def build_release_package(jpl: JplStatus) -> Path:
         "four_product_evidence_ladder_r41.csv",
         "article_readiness_dashboard_r41.csv",
         "article_readiness_summary_r41.json",
+        "review_protocol_box1_r42.csv",
+        "review_protocol_box1_r42.md",
+        "article_display_reorder_summary_r42.json",
     ]
     copied = []
     for name in files:
@@ -636,10 +639,13 @@ def build_release_package(jpl: JplStatus) -> Path:
         "Fig4_timeseries",
         "Fig4_evidence_tier_cards_article",
         "Fig2_event_hindcast_article",
+        "Fig2_global_payload_article",
+        "Fig3_regional_evidence_cards_article",
         "Fig3_regional_hierarchical_screen_article",
         "Fig4_four_product_evidence_ladder_article",
         "Fig5_aquifer_class_phase_article",
         "Fig6_evidence_boundary",
+        "Fig6_engineering_event_boundary_article",
     ]:
         for ext in [".svg", ".pdf", ".png"]:
             src = FIG / f"{stem}{ext}"
@@ -655,6 +661,7 @@ def build_release_package(jpl: JplStatus) -> Path:
         "r39_article_dataset_release.py",
         "r40_event_hindcast_article_validation.py",
         "r41_article_hierarchy_and_evidence_ladder.py",
+        "r42_article_display_reorder_and_protocol.py",
         "verify_derived_outputs.py",
     ]:
         src = ROOT / "scripts" / script
@@ -662,11 +669,11 @@ def build_release_package(jpl: JplStatus) -> Path:
             dst = REL / "scripts" / script
             shutil.copy2(src, dst)
             copied.append(dst)
-    readme = f"""# Dynamic Groundwater-Liquefaction Screening Dataset v1.0
+    readme = f"""# DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins
 
 Local release prepared: {datetime.now(timezone.utc).isoformat()}
 
-This derived-data release supports the manuscript route "A dynamic groundwater screen for liquefaction review in seismic urban water management".
+This derived-data release supports the manuscript "Dynamic groundwater trajectories define review needs for liquefaction-sensitive water management".
 
 ## Contents
 
@@ -678,7 +685,21 @@ This derived-data release supports the manuscript route "A dynamic groundwater s
 - JPL CRI access status: `{jpl.run_status}`. The protected NetCDF is not redistributed and is not used as a claim unless authenticated sampling is completed.
 - Aquifer-context S_y review priors and phase calculations.
 - Evidence-tier cards for regional sign and claim class.
-- Engineering-context enrichment diagnostics and non-regulatory review protocol.
+- Article display-order products, engineering-context enrichment diagnostics and non-regulatory review protocol.
+
+## Article display sequence
+
+The current Article display sequence is:
+
+1. `Fig1_mechanism.*`
+2. `Fig2_global_payload_article.*`
+3. `Fig3_regional_evidence_cards_article.*`
+4. `Fig4_four_product_evidence_ladder_article.*`
+5. `Fig5_aquifer_class_phase_article.*`
+6. `Fig6_engineering_event_boundary_article.*`
+7. main-text Table/Box 1 protocol (`review_protocol_box1_r42.csv`)
+
+Legacy/supporting figure stems such as `Fig2_global_signresolved.*`, `Fig2_event_hindcast_article.*`, `Fig3_regional.*` and `Fig6_evidence_boundary.*` are retained for reproducibility and audit trail. They are not the current Article display order.
 
 ## Boundary
 
@@ -690,15 +711,15 @@ Zenodo DOI: to be minted by the author after repository upload/release approval.
 """
     (REL / "README.md").write_text(readme, encoding="utf-8")
     (REL / "DATASET_CITATION.txt").write_text(
-        "Ren, L. Dynamic Groundwater-Liquefaction Screening Dataset v1.0. Zenodo DOI to be minted.\n",
+        "Ren, L. DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins. Zenodo DOI to be minted.\n",
         encoding="utf-8",
     )
     (REL / "zenodo.json").write_text(
         json.dumps(
             {
-                "title": "Dynamic Groundwater-Liquefaction Screening Dataset v1.0",
+                "title": "DGLS-v1: Dynamic Groundwater-Liquefaction Screening Dataset for Seismic Urban Basins",
                 "upload_type": "dataset",
-                "description": "Derived city, regional-group, product-consensus, aquifer-context and evidence-tier tables for a dynamic groundwater-liquefaction screening study.",
+                "description": "Derived city, regional-group, product-consensus, aquifer-context, evidence-tier, event-boundary and protocol tables for a dynamic groundwater-liquefaction screening study.",
                 "creators": [{"name": "Ren, Lijian", "affiliation": "Inner Mongolia University of Technology"}],
                 "license": "cc-by-4.0",
                 "keywords": ["GRACE", "groundwater", "liquefaction", "urban risk", "specific yield"],
@@ -752,7 +773,7 @@ def main() -> None:
         "dataset_release_dir": str(REL.relative_to(ROOT)),
         "dataset_release_zip": str(zip_path.relative_to(ROOT)),
         "zip_bytes": zip_path.stat().st_size,
-        "boundary": "R39/R40/R41 complete local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided.",
+        "boundary": "R39/R40/R41/R42 complete local Article-facing products; Zenodo DOI and Earthdata-authenticated JPL ingestion remain human/auth boundaries unless credentials are provided.",
     }
     (DER / "r39_article_dataset_release_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))

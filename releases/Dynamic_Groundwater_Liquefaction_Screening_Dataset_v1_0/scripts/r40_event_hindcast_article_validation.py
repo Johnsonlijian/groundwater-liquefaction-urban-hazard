@@ -1,4 +1,4 @@
-"""R40 event-inventory benchmark for the Nature Water Article route.
+"""R40 event-inventory benchmark for the Nature Water Article.
 
 This script adds an Article-facing historical-event benchmark without
 overclaiming it as site-scale engineering validation.

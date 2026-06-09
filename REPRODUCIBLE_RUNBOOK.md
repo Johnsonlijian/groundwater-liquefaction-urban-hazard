@@ -112,7 +112,7 @@ Expected summary:
 - R25 CGWB source retry status: no successful access to the monitoring page, Greater Mumbai PDF or Maharashtra yearbook through proxy/direct sessions.
 - R25 JPL CRI runner status: Earthdata-protected; no local credentials, `earthaccess` package or authenticated local NetCDF detected.
 - R39 JPL CRI status: Article ledger generated; no JPL-derived numerical result is asserted without authenticated ingestion.
-- R39/R40/R41/R42 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables, display-order products and derived tables; DOI minting remains a post-upload step.
+- R39/R40/R41/R42 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables, display-order products and derived tables; GitHub release `v0.8.0-nature-water-article-r42` is published at `https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42`; Zenodo DOI minting remains pending author-controlled Zenodo publication.
 - R42 Article display repair: `Fig2_global_payload_article.*`, `Fig3_regional_evidence_cards_article.*`, `Fig6_engineering_event_boundary_article.*`, `review_protocol_box1_r42.csv` and `article_display_reorder_summary_r42.json` are present.
 - Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.

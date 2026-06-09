@@ -117,10 +117,14 @@ The extended sensitivity grid varies PGA-to-PGV conversion, specific yield and s
 
 GRACE/GRACE-FO constrains a regional storage-derived water-table driver at roughly 300 km scale. The city is the exposure unit. City values are directional screening estimates, not site-specific engineering predictions. The analysis does not claim that groundwater causes earthquakes.
 
-## Intended public remote
+## Public release
 
-`https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard`
+Repository: `https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard`
+
+Current release: `https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42`
+
+Zenodo DOI is pending author-controlled Zenodo publication. No placeholder DOI should be cited.
 
 ## Citation
 
-Use the metadata in `CITATION.cff` once the manuscript and Zenodo record are finalized.
+Use the metadata in `CITATION.cff` and cite the GitHub release until a Zenodo DOI is minted.

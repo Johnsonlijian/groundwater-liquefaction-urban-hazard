@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b1b3a" flood-opacity="0.16"/></filter>
+<linearGradient id="water" x1="0" x2="1"><stop offset="0" stop-color="#8BD5F7" stop-opacity=".9"/><stop offset="1" stop-color="#1B77B9" stop-opacity=".9"/></linearGradient>
+<linearGradient id="soil" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#C28B59"/><stop offset=".55" stop-color="#B1784A"/><stop offset="1" stop-color="#7C4D2D"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#081B4A"/></marker>
+<marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2467AE"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C84C3A"/></marker>
+</defs>
+<rect x="0" y="0" width="2200" height="1500" rx="0" fill="#F5F8FC"/>
+<text x="1100.0" y="58.0" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#081B4A" opacity="1.0" style="">FIGURE 3  |  EVIDENCE-TIER REGIONAL ARENA</text>
+<text x="1100.0" y="102.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="middle" fill="#081B4A" opacity="1.0" style="font-style:italic;">Five regional cases, five claim classes, one conservative grammar</text>
+<rect x="32" y="128" width="2164" height="1270" rx="28" fill="#FFFFFF" stroke="#A9BCD6" stroke-width="2.2" opacity="1" filter="url(#shadow)"/>
+<rect x="80" y="230" width="380" height="820" rx="24" fill="#FBFCFE" stroke="#BBC9DA" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="118" cy="275" r="25" fill="#2E7D3A" stroke="white" stroke-width="3"/><text x="118.0" y="284.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">A</text>
+<text x="155.0" y="268.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">North China Plain /</text>
+<text x="155.0" y="296.3" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Beijing-Tianjin-</text>
+<text x="155.0" y="324.6" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Hebei</text>
+<rect x="105" y="352" width="330" height="125" rx="18" fill="#F0F5FA" stroke="#D2DCE8" stroke-width="1.5" opacity="1"/>
+<text x="123.0" y="392.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#2E7D3A" opacity="1.0" style="">mechanism anchor</text>
+<circle cx="128" cy="537" r="18" fill="#2E7D3A" stroke="white" stroke-width="2.5"/>
+<text x="128.0" y="544.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="162.0" y="533.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CSR</text>
+<text x="162.0" y="560.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">positive/recharge-side sign but</text>
+<text x="162.0" y="577.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Beijing is sub-material in global</text>
+<text x="162.0" y="595.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">screen</text>
+<circle cx="128" cy="641" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="128.0" y="648.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="162.0" y="637.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GSFC</text>
+<text x="162.0" y="664.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">used as independent sign guardrail</text>
+<text x="162.0" y="681.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">where available</text>
+<circle cx="128" cy="745" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="128.0" y="752.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="162.0" y="741.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GFZ</text>
+<text x="162.0" y="768.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GFZ raw sign match 2/2; GFZ leakage-</text>
+<text x="162.0" y="785.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">adjusted sign match 2/2</text>
+<circle cx="128" cy="849" r="18" fill="#2E7D3A" stroke="white" stroke-width="2.5"/>
+<text x="128.0" y="856.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="162.0" y="845.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local</text>
+<text x="162.0" y="872.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">high: &gt;2000 wells and about 190000</text>
+<text x="162.0" y="889.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">measurements in Long et al. 2025;</text>
+<text x="162.0" y="907.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Beijing urban well mechanism in</text>
+<text x="162.0" y="925.1" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Li/Wang et al. 2025 | high</text>
+<text x="162.0" y="942.8" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">deformation context; regional</text>
+<text x="162.0" y="960.5" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">subsidence/recovery is heterogeneous</text>
+<rect x="105" y="935" width="330" height="78" rx="16" fill="#EDF7EF" stroke="#A9CBA6" stroke-width="1.5" opacity="1"/>
+<text x="123.0" y="965.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">mechanism anchor, not material</text>
+<text x="123.0" y="982.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">city validation</text>
+<rect x="500" y="230" width="380" height="820" rx="24" fill="#FBFCFE" stroke="#BBC9DA" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="538" cy="275" r="25" fill="#4A9E78" stroke="white" stroke-width="3"/><text x="538.0" y="284.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">B</text>
+<text x="575.0" y="268.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Tokyo Bay / Yokohama</text>
+<rect x="525" y="352" width="330" height="125" rx="18" fill="#F0F5FA" stroke="#D2DCE8" stroke-width="1.5" opacity="1"/>
+<text x="543.0" y="392.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#4A9E78" opacity="1.0" style="">sign-supported coastal</text>
+<text x="543.0" y="419.1" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#4A9E78" opacity="1.0" style="">review case</text>
+<circle cx="548" cy="537" r="18" fill="#4A9E78" stroke="white" stroke-width="2.5"/>
+<text x="548.0" y="544.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="582.0" y="533.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CSR</text>
+<text x="582.0" y="560.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Yokohama CSR-material at S_y=0.10;</text>
+<text x="582.0" y="577.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Tokyo targeted/sub-material depending</text>
+<text x="582.0" y="595.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">S_y</text>
+<circle cx="548" cy="641" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="548.0" y="648.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="582.0" y="637.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GSFC</text>
+<text x="582.0" y="664.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Yokohama GSFC sign support but not</text>
+<text x="582.0" y="681.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GSFC-material</text>
+<circle cx="548" cy="745" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="548.0" y="752.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="582.0" y="741.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GFZ</text>
+<text x="582.0" y="768.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GFZ raw sign match 2/2; GFZ leakage-</text>
+<text x="582.0" y="785.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">adjusted sign match 2/2</text>
+<circle cx="548" cy="849" r="18" fill="#4A9E78" stroke="white" stroke-width="2.5"/>
+<text x="548.0" y="856.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="582.0" y="845.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local</text>
+<text x="582.0" y="872.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">medium-high sign: Yokohama 20/23</text>
+<text x="582.0" y="889.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">rising; Tokyo official records mostly</text>
+<text x="582.0" y="907.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">rising | medium: deformation</text>
+<text x="582.0" y="925.1" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">monitoring context exists; not proof</text>
+<text x="582.0" y="942.8" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">of shallow liquefiable heads</text>
+<rect x="525" y="935" width="330" height="78" rx="16" fill="#EDF7EF" stroke="#A9CBA6" stroke-width="1.5" opacity="1"/>
+<text x="543.0" y="965.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">sign-supported positive screen,</text>
+<text x="543.0" y="982.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">not independent material proof</text>
+<rect x="920" y="230" width="380" height="820" rx="24" fill="#FBFCFE" stroke="#BBC9DA" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="958" cy="275" r="25" fill="#F2B84B" stroke="white" stroke-width="3"/><text x="958.0" y="284.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">C</text>
+<text x="995.0" y="268.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Mumbai-Bhayandar /</text>
+<text x="995.0" y="296.3" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Mumbai coast</text>
+<rect x="945" y="352" width="330" height="125" rx="18" fill="#F0F5FA" stroke="#D2DCE8" stroke-width="1.5" opacity="1"/>
+<text x="963.0" y="392.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#F2B84B" opacity="1.0" style="">candidate-only</text>
+<text x="963.0" y="419.1" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#F2B84B" opacity="1.0" style="">contradiction boundary</text>
+<circle cx="968" cy="537" r="18" fill="#F2B84B" stroke="white" stroke-width="2.5"/>
+<text x="968.0" y="544.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="1002.0" y="533.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CSR</text>
+<text x="1002.0" y="560.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">CSR-material positive at S_y=0.10</text>
+<circle cx="968" cy="641" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="968.0" y="648.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="1002.0" y="637.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GSFC</text>
+<text x="1002.0" y="664.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GSFC direction match only; no</text>
+<text x="1002.0" y="681.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">statistical sign or material support</text>
+<circle cx="968" cy="745" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="968.0" y="752.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="1002.0" y="741.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GFZ</text>
+<text x="1002.0" y="768.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GFZ raw sign match 2/2; GFZ leakage-</text>
+<text x="1002.0" y="785.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">adjusted sign match 2/2</text>
+<circle cx="968" cy="849" r="18" fill="#F2B84B" stroke="white" stroke-width="2.5"/>
+<text x="968.0" y="856.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="1002.0" y="845.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local</text>
+<text x="1002.0" y="872.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">contradictory guardrail: Mumbai</text>
+<text x="1002.0" y="889.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">station literature supports</text>
+<text x="1002.0" y="907.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">depletion/increasing depth | medium-</text>
+<text x="1002.0" y="925.1" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">high Mumbai coastal subsidence</text>
+<text x="1002.0" y="942.8" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">context; not Bhayandar-specific</text>
+<text x="1002.0" y="960.5" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">validation</text>
+<rect x="945" y="935" width="330" height="78" rx="16" fill="#FFF8EA" stroke="#E0C77C" stroke-width="1.5" opacity="1"/>
+<text x="963.0" y="965.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">candidate-only / contradiction</text>
+<text x="963.0" y="982.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">boundary</text>
+<rect x="1340" y="230" width="380" height="820" rx="24" fill="#FBFCFE" stroke="#BBC9DA" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1378" cy="275" r="25" fill="#2467AE" stroke="white" stroke-width="3"/><text x="1378.0" y="284.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">D</text>
+<text x="1415.0" y="268.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Delhi / New Delhi</text>
+<rect x="1365" y="352" width="330" height="125" rx="18" fill="#F0F5FA" stroke="#D2DCE8" stroke-width="1.5" opacity="1"/>
+<text x="1383.0" y="392.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#2467AE" opacity="1.0" style="">product-material</text>
+<text x="1383.0" y="419.1" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#2467AE" opacity="1.0" style="">depletion case</text>
+<circle cx="1388" cy="537" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1388.0" y="544.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="1422.0" y="533.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CSR</text>
+<text x="1422.0" y="560.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">negative/depletion-side material or</text>
+<text x="1422.0" y="577.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">targeted screen</text>
+<circle cx="1388" cy="641" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1388.0" y="648.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="1422.0" y="637.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GSFC</text>
+<text x="1422.0" y="664.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">Delhi is the only GSFC-material</text>
+<text x="1422.0" y="681.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">support case among six CSR-material</text>
+<text x="1422.0" y="699.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">units</text>
+<circle cx="1388" cy="745" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1388.0" y="752.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="1422.0" y="741.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GFZ</text>
+<text x="1422.0" y="768.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GFZ raw sign match 1/1; GFZ leakage-</text>
+<text x="1422.0" y="785.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">adjusted sign match 1/1</text>
+<circle cx="1388" cy="849" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1388.0" y="856.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="1422.0" y="845.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local</text>
+<text x="1422.0" y="872.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">medium-high: CGWB station literature</text>
+<text x="1422.0" y="889.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">shows long-term depletion across most</text>
+<text x="1422.0" y="907.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">of DMR except Yamuna floodplains |</text>
+<text x="1422.0" y="925.1" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">high heterogeneous groundwater-linked</text>
+<text x="1422.0" y="942.8" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">subsidence/recovery context</text>
+<rect x="1365" y="935" width="330" height="78" rx="16" fill="#EDF7EF" stroke="#A9CBA6" stroke-width="1.5" opacity="1"/>
+<text x="1383.0" y="965.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">strong depletion-side</text>
+<text x="1383.0" y="982.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">product/material anchor</text>
+<rect x="1760" y="230" width="380" height="820" rx="24" fill="#FBFCFE" stroke="#BBC9DA" stroke-width="2" opacity="1" filter="url(#shadow)"/>
+<circle cx="1798" cy="275" r="25" fill="#2F9EB0" stroke="white" stroke-width="3"/><text x="1798.0" y="284.0" font-family="Arial" font-size="26" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">E</text>
+<text x="1835.0" y="268.0" font-family="Arial" font-size="24" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Lahore / Punjab belt</text>
+<rect x="1785" y="352" width="330" height="125" rx="18" fill="#F0F5FA" stroke="#D2DCE8" stroke-width="1.5" opacity="1"/>
+<text x="1803.0" y="392.0" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#2F9EB0" opacity="1.0" style="">depletion-side regional</text>
+<text x="1803.0" y="419.1" font-family="Arial" font-size="23" font-weight="700" text-anchor="start" fill="#2F9EB0" opacity="1.0" style="">review case</text>
+<circle cx="1808" cy="537" r="18" fill="#2F9EB0" stroke="white" stroke-width="2.5"/>
+<text x="1808.0" y="544.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">1</text>
+<text x="1842.0" y="533.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CSR</text>
+<text x="1842.0" y="560.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">negative/depletion-side material or</text>
+<text x="1842.0" y="577.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">targeted screen</text>
+<circle cx="1808" cy="641" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1808.0" y="648.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">2</text>
+<text x="1842.0" y="637.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GSFC</text>
+<text x="1842.0" y="664.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">sign support varies by city; not a</text>
+<text x="1842.0" y="681.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">uniform material claim</text>
+<circle cx="1808" cy="745" r="18" fill="#2467AE" stroke="white" stroke-width="2.5"/>
+<text x="1808.0" y="752.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">3</text>
+<text x="1842.0" y="741.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">GFZ</text>
+<text x="1842.0" y="768.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">GFZ raw sign match 2/2; GFZ leakage-</text>
+<text x="1842.0" y="785.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">adjusted sign match 2/2</text>
+<circle cx="1808" cy="849" r="18" fill="#2F9EB0" stroke="white" stroke-width="2.5"/>
+<text x="1808.0" y="856.0" font-family="Arial" font-size="17" font-weight="700" text-anchor="middle" fill="white" opacity="1.0" style="">4</text>
+<text x="1842.0" y="845.0" font-family="Arial" font-size="21" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">Local</text>
+<text x="1842.0" y="872.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">high for Lahore borehole/GRACE</text>
+<text x="1842.0" y="889.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">evidence; broader Punjab/NW India</text>
+<text x="1842.0" y="907.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">depletion supported by regional</text>
+<text x="1842.0" y="925.1" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">literature | high for Lahore PS-</text>
+<text x="1842.0" y="942.8" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">InSAR; medium for broader Punjab</text>
+<text x="1842.0" y="960.5" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#5E6A7D" opacity="1.0" style="">SBAS-InSAR</text>
+<rect x="1785" y="935" width="330" height="78" rx="16" fill="#EDF7EF" stroke="#A9CBA6" stroke-width="1.5" opacity="1"/>
+<text x="1803.0" y="965.0" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">strong depletion/subsidence</text>
+<text x="1803.0" y="982.7" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">context; regional grouping must</text>
+<text x="1803.0" y="1000.4" font-family="Arial" font-size="15" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">stay cautious</text>
+<rect x="80" y="1130" width="2040" height="190" rx="24" fill="#F5F8FC" stroke="#B8C8DD" stroke-width="2" opacity="1"/>
+<text x="115.0" y="1184.0" font-family="Arial" font-size="29" font-weight="700" text-anchor="start" fill="#081B4A" opacity="1.0" style="">CLAIM STRENGTH IS NOT A COLORFUL HOTSPOT MAP</text>
+<text x="115.0" y="1240.0" font-family="Arial" font-size="25" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">Beijing anchors the mechanism, Tokyo Bay/Yokohama is sign-supported, Mumbai-Bhayandar is a contradiction boundary, Delhi is product-</text>
+<text x="115.0" y="1269.5" font-family="Arial" font-size="25" font-weight="400" text-anchor="start" fill="#111827" opacity="1.0" style="">material depletion, and Lahore/Punjab is a depletion-subsidence review case.</text>
+</svg>

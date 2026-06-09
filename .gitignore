@@ -31,6 +31,7 @@ Submit-*/
 *.docx
 *.pdf
 !figures/*.pdf
+!figures/visual_upgrade/*.pdf
 cover_letter*
 CoverLetter*
 reviews/

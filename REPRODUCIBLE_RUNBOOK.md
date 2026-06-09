@@ -44,6 +44,8 @@ python scripts\\r40_event_hindcast_article_validation.py
 python scripts\\r41_article_hierarchy_and_evidence_ladder.py
 python scripts\\r42_article_display_reorder_and_protocol.py
 python scripts\\r39_article_dataset_release.py
+python scripts\\build_nature_water_visual_upgrade_pack.py
+python scripts\\build_3d_dgls_hero.py
 ```
 
 ## Minimum verification from included derived data
@@ -114,6 +116,7 @@ Expected summary:
 - R39 JPL CRI status: Article ledger generated; no JPL-derived numerical result is asserted without authenticated ingestion.
 - R39/R40/R41/R42 dataset release status: local Zenodo-ready package generated with manifest, checksums, citation metadata, event-benchmark tables, display-order products and derived tables; GitHub release `v0.8.0-nature-water-article-r42` is published at `https://github.com/Johnsonlijian/groundwater-liquefaction-urban-hazard/releases/tag/v0.8.0-nature-water-article-r42`; Zenodo DOI minting remains pending author-controlled Zenodo publication.
 - R42 Article display repair: `Fig2_global_payload_article.*`, `Fig3_regional_evidence_cards_article.*`, `Fig6_engineering_event_boundary_article.*`, `review_protocol_box1_r42.csv` and `article_display_reorder_summary_r42.json` are present.
+- R45 visual-upgrade figure pack: `figures/visual_upgrade/` contains six code-generated SVG/PDF/PNG upgraded display candidates, an optional 3D mechanism hero and a contact sheet. These are visual re-expressions of the existing evidence and do not add new numerical claims.
 - Largest follow-up-unit magnitude sensitivity factor in the deterministic grid: specific yield.
 - R28 S_y* thresholds: the six CSR-material screening units remain material only for S_y at or below about 0.11-0.16.
 - Beijing R28 S_y* threshold: never material across S_y = 0.05-0.25.
@@ -182,6 +185,17 @@ Generated figures are stored under `figures/`:
 - `FigS4_r37_third_product_engineering_protocol.png`
 - `FigS4_r37_third_product_engineering_protocol.svg`
 - `FigS4_r37_third_product_engineering_protocol.pdf`
+
+Visual-upgrade candidates are stored under `figures/visual_upgrade/`:
+
+- `Fig1_3D_DGLS_mechanism_upgrade.*`
+- `Fig2_global_null_regional_payload_upgrade.*`
+- `Fig3_regional_evidence_arena_upgrade.*`
+- `Fig4_product_evidence_ladder_upgrade.*`
+- `Fig5_aquifer_sy_phase_arena_upgrade.*`
+- `Fig6_engineering_event_protocol_arena_upgrade.*`
+- `GraphicalAbstract_3D_DGLS_mechanism_hero.*`
+- `contact_sheet.png`
 
 ## Guardrails
 

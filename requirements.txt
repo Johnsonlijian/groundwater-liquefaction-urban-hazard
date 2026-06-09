@@ -12,3 +12,7 @@ requests
 beautifulsoup4
 pdfplumber
 openpyxl
+python-pptx
+PyMuPDF
+reportlab
+svglib
